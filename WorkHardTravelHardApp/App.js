@@ -5,8 +5,22 @@ import { useState } from 'react';
 
 export default function App() {
   const [working, setWorking] = useState(true);
+  const [text, setText] = useState("");
+  const [toDos, settoDos] = useState({});
   const travel = () => setWorking(false);
   const work = () => setWorking(true);
+  const onChangeText = (payload) => setText(payload);
+  const addToDo = () => {
+    if(text === ""){
+      return;
+    }
+    const newToDos = Object.assign({}, toDos, {
+      [Date.now()]: {text, work:working},
+    });
+    settoDos(newToDos);
+    setText("");
+  };
+  console.log(toDos);
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -19,9 +33,15 @@ export default function App() {
         </TouchableOpacity>
       
       </View>
-      <View>
-          <TextInput style = {styles.input}></TextInput>
-        </View>
+      
+          <TextInput
+          onSubmitEditing={addToDo}
+          onChangeText={onChangeText}
+          returnKeyType='go'
+          value={text}
+          placeholder={working ? "Add a To Do" : "Where do you want to go?"} 
+          style = {styles.input}></TextInput>
+       
     </View>
   );
 }
@@ -44,5 +64,10 @@ const styles = StyleSheet.create({
   },
   input : {
     backgroundColor: "white",
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderRadius: 30,
+    marginTop: 20,
+    fontSize: 18,
   }
 });
