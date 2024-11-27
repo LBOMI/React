@@ -1,26 +1,58 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, TextInput, ScrollView} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, TextInput, ScrollView, Alert} from 'react-native';
 import { theme } from './colors';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import Fontisto from '@expo/vector-icons/Fontisto';
+
+const STORAGE_KEY = "@toDos";
 
 export default function App() {
   const [working, setWorking] = useState(true);
   const [text, setText] = useState("");
   const [toDos, settoDos] = useState({});
+  useEffect(() => {loadToDos();}, []);
   const travel = () => setWorking(false);
   const work = () => setWorking(true);
   const onChangeText = (payload) => setText(payload);
-  const addToDo = () => {
+  const saveToDos = async (toSave) => {
+    const s = JSON.stringify(toSave) //object를 String으로 바꿔줌
+    await AsyncStorage.setItem(STORAGE_KEY, s)
+  }
+  const loadToDos = async () => {
+    const s = await AsyncStorage.getItem(STORAGE_KEY)
+    settoDos(JSON.parse(s)); //parse는 string을 JS object로 만들어 줌
+  };
+  
+  const addToDo = async () => {
     if(text === ""){
       return;
     }
-    const newToDos = Object.assign({}, toDos, {
-      [Date.now()]: {text, work:working},
-    });
+    const newToDos = {
+      ...toDos,
+      [Date.now()] : {text, working},
+    };
     settoDos(newToDos);
+    await saveToDos(newToDos);
     setText("");
   };
   console.log(toDos);
+  const deleteToDo = async (key) => {
+    Alert.alert("Delete To Do", "Are you sure?",
+      [{text: "Cancel"},
+        {text: "I'm Sure", 
+          style: "destructive",
+          onPress: async () => {
+          const newToDos = {...toDos} //object를 만들고,
+          delete newToDos[key] //object의 key를 삭제
+          settoDos(newToDos); //state 업데이트,
+          await saveToDos(newToDos); //AsyncStorage에 저장
+        }}
+      ]
+    );
+    return
+    
+  }
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -42,10 +74,15 @@ export default function App() {
           placeholder={working ? "Add a To Do" : "Where do you want to go?"} 
           style = {styles.input}></TextInput>
           <ScrollView>{
-            Object.keys(toDos).map(key => /*todo안의 키들을 살펴본 후, todos[key].text를 보여줌*/
+            Object.keys(toDos).map((key) => /*todo안의 키들을 살펴본 후, todos[key].text를 보여줌*/
+            toDos[key].working === working ? (
             <View style = {styles.toDo} key={key}>
               <Text style = {styles.toDoText}>{toDos[key].text}</Text>   
-              </View>)
+              <TouchableOpacity onPress={() => deleteToDo(key)}>
+                <Fontisto name="trash" size={18} color={theme.grey} />
+              </TouchableOpacity>
+              
+              </View> ) : null)
             }
           </ScrollView>
     </View>
@@ -82,6 +119,9 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 20,
     borderRadius: 15,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between"
   },
   toDoText: {
     color: "white",
