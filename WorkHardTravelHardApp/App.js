@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, TextInput, ScrollView} from 'react-native';
 import { theme } from './colors';
 import { useState } from 'react';
 
@@ -41,7 +41,13 @@ export default function App() {
           value={text}
           placeholder={working ? "Add a To Do" : "Where do you want to go?"} 
           style = {styles.input}></TextInput>
-       
+          <ScrollView>{
+            Object.keys(toDos).map(key => /*todo안의 키들을 살펴본 후, todos[key].text를 보여줌*/
+            <View style = {styles.toDo} key={key}>
+              <Text style = {styles.toDoText}>{toDos[key].text}</Text>   
+              </View>)
+            }
+          </ScrollView>
     </View>
   );
 }
@@ -67,7 +73,19 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 20,
     borderRadius: 30,
-    marginTop: 20,
+    marginVertical: 20,
     fontSize: 18,
+  },
+  toDo:{
+    backgroundColor: theme.grey,
+    marginBottom: 10,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    borderRadius: 15,
+  },
+  toDoText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "500",
   }
 });
