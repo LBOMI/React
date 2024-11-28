@@ -29,12 +29,12 @@ export default function App() {
       return;
     }
     const newToDos = {
-      ...toDos,
-      [Date.now()] : {text, working},
+      ...toDos, //기존 toDos에 newToDo 합치기
+      [Date.now()] : {text, working}, //key를 통해 todo를 찾기 위함.
     };
-    settoDos(newToDos);
-    await saveToDos(newToDos);
-    setText("");
+    settoDos(newToDos); //state에 저장
+    await saveToDos(newToDos); //saveToDos 함수 호출, await를 사용한 이유는 저장될 때까지 기다리기 위함인데 생략 가능
+    setText(""); //toDo에 value를 empty로 설정
   };
   console.log(toDos);
   const deleteToDo = async (key) => {
@@ -74,8 +74,8 @@ export default function App() {
           placeholder={working ? "Add a To Do" : "Where do you want to go?"} 
           style = {styles.input}></TextInput>
           <ScrollView>{
-            Object.keys(toDos).map((key) => /*todo안의 키들을 살펴본 후, todos[key].text를 보여줌*/
-            toDos[key].working === working ? (
+            Object.keys(toDos).map((key) => /*todo안의 키들을 살펴본 후, todos[key].text를 보여줌*/ //key값들만 담긴 배열 반환
+            toDos[key].working === working ? ( //toDo의 working 값이 state의 working 값과 동일한지 
             <View style = {styles.toDo} key={key}>
               <Text style = {styles.toDoText}>{toDos[key].text}</Text>   
               <TouchableOpacity onPress={() => deleteToDo(key)}>
