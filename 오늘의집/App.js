@@ -219,16 +219,22 @@ function Header() {
                         <a className='s-c_4_2_1_1_1_1_a'>
                           <div className='s-c_4_2_1_1_1_1_a_1'>
                             <span className='s-c_4_2_1_1_1_1_a_1_s'></span>
-                            <span>
-                              <span></span>
+                            <span className='s-c_4_2_1_1_1_1_a_1_s2'>
+                              <span className='s-c_4_2_1_1_1_1_a_1_s2_1'></span>
                             </span>
-                            <span></span>
+                            <span className='s-c_4_2_1_1_1_1_a_1_s3'></span>
                           </div>
                         </a>
                       </div>
-                      <div></div>
+                      <div>
+                        <div>
+
+                        </div>
+                      </div>
                     </div>
-                    <button></button>
+                    <button type='button' className='s-c_4_2_1_1_b'>
+                      <span className='s-c_4_2_1_1_b_s'><FontAwesomeIcon icon={faChevronDown} /></span>
+                    </button>
                   </div>
                 </span>
               </div>
@@ -237,12 +243,86 @@ function Header() {
         </div>
       </div>
     </header>
-  
   );
 
 }
-function header() {
-
+function Body() {
+  return (
+    <section>
+      <div className='B_mains'>
+        <div className='B_main'>
+          <div className='B_main1'>
+            <section>
+              <a>
+                <img className='B_main_section_a_img' src='오늘의집 main picture.avif'></img>
+                <div className='B_main1_1'>
+                  <p className='B_main1_1_p'>아이 있는 집 맞나요? 모던함이 돋보이는 집</p>
+                  <span className='B_main1_1_s'>
+                    <img className='B_main1_1_img'></img>
+                    <span className='B_main1_1_span_span'>눈누</span>
+                  </span>
+                </div>
+              </a>
+            </section>
+          </div>
+          <div className='B_main2'>
+            <section >
+              <div className='B_main2_1'>
+                <div className='B_main2_1_1'>
+                  <div className='B_main2_1_1_1'>
+                    <div className='B_main2_1_1_1_1'>
+                      <a>
+                        <div></div>
+                        <div></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className='B_main2_1_2'>
+                  <span className='B_main2_1_2s'>
+                    <span className='B_main2_1_2ss'></span>
+                  </span>
+                </div>
+                <div className='B_main2_1_3'>
+                  <div className='B_main2_1_3_1'>
+                    <button type='button' className='B_main2_1_3_1_button'>
+                      <span className='B_main2_1_3_1_button_span'></span>
+                    </button>
+                  </div>
+                  <div className='B_main2_1_3_2'>
+                    <button type='button' className='B_main2_1_3_1_button'>
+                      <span className='B_main2_1_3_1_button_span'></span>
+                    </button>
+                  </div>
+                  <span className='B_main2_1_3s'>
+                    <span className='B_main2_1_3ss'></span>
+                    <span className='B_main2_1_3ss1'></span>
+                  </span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div className='B_nav'>
+          <div className='B_nav_1'>
+            <div className='B_nav_2' >
+              <a >
+                <img src='오늘의집 아이콘1.avif'></img>
+                <span>연말빅세일</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  );
 }
 
 
@@ -277,6 +357,7 @@ export default function TodaysHouse() {
   return (
    <div className='entire'>
     <Header />
+    <Body />
     </div>
      
     
