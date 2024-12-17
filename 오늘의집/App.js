@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
@@ -308,7 +309,7 @@ function Body() {
           <div className='B_nav_1'>
             <div className='B_nav_2' >
               <a >
-                <img src='오늘의집 아이콘1.avif'></img>
+                <img src='body_icon\오늘의집 아이콘1.avif'></img>
                 <span>연말빅세일</span>
               </a>
             </div>
@@ -390,7 +391,7 @@ function Body() {
                   <li>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor1.avif'  ></img>
+                        <img src='lookfor_picture\lookfor1.avif'  style={{width: 172.67, height: 230}}></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -435,7 +436,7 @@ function Body() {
                   <li>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor2.avif'  ></img>
+                        <img src='lookfor_picture\lookfor2.avif'  style={{width: 172.67, height: 230}}></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -480,7 +481,7 @@ function Body() {
                   <li>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor3.gif'  ></img>
+                        <img src='lookfor_picture\lookfor3.gif' style={{width: 172.67, height: 230}} ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -525,7 +526,7 @@ function Body() {
                   <li>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor4.avif'  ></img>
+                        <img src='lookfor_picture\lookfor4.avif' style={{width: 172.67, height: 230}} ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -570,7 +571,7 @@ function Body() {
                   <li>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor5.avif'  ></img>
+                        <img src='lookfor_picture\lookfor5.avif' style={{width: 172.67, height: 230}} ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -615,7 +616,7 @@ function Body() {
                   <li>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor6.avif'  ></img>
+                        <img src='lookfor_picture\lookfor6.avif' style={{width: 172.67, height: 230}} ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -678,14 +679,360 @@ function Body() {
           </div>
         </div>
         <div className='B_lookfor2'>
-          <div className='B_lookfor2_1'>
-            <div></div>
-            <div></div>
+          <div className='B_lookfor2_1h'>
+            <div className='B_lookfor2_1'>
+              <div className='B_lookfor2_1_1'>
+                <strong>이주의 집들이! 발굴하러 가볼까요?</strong>
+              </div>
+            </div>
+            <div className='B_lookfor_h2'>
+              <button type='button'>더보기</button>
+            </div>
           </div>
-          <div></div>
+          <div className='B_lookfor2_2'>
+            <div className='B_lookfor2_2_1'>
+              <div className='B_lookfor2_2_1_1'>
+                <div className='B_lookfor2_2_1_1_1'>
+                  <img src='jipdlei\집들이1.avif' style={{height:179}}></img>
+                  <div className='B_lookfor2_2_1_1_1_1'>
+                    <div className='B_lookfor2_2_1_1_1_1_1'></div>
+                  </div>
+                  <div className='B_lookfor2_2_1_1_1_2'>
+                    <button type='button'>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div className='B_lookfor2_2_1_1_2'>
+                  <p>
+                    <span>식물과 컬러로 포인트! </span>
+                    공간 디자이너 부부와 아이가 사는 집
+                  </p>
+                </div>
+                <a></a>
+              </div>
+              <div className='B_lookfor2_2_1_1'>
+                <div className='B_lookfor2_2_1_1_1'>
+                  <img src='jipdlei\집들이2.avif' style={{height:179}}></img>
+                  <div className='B_lookfor2_2_1_1_1_1'>
+                    <div className='B_lookfor2_2_1_1_1_1_1'></div>
+                  </div>
+                  <div className='B_lookfor2_2_1_1_1_2'>
+                    <button type='button'>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div className='B_lookfor2_2_1_1_2'>
+                  <p>
+                    <span>블랙&그레이톤으로 </span>
+                    정돈된 호텔의 무드를 느낄 수 있는 집
+                  </p>
+                </div>
+                <a></a>
+              </div>
+              <div className='B_lookfor2_2_1_1'>
+                <div className='B_lookfor2_2_1_1_1'>
+                  <img src='jipdlei\집들이3.webp' style={{width: 268 ,height:179}}></img>
+                  <div className='B_lookfor2_2_1_1_1_1'>
+                    <div className='B_lookfor2_2_1_1_1_1_1'></div>
+                  </div>
+                  <div className='B_lookfor2_2_1_1_1_2'>
+                    <button type='button'>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div className='B_lookfor2_2_1_1_2'>
+                  <p>
+                    <span>공간 분위기 바꾸기? </span>
+                    가구&소품 재배치로 어렵지 않게 완성!
+                  </p>
+                </div>
+                <a></a>
+              </div>
+              <div className='B_lookfor2_2_1_1'>
+                <div className='B_lookfor2_2_1_1_1'>
+                  <img src='jipdlei\집들이4.avif' style={{height:179}}></img>
+                  <div className='B_lookfor2_2_1_1_1_1'>
+                    <div className='B_lookfor2_2_1_1_1_1_1'></div>
+                  </div>
+                  <div className='B_lookfor2_2_1_1_1_2'>
+                    <button type='button'>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div className='B_lookfor2_2_1_1_2'>
+                  <p>
+                    <span>30평대 같은 </span>
+                    대면형 주방을 실현한, 18평 신희타 리모델링기
+                  </p>
+                </div>
+                <a></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div></div>
-        <div></div>
+        <div className='Categroy_'>
+          <div className='Category_1h'>
+            <div className='Category_1h_1'>
+              <div className='Category_1h_1_1'>
+                <strong>카테고리별 상품 찾기</strong>
+              </div>
+            </div>
+            <div className='Category_1h_2'></div>
+          </div>
+          <div className='Category_C'>
+            <div className='Category_C_1'>
+              <div className='Category_C_1_1'>
+                <ul>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\크리스마스.avif'></img>
+                        </div>
+                        <span>크리스마스</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\가구.avif'></img>
+                        </div>
+                        <span>가구</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\패브릭.avif'></img>
+                        </div>
+                        <span>패브릭</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\가전,디지털.avif'></img>
+                        </div>
+                        <span>가전.디지털</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\주방용품.avif'></img>
+                        </div>
+                        <span>주방용품</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\식품.avif'></img>
+                        </div>
+                        <span>식품</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\데코,식물.avif'></img>
+                        </div>
+                        <span>데코,식물</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\조명.avif'></img>
+                        </div>
+                        <span>조명</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\수납,정리.avif'></img>
+                        </div>
+                        <span>수납,정리</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\생활용품.avif'></img>
+                        </div>
+                        <span>생활용품</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\생필품.avif'></img>
+                        </div>
+                        <span>생필품</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\유아,아동.avif'></img>
+                        </div>
+                        <span>유아, 아동</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\반려동물.avif'></img>
+                        </div>
+                        <span>반려동물</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\캠핑,레저.avif'></img>
+                        </div>
+                        <span>캠핑,레저</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\공구,DIY.avif'></img>
+                        </div>
+                        <span>공구,DIY</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\인테리어시공.avif'></img>
+                        </div>
+                        <span>인테리어시공</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\렌탈,구독.avif'></img>
+                        </div>
+                        <span>렌탈,구독</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\장보기.avif'></img>
+                        </div>
+                        <span>장보기</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\혼수,신혼.avif'></img>
+                        </div>
+                        <span>혼수,신혼</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className='Category_C_1_2'>
+                <button type='button'>
+                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+                </button>
+              </div>
+              <div className='Category_C_1_3'>
+              <button type='button'>
+                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='Todaydeal'>
+          <div className='Todaydeal_h'>
+            <div className='Todaydeal_h_1'>
+              <div className='Todaydeal_h_1_1'>
+                <strong>오늘의 딜</strong>
+              </div>
+            </div>
+            <div className='Todaydeal_h_2'>
+              <button type='button'>더보기</button>
+            </div>
+          </div>
+          <div className='Todaydeal_C'>
+            <div className='Todaydeal_C_1'>
+              <div className='Todaydeal_C_1_1'>
+                <ul>
+                  <li>
+                    <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'></div>
+                        <div className='Todaydeal_C_1_1_li_1_2'></div>
+                      </article>
+                    </div>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <div className='Todaydeal_C_1_2'></div>
+              <div className='Todaydeal_C_1_3'></div>
+            </div>
+          </div>
+        </div>
         <div></div>
         <div></div>
         <div></div>
