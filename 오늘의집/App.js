@@ -1011,8 +1011,63 @@ function Body() {
                     <div className='Todaydeal_C_1_1_li_1'>
                       <article>
                         <a></a>
-                        <div className='Todaydeal_C_1_1_li_1_1'></div>
-                        <div className='Todaydeal_C_1_1_li_1_2'></div>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_1'>
+                                <div className='Todaydeal_C_1_1_li_1_1_1_1_1_1'>
+                                  <picture>
+                                    <source></source>
+                                    <img src='Todaydeal\2024BEST.avif'></img>
+                                  </picture>
+                                </div>
+                              </div>
+                              <img src='Todaydeal\Todaydeal_1.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>아이러브베베</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[최종17,910원/82초고평량]시그니앙 골드퍼플 70매 20팩 캡형 아기물티슈</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.9</strong>
+                                리뷰 630
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>42
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>22,900</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.9</strong>
+                                리뷰 630
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span4'>
+                              <img></img>
+                            </span>
+                            <span></span>
+                            <span></span>
+                            <div></div>
+                          </div>
+                        </div>
                       </article>
                     </div>
                   </li>
