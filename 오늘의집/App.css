@@ -748,7 +748,8 @@ header {
 }
 
 .B_lookfor_h,
-.Todaydeal_h {
+.Todaydeal_h,
+.UserReview_h {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -756,6 +757,7 @@ header {
   padding: 20px 0px;
   font-size: 0px;
   line-height: 1;
+  margin: 0;
 }
 
 .B_lookfor_h1,
@@ -1014,7 +1016,9 @@ header {
   left: 100%;
 }
 
-.B_lookfor_h3_3 button {
+.B_lookfor_h3_3 button,
+.Todaydeal_C_1_2 button,
+.Todaydeal_C_1_3 button {
   margin: 0;
   border: none;
   background: none;
@@ -1036,7 +1040,9 @@ header {
   box-shadow: 0 2px 5px rgba(63, 71, 77, 0.15); 
 }
 
-.B_lookfor_h3_3 span {
+.B_lookfor_h3_3 span,
+.Todaydeal_C_1_2 span,
+.Todaydeal_C_1_3 span {
   display: inline-block;
   font-size: 24px;
   line-height: 1;
@@ -1199,7 +1205,8 @@ header {
 }
 
 .Categroy_,
-.Todaydeal {
+.Todaydeal,
+.UserReview {
   width: 100%;
   box-sizing: border-box;
   background: rgb(255, 255, 255);
@@ -1414,6 +1421,7 @@ header {
 .Todaydeal_C_1_1_li_1_2_1 h1 {
   margin-top: 9px; /*media 768*/
   font-weight: inherit;
+  margin: 0;
 }
 
 .Todaydeal_C_1_1_li_1_2_1_span1 {
@@ -1453,7 +1461,7 @@ header {
   margin-right: 1px;
   color: #35C5F0;
   vertical-align: -2px;
-}
+} 
 
 .Todaydeal_C_1_1_li_1_2_1_div strong,
 .Todaydeal_C_1_1_li_1_2_1_div2 strong {
@@ -1492,7 +1500,10 @@ header {
   color: #9e9e9e;
   line-height: 16px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
+
 
 .Todaydeal_C_1_1_li_1_2_1_span4 {
   margin: 4px 0 0;
@@ -1504,6 +1515,74 @@ header {
   height: 15px;
 }
 
+.Todaydeal_C_1_1_li_1_2_1_span5 {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(99, 145, 230);
+}
+
+.Todaydeal_C_1_1_li_1_2_1_span6 {
+  margin-top: 6px;
+  display: flex;
+}
+
+.Todaydeal_C_1_1_li_1_2_1_span6 svg {
+  width: 47px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.Todaydeal_C_1_1_li_1_2_1_div3 {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: fit-content;
+  padding: 2px 5px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  border-radius: 4px;
+  margin-top: 6px;
+  color: rgb(47, 52, 56);
+  border: 1px solid rgb(234, 237, 239);
+  margin: 0;
+}
+
+.Todaydeal_C_1_1_li_1_2_1_div3 img {
+  display: block;
+  width: 11px;
+  margin-right: 5px;
+}
+
+.Todaydeal_C_1_1_li_1_2_1_div3 span {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Todaydeal_C_1_2 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0%;
+  margin: 0;
+}
+
+.Todaydeal_C_1_3 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 100%;
+  margin: 0;
+}
+
+.UserReview_c {
+  margin: 0;
+}
 
 .nav {
   width:1256px;
