@@ -1055,25 +1055,197 @@ function Body() {
                             </span>
                             <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
                               <p>
-                                <svg></svg>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
                                 <strong>4.9</strong>
                                 리뷰 630
                               </p>
                             </div>
                             <span className='Todaydeal_C_1_1_li_1_2_1_span4'>
-                              <img></img>
+                              <img src='Todaydeal\오늘출발.png'></img>
                             </span>
-                            <span></span>
-                            <span></span>
-                            <div></div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span5'>평일 21:00까지 결제시</span>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
+                              <img src='Todaydeal\card-promotion-badge.png'></img>
+                              <span>최대 10% 결제할인</span>
+                            </div>
                           </div>
                         </div>
                       </article>
                     </div>
                   </li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li> <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              
+                              <img src='Todaydeal\Todaydeal_2.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>헤드앤숄더</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>두피 케어! 헤드앤숄더 특가 모음딜</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.8</strong>
+                                리뷰 5,739
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>28
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>37900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.8</strong>
+                                리뷰 5,739
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
+                              <img src='Todaydeal\card-promotion-badge.png'></img>
+                              <span>최대 15% 결제할인</span>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div></li>
+                  <li> <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                            
+                              <img src='Todaydeal\Todaydeal_3.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>한빛카페트</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[쿠폰] 러그/카페트 특가 모음전(사이잘룩/타일/워셔블/사계절러그)</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.7</strong>
+                                리뷰 91,504
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>40
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>8,900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.7</strong>
+                                리뷰 91,504
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                      </article>
+                    </div></li>
+                  <li> <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              
+                              <img src='Todaydeal\Todaydeal_4.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>네이처리빙</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>네이처리빙 빨래바구니 외 수납/생활/주방 인기템</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.7</strong>
+                                리뷰 391,566
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>64
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>17,900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.7</strong>
+                                리뷰 391,566
+                              </p>
+                            </div>
+                            
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                          
+                          </div>
+                        </div>
+                      </article>
+                    </div></li>
                   <li></li>
                   <li></li>
                   <li></li>
@@ -1083,12 +1255,26 @@ function Body() {
                   <li></li>
                 </ul>
               </div>
-              <div className='Todaydeal_C_1_2'></div>
-              <div className='Todaydeal_C_1_3'></div>
+              <div className='Todaydeal_C_1_2'>
+                <button type='button'>
+                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+                </button>
+              </div>
+              <div className='Todaydeal_C_1_3'>
+                <button type='button'>
+                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div></div>
+        <div className='UserReview'>
+          <div className='UserReview_h'>
+            <div></div>
+            <div></div>
+          </div>
+          <div className='UserReview_c'></div>
+        </div>
         <div></div>
         <div></div>
       </div>
