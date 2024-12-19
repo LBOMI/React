@@ -761,16 +761,19 @@ header {
 }
 
 .B_lookfor_h1,
-.Todaydeal_h_1 {
+.Todaydeal_h_1,
+.UserReview_h1 {
   flex: 1 1 0%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   min-width: 0px;
+  margin: 0;
 }
 
 .B_lookfor_h1_1,
-.Todaydeal_h_1_1 {
+.Todaydeal_h_1_1,
+.UserReview_h1_1 {
   display: inline-flex;
   align-items: center;
   max-width: 100%;
@@ -778,7 +781,8 @@ header {
 }
 
 .B_lookfor_h1_1 strong,
-.Todaydeal_h_1_1 strong {
+.Todaydeal_h_1_1 strong,
+.UserReview_h1_1 strong {
   overflow: hidden;
   display: inline-block;
   font-weight: 700;
@@ -810,7 +814,8 @@ header {
 }
 
 .B_lookfor_h2,
-.Todaydeal_h_2 {
+.Todaydeal_h_2,
+.UserReview_h2 {
   display: flex;
   align-items: center;
   height: 0px;
@@ -818,7 +823,8 @@ header {
 }
 
 .B_lookfor_h2 button,
-.Todaydeal_h_2 button {
+.Todaydeal_h_2 button,
+.UserReview_h2 button {
   display: inline-block;
   margin: 0px;
   padding: 0px;
@@ -1108,13 +1114,16 @@ header {
   gap: 20px;
 }
 
-.B_lookfor2_2_1_1 {
+.B_lookfor2_2_1_1,
+.UserReview_c_1_1,
+.UserReview_c_1_2,
+.UserReview_c_1_3 {
   position: relative;
   display: flex;
   width: 100%;
   min-width: 0px;
   flex-flow: column;
-
+  margin: 0;
 }
 
 .B_lookfor2_2_1_1_1 {
@@ -1124,7 +1133,10 @@ header {
   border-radius: 4px;
 }
 
-.B_lookfor2_2_1_1_1 .img {
+.B_lookfor2_2_1_1_1 .img,
+.UserReview_c_1_1_1 .img,
+.UserReview_c_1_1_2 .img,
+.UserReview_c_1_3_1 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1134,18 +1146,26 @@ header {
   transition: transform 0.2s ease 0s;
 }
 
-.B_lookfor2_2_1_1_1_1 {
+.B_lookfor2_2_1_1_1_1,
+.UserReview_c_1_1_1_1,
+.UserReview_c_1_2_1_1,
+.UserReview_c_1_3_1_1 {
   position: absolute;
   padding: 8px;
   font-size: 0px;
   z-index: 1;
   left: 0px;
   bottom: 0px;
+  margin: 0;
 }
 
-.B_lookfor2_2_1_1_1_1_1 {
+.B_lookfor2_2_1_1_1_1_1,
+.UserReview_c_1_1_1_1_1,
+.UserReview_c_1_2_1_1_1,
+.UserReview_c_1_3_1_1_1 {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .B_lookfor2_2_1_1_1_2 {
@@ -1198,7 +1218,9 @@ header {
   color: rgb(53, 197, 240);
   font-weight: 700;
 }
-.B_lookfor2_2_1_1 a {
+
+.B_lookfor2_2_1_1 a,
+.UserReview_c_1_1 a {
   position: absolute;
   inset: 0px;
   cursor: pointer;
@@ -1206,7 +1228,8 @@ header {
 
 .Categroy_,
 .Todaydeal,
-.UserReview {
+.UserReview,
+.Exhibition {
   width: 100%;
   box-sizing: border-box;
   background: rgb(255, 255, 255);
@@ -1584,6 +1607,63 @@ header {
   margin: 0;
 }
 
+.UserReview_c_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0;
+}
+
+.UserReview_c_1_1_1,
+.UserReview_c_1_2_1,
+.UserReview_c_1_3_1 {
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.UserReview_c_1_1_2,
+.UserReview_c_1_2_2,
+.UserReview_c_1_3_2 {
+  margin-top: 10px;
+  min-width: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(47, 52, 56);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.UserReview_c_1_1_2_p1,
+.UserReview_c_1_2_2_p1,
+.UserReview_c_1_3_2_p1 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.UserReview_c_1_1_2_p2,
+.UserReview_c_1_2_2_p2,
+.UserReview_c_1_3_2_p2 {
+  overflow: hidden;
+  margin-top: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.UserReview_c_1_1 a,
+.UserReview_c_1_2 a,
+.UserReview_c_1_3 a {
+  position: absolute;
+  inset: 0px;
+  cursor: pointer;
+}
 .nav {
   width:1256px;
   height: 132.33px;
