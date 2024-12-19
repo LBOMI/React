@@ -1588,8 +1588,29 @@ function Body() {
             <div className='Best_c2'>
               <article>
                 <a></a>
-                <div></div>
-                <div></div>
+                <div className='Best_c2_1'>
+                  <div className='Best_c2_1_1'>
+                    <div className='Best_c2_1_1_1'>
+                      <svg></svg>
+                      <span>1</span>                    
+                      </div>
+                    <button type='button'>
+                      <span>
+                        <svg></svg>
+                        <svg></svg>
+                      </span>
+                    </button>
+                    <div className='Best_c2_1_1_2'>
+                      <div className='Best_c2_1_1_2_1'>
+                        <div className='Best_c2_1_1_2_1_1'>
+                          <img></img>
+                        </div>
+                      </div>
+                      <img></img>
+                    </div>
+                  </div>
+                </div>
+                <div className='Best_c2_2'></div>
               </article>
               <article></article>
               <article></article>
