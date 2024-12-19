@@ -5,6 +5,8 @@ import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+
 import './App.css';
 
 
@@ -1330,10 +1332,270 @@ function Body() {
           </div>
         </div>
         <div className='Exhibition'>
-          <div></div>
-          <div></div>
+          <div className='Exhibition_h'>
+            <div className='Exhibition_h1'>
+              <div className='Exhibition_h1_1'>
+                <strong>오늘의 기획전</strong>
+              </div>
+            </div>
+            <div className='Exhibition_h2'>
+              <button type='button'>더보기</button>
+            </div>
+          </div>
+          <div className='Exhibition_c'>
+            <div className='Exhibition_c1'>
+              <div className='Exhibition_c1_1'>
+                <ul>
+                  <li>
+                    <div className='Exhibition_c1_1_1'>
+                      <div className='Exhibition_c1_1_1_1'>
+                        <img src='exhibition\기획전_1.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_1_1_1'>
+                          <div className='Exhibition_c1_1_1_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_1_2'>
+                        <p className='Exhibition_c1_1_1_2_p1'>전시, 반품, 스크래치 특템의 기회!</p>
+                        <p className='Exhibition_c1_1_1_2_p2'>빠른 품절! 리퍼마켓 ~82%</p>
+                      </div>
+                      <a></a>
+                    </div>
+                  </li>
+                  <li><div className='Exhibition_c1_1_2'>
+                      <div className='Exhibition_c1_1_2_1'>
+                        <img src='exhibition\기획전_2.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_2_1_1'>
+                          <div className='Exhibition_c1_1_2_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_2_2'>
+                        <p className='Exhibition_c1_1_2_2_p1'>전상품 무료배송</p>
+                        <p className='Exhibition_c1_1_2_2_p2'>매일 새로운 장보기 핫딜! 오마트</p>
+                      </div>
+                      <a></a>
+                    </div></li>
+                  <li><div className='Exhibition_c1_1_3'>
+                      <div className='Exhibition_c1_1_3_1'>
+                        <img src='exhibition\기획전_3.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_3_1_1'>
+                          <div className='Exhibition_c1_1_3_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_3_2'>
+                        <p className='Exhibition_c1_1_3_2_p1'></p>
+                        <p className='Exhibition_c1_1_3_2_p2'>오늘의집 Only</p>
+                      </div>
+                      <a></a>
+                    </div></li>
+                  <li><div className='Exhibition_c1_1_4'>
+                      <div className='Exhibition_c1_1_4_1'>
+                        <img src='exhibition\기획전_4.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_4_1_1'>
+                          <div className='Exhibition_c1_1_4_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_4_2'>
+                        <p className='Exhibition_c1_1_4_2_p1'>배송 걱정없이 원하는 날 한번에 설치해요!</p>
+                        <p className='Exhibition_c1_1_4_2_p2'>오늘의집 배송 꿀조합 가구 추천</p>
+                      </div>
+                      <a></a>
+                    </div></li>
+                  <li>
+                    <a>
+                      <div className='Exhibition_c1_1_5'>
+                        <span><FontAwesomeIcon icon={faArrowRight} /></span>
+                      </div>
+                      <div className='Exhibition_c1_1_6'>더보기</div>
+                    </a>
+                    </li>
+                </ul>
+              </div>
+              <div className='Exhibition_c1_2'>
+                <button type='button'>
+                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+                </button>
+              </div>
+              <div className='Exhibition_c1_3'>
+                <button type='button'>
+                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div></div>
+        <div className='Best'>
+          <div className='Best_h'>
+            <div className='Best_h1'>
+              <div className='Best_h1_1'>
+                <strong>베스트</strong>
+              </div>
+            </div>
+            <div className='Best_h2'>
+              <button type='button'>더보기</button>
+            </div>
+          </div>
+          <div className='Best_c'>
+            <div className='Best_c1'>
+              <div className='Best_c1_1'>
+                <div className='Best_c1_1_1'>
+                  <ul>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_1'>
+                        <input type='checkbox' checked></input>
+                        <span>전체</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_2'>
+                        <input type='checkbox'></input>
+                        <span>크리스마스</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_3'>
+                        <input type='checkbox'></input>
+                        <span>가구</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_4'>
+                        <input type='checkbox'></input>
+                        <span>패브릭</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_5'>
+                        <input type='checkbox'></input>
+                        <span>가전,디지털</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_6'>
+                        <input type='checkbox'></input>
+                        <span>주방용품</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_7'>
+                        <input type='checkbox'></input>
+                        <span>식품</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_8'>
+                        <input type='checkbox'></input>
+                        <span>데코,식물</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_9'>
+                        <input type='checkbox'></input>
+                        <span>조명</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_10'>
+                        <input type='checkbox'></input>
+                        <span>수납,정리</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_11'>
+                        <input type='checkbox'></input>
+                        <span>가전,디지털</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_12'>
+                        <input type='checkbox'></input>
+                        <span>생활용품</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_13'>
+                        <input type='checkbox'></input>
+                        <span>생필품</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_14'>
+                        <input type='checkbox'></input>
+                        <span>유아,아동</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_15'>
+                        <input type='checkbox'></input>
+                        <span>반려동물</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_16'>
+                        <input type='checkbox'></input>
+                        <span>캠핑,레저</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_17'>
+                        <input type='checkbox'></input>
+                        <span>공구,DIY</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_18'>
+                        <input type='checkbox'></input>
+                        <span>인테리어시공</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_19'>
+                        <input type='checkbox'></input>
+                        <span>렌탈,구독</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_20'>
+                        <input type='checkbox'></input>
+                        <span>장보기</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_21'>
+                        <input type='checkbox'></input>
+                        <span>혼수,신혼</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label className='Best_c1_1_1_li_label_22'>
+                        <input type='checkbox'></input>
+                        <span>Binary shop</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div className='Best_c1_1_2'>
+                  <button type='button'>
+                    <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+                  </button>
+                </div>
+                <div className='Best_c1_1_3'>
+                  <button type='button'>
+                    <span><FontAwesomeIcon icon={faChevronRight} /></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='Best_c2'>
+              <article>
+                <a></a>
+                <div></div>
+                <div></div>
+              </article>
+              <article></article>
+              <article></article>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
