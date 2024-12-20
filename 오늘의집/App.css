@@ -1809,7 +1809,7 @@ header {
 
 .Best_c1 {
   margin-bottom: 16px;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .Best_c1_1_1 li {
@@ -1902,7 +1902,9 @@ header {
   z-index: 2;
 }
 
-.Best_c2_1_1 {
+.Best_c2_1_1,
+.Best_c2_11_1,
+.Best_c2_111_1 {
   position: relative;
   padding-bottom: 100%;
   background-color: rgb(247, 249, 250);
@@ -1910,7 +1912,9 @@ header {
   margin: 0;
 }
 
-.Best_c2_1_1_1 {
+.Best_c2_1_1_1,
+.Best_c2_11_1_1,
+.Best_c2_111_1_1 {
   display: inline-block;
   font-size: 0px;
   line-height: 1;
@@ -1920,7 +1924,9 @@ header {
   left: 12px;
 }
 
-.Best_c2_1_1_1 span {
+.Best_c2_1_1_1 span,
+.Best_c2_11_1_1 span,
+.Best_c2_111_1_1 span {
   position: absolute;
   top: 4px;
   left: 0px;
@@ -1932,7 +1938,9 @@ header {
   text-align: center;
 }
 
-.Best_c2_1_1 button {
+.Best_c2_1_1 button,
+.Best_c2_11_1 button,
+.Best_c2_111_1 button {
   margin: 0px;
   padding: 0px;
   border: none;
@@ -1951,14 +1959,18 @@ header {
   z-index: 10;
 }
 
-.Best_c2_1_1 span {
+.Best_c2_1_1 span,
+.Best_c2_11_1 span,
+.Best_c2_111_1 span {
   display: inline-block;
   font-size: 24px;
   line-height: 1;
   transform: translateZ(0px);
 }
 
-.Best_c2_1_1_2 {
+.Best_c2_1_1_2,
+.Best_c2_11_1_2,
+.Best_c2_111_1_2 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1967,7 +1979,9 @@ header {
   margin: 0;
 }
 
-.Best_c2_1_1_2_1 {
+.Best_c2_1_1_2_1,
+.Best_c2_11_1_2_1,
+.Best_c2_111_1_2_1 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1977,7 +1991,9 @@ header {
   margin: 0;
 }
 
-.Best_c2_1_1_2_1_1 {
+.Best_c2_1_1_2_1_1,
+.Best_c2_11_1_2_1_1,
+.Best_c2_111_1_2_1_1 {
   position: absolute;
   top: 0%;
   left: 71%;
@@ -1986,10 +2002,152 @@ header {
   margin: 0;
 }
 
-.Best_c2_1_1_2_1_1 img {
+.Best_c2_1_1_2_1_1 img,
+.Best_c2_11_1_2_1_1 img,
+.Best_c2_111_1_2_1_1 img {
   width: 100%;
   background-color: transparent;
   border: 0;
+}
+
+.Best_c2_2,
+.Best_c2_22,
+.Best_c2_222 {
+  width: 100%;
+  margin: 0;
+}
+
+.Best_c2_2_1,
+.Best_c2_22_1,
+.Best_c2_222_1 {
+  margin-top: 10px;
+}
+
+.Best_c2_2_1_1,
+.Best_c2_22_1_1,
+.Best_c2_222_1_1 {
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  word-break: break-all;
+  color: rgb(130, 140, 148);
+}
+
+.Best_c2_2_1 span,
+.Best_c2_22_1 span,
+.Best_c2_222_1 span {
+  font-size: 14px;
+  line-height: 18px;
+  max-height: 36px;
+  margin-top: 4px;
+  word-break: break-all;
+  transition: opacity 0.1s ease 0s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-wrap: break-word;
+  color: rgb(47, 52, 56);
+}
+
+.Best_c2_2_2,
+.Best_c2_22_2,
+.Best_c2_222_2 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.Best_c2_2_2_span1,
+.Best_c2_22_2_span1,
+.Best_c2_222_2_span1 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-right: 2px;
+  color: rgb(53, 197, 240);
+}
+
+.Best_c2_2_2_span2,
+.Best_c2_22_2_span2,
+.Best_c2_222_2_span2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgb(47, 52, 56);
+}
+
+.Best_c2_2_3,
+.Best_c2_22_3,
+.Best_c2_222_3 {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(130, 140, 148);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.Best_c2_2_3_span1,
+.Best_c2_22_3_span1,
+.Best_c2_222_3_span1 {
+  color: rgb(53, 197, 240);
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 1px;
+  vertical-align: -2px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.Best_c2_2_3 strong,
+.Best_c2_22_3 strong,
+.Best_c2_222_3 strong {
+  margin-right: 4px;
+  color: rgb(47, 52, 56);
+  font-weight: bold;
+}
+
+.Best_c2_2_3_span2,
+.Best_c2_22_3_span2,
+.Best_c2_222_3_span2 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  color: rgb(130, 140, 148);
+}
+
+.Best_c2_222_31 {
+  display: flex;
+  margin-top: 4px;
+}
+
+.Best_c2_222_31 img {
+  width: auto;
+  height: 15px;
+  border: 0;
+}
+
+.Best_c2_222_31_span {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(99, 145, 230);
+}
+
+.Best_c2_2_4,
+.Best_c2_22_4,
+.Best_c2_222_4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
 }
 .nav {
   width:1256px;
