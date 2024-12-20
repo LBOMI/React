@@ -1586,7 +1586,7 @@ function Body() {
               </div>
             </div>
             <div className='Best_c2'>
-              <article>
+              <article> 
                 <a></a>
                 <div className='Best_c2_1'>
                   <div className='Best_c2_1_1'>
@@ -1603,17 +1603,137 @@ function Body() {
                     <div className='Best_c2_1_1_2'>
                       <div className='Best_c2_1_1_2_1'>
                         <div className='Best_c2_1_1_2_1_1'>
-                          <img></img>
+                          <img src='best\2024BEST.avif'></img>
                         </div>
                       </div>
-                      <img></img>
+                      <img src='best\best_1.avif' style={{width:365, height:365}}></img>
                     </div>
                   </div>
                 </div>
-                <div className='Best_c2_2'></div>
+                <div className='Best_c2_2'>
+                  <div className='Best_c2_2_1'>
+                    <div className='Best_c2_2_1_1'>아엠홈</div>
+                    <span>맞춤 비침없는 도톰 레이스/쉬폰커튼(나비주름/핀형/봉집)</span>
+                  </div>
+                  <div className='Best_c2_2_2'>
+                    <span className='Best_c2_2_2_span1'>28
+                      <span>%</span>
+                    </span>
+                    <span className='Best_c2_2_2_span2'>
+                      16,800
+                      <span></span>
+                    </span>
+                  </div>
+                  <div className='Best_c2_2_3'>
+                    <span className='Best_c2_2_3_span1'></span>
+                    <strong>4.7</strong>
+                    <span className='Best_c2_2_3_span2'>리뷰 39,766</span>
+                  </div>
+                  <div className='Best_c2_2_4'>
+                    <svg></svg>
+                  </div>
+                </div>
               </article>
-              <article></article>
-              <article></article>
+              <article> 
+                <a></a>
+                <div className='Best_c2_11'>
+                  <div className='Best_c2_11_1'>
+                    <div className='Best_c2_11_1_1'>
+                      <svg></svg>
+                      <span>2</span>                    
+                      </div>
+                    <button type='button'>
+                      <span>
+                        <svg></svg>
+                        <svg></svg>
+                      </span>
+                    </button>
+                    <div className='Best_c2_11_1_2'>
+                      <div className='Best_c2_11_1_2_1'>
+                        <div className='Best_c2_11_1_2_1_1'>
+                          <img src='best\2024BEST.avif'></img>
+                        </div>
+                      </div>
+                      <img src='best\best_2.avif' style={{width:365, height:365}}></img>
+                    </div>
+                  </div>
+                </div>
+                <div className='Best_c2_22'>
+                  <div className='Best_c2_22_1'>
+                    <div className='Best_c2_22_1_1'>헬로우슬립</div>
+                    <span>[최대15%쿠폰+사은품]부드러운 카스테라 워싱 향균 옥수수솜 사계절&한파용 차렵이불세트</span>
+                  </div>
+                  <div className='Best_c2_22_2'>
+                    <span className='Best_c2_22_2_span1'>37
+                      <span>%</span>
+                    </span>
+                    <span className='Best_c2_22_2_span2'>
+                      35,900
+                      <span></span>
+                    </span>
+                  </div>
+                  <div className='Best_c2_22_3'>
+                    <span className='Best_c2_22_3_span1'></span>
+                    <strong>4.8</strong>
+                    <span className='Best_c2_22_3_span2'>리뷰 43,751</span>
+                  </div>
+                  <div className='Best_c2_22_4'>
+                    <svg></svg>
+                  </div>
+                </div>
+              </article>
+              <article> 
+                <a></a>
+                <div className='Best_c2_111'>
+                  <div className='Best_c2_111_1'>
+                    <div className='Best_c2_111_1_1'>
+                      <svg></svg>
+                      <span>3</span>                    
+                      </div>
+                    <button type='button'>
+                      <span>
+                        <svg></svg>
+                        <svg></svg>
+                      </span>
+                    </button>
+                    <div className='Best_c2_111_1_2'>
+                      <div className='Best_c2_111_1_2_1'>
+                        <div className='Best_c2_111_1_2_1_1'>
+                          <img src='best\2024BEST.avif'></img>
+                        </div>
+                      </div>
+                      <img src='best\best_3.avif' style={{width:365, height:365}}></img>
+                    </div>
+                  </div>
+                </div>
+                <div className='Best_c2_222'>
+                  <div className='Best_c2_222_1'>
+                    <div className='Best_c2_222_1_1'>퀵슬립</div>
+                    <span>Q4 유로탑 롤팩 매트리스 2size_적당푹신(롤팩)</span>
+                  </div>
+                  <div className='Best_c2_222_2'>
+                    <span className='Best_c2_222_2_span1'>57
+                      <span>%</span>
+                    </span>
+                    <span className='Best_c2_222_2_span2'>
+                      299,900
+                      <span></span>
+                    </span>
+                  </div>
+                  <div className='Best_c2_222_3'>
+                    <span className='Best_c2_222_3_span1'></span>
+                    <strong>4.8</strong>
+                    <span className='Best_c2_222_3_span2'>리뷰 16,581</span>
+                  </div>
+                  <div className='Best_c2_222_31'>
+                    <img src='Todaydeal\오늘출발.png'></img>
+                  </div>
+                  <span className='Best_c2_222_31_span'>평일 12:00까지 결제시</span>
+                  <div className='Best_c2_222_4'>
+                    <svg></svg>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
