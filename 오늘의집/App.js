@@ -250,6 +250,7 @@ function Header() {
   );
 
 }
+
 function Body() {
   return (
     <section>
@@ -1742,7 +1743,110 @@ function Body() {
   );
 }
 
-
+function Footer() {
+  return (
+    <footer>
+      <div className='footer_1'>
+        <div className='footer_1_1'>
+          <div className='footer_1_1_1'>
+            <a>고객센터</a>
+            <span><FontAwesomeIcon icon={faChevronRight} /></span>
+          </div>
+          <div className='footer_1_1_2'>
+            <a>1670-0876</a>
+            <time dateTime='09:00'>09:00</time>~
+            <time dateTime='18:00'>18:00</time>
+          </div>
+          <div className='footer_1_1_3'>
+            <div className='footer_1_1_3_1'>평일: 전체 문의 상담</div>
+            <div className='footer_1_1_3_2'>토요일, 공휴일: 오늘의집 직접배송 주문건 상담</div>
+            <div className='footer_1_1_3_3'>일요일: 휴무</div>
+          </div>
+          <div className='footer_1_1_4'>
+            <button>카톡 상담(평일 09:00~18:00)</button>
+            <a>이메일 문의</a>
+          </div>
+        </div>
+        <div className='footer_1_2'></div>
+        <div className='footer_1_3'>
+          <a>회사소개</a>
+          <a>채용정보</a>
+          <a>이용약관</a>
+          <a style={{fontWeight:700}}>개인정보 처리방침</a>
+          <a>공지사항</a>
+          <a>안전거래센터</a>
+          <a>입점신청</a>
+          <a>제휴/광고 문의</a>
+          <a>시공파트너 안내</a>
+          <a style={{fontWeight:700}}>파트너 개인정보 처리방침</a>
+          <a>상품광고 소개</a>
+          <a>고객의 소리</a>
+        </div>
+        <div className='footer_1_4'></div>
+        <div className='footer_1_5'>
+          <div className='footer_1_5_1'>
+            <div className='footer_1_5_1_1'>
+              <div className='footer_1_5_1_1_1'>
+                <span>|</span>(주)버킷플레이스
+              </div>
+              <div className='footer_1_5_1_1_2'>
+                <span>|</span>대표이사 이승재
+              </div>
+              <div className='footer_1_5_1_1_3'>
+                <span>|</span><address>서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층</address>
+              </div>
+              <div className='footer_1_5_1_1_4'>
+                <span>|</span><a>contact@bucketplace.net</a>
+              </div>
+              <div className='footer_1_5_1_1_5'>
+                <span>|</span><span>사업자등록번호 119-86-91245</span>
+                <a target='_blank'>사업자정보확인</a>
+              </div>
+              <div className='footer_1_5_1_1_6'>
+                <span>|</span><span>통신판매업신고번호 제2018-서울서초-0580호</span>
+              </div>
+            </div>
+          </div>
+          <div className='footer_1_5_2'>
+            <span>고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</span>
+            <a target='_blank'>서비스가입사실확인</a>
+          </div>
+          <div className='footer_1_5_3'>
+            <div className='footer_1_5_3_1'>
+              <img src='footer\footer_isms.png'></img>
+              <div className='footer_1_5_3_1_1'>
+                <span>오늘의집 서비스 운영</span>
+                <br></br>
+                2024. 09. 08 ~ 2027. 09. 07
+              </div>
+            </div>
+            <div className='footer_1_5_3_2'>
+              <img src='footer\footer_iso27001 인증 마크.png'></img>
+            </div>
+            <div className='footer_1_5_3_3'>
+              <a target='_blank'>
+                <img src='footer\footer_pcr 인증마크.png'></img>
+              </a>
+            </div>
+          </div>
+          <div className='footer_1_5_4'>
+          (주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록 판매한 상품은 판매자로서 책임을 부담합니다.
+          </div>
+          <div className='footer_1_5_5'>
+            <a>
+              <svg width={24} height={24} viewBox='0 0 24 24' fill='none'></svg>
+            </a>
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+          </div>
+          <p>Copyright 2014. bucketplace, Co., Ltd. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  )
+}
 
 
 
@@ -1775,6 +1879,7 @@ export default function TodaysHouse() {
    <div className='entire'>
     <Header />
     <Body />
+    <Footer />
     </div>
      
     
