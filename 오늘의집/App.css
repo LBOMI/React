@@ -285,6 +285,8 @@ header {
   margin: 0 -5px;
   height: 51px;
   overflow: hidden;
+  font-weight: 700;
+  font-size: 12px;
 }
 
 .s-c_4_1_1 {
@@ -319,7 +321,7 @@ header {
 }
 
 .s-c_4_1_3_p {
-  font-size: 16px;
+  
   line-height: 20px;
   position: relative;
   color: #35C5F0;
@@ -336,7 +338,7 @@ header {
   line-height: 0;
 }
 
-.s-c_4_1_5_b {
+.s-c_4_1_5 button {
   margin: 0px;
   border: none;
   background: none;
@@ -347,14 +349,29 @@ header {
   align-items: center;
   position: absolute;
   transform: translateX(-100%);
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
-.s-c_4_1_5_b_icon {
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1;
-  color: rgb(47, 52, 56);
-  z-index: 2;
+.s-c_4_1_5 button span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    color: rgb(47, 52, 56);
+    z-index: 2;
+}
+
+.s-c_4_1_5 button::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
+}
+
+.s-c_4_1_5_button span::before {
+  vertical-align: top;
 }
 
 .s-c_4_2 {
@@ -448,6 +465,52 @@ header {
   line-height: 1;
 }
 
+/*dropdown*/
+.drop {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  transform: translate3d(826px, 61.3333px, 0px);
+  pointer-events: auto;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  visibility: visible;
+  z-index: 900;
+}
+
+.drop_1 {
+  transform: none;
+  transition: transform 0.2s ease 0s;
+  position: relative;
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 221, 224);
+  border-radius: 6px;
+  box-shadow: rgba(63, 71, 77, 0.2) 0px 4px 10px 0px;
+}
+
+.drop_1_1 {
+  display: block;
+  min-width: 250px;
+  padding: 20px 22px 0px;
+}
+
+.drop_1_1 span {
+  height: inherit;
+  display: block;
+}
+
+.drop_1_1 a {
+  display: block;
+  text-align: start;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px; /*media 768px*/
+  line-height: 20px; /*media 768px*/
+  padding: 0px 0px 20px; /*media 768px*/
+}
 /*body*/
 .B_mains {
   margin-top: 30px;
