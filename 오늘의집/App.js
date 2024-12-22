@@ -8,9 +8,11 @@ import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 import './App.css';
+import { useState } from 'react';
 
 
 function Header() {
+  const [view, setView] = useState(false);
   return (
     <header>
       <div className='sticky-container' style={{height: 80.75}}>
@@ -23,7 +25,7 @@ function Header() {
           </div>
 
           <div className='logo_N'>
-            <div className='logo_N_1' style={{width: 71, height:54}}>커뮤니티</div>
+            <div className='logo_N_1' style={{width: 71, height:54, color:"#35C5F0"}}>커뮤니티</div>
             <div className='logo_N_1' style={{width: 40.52, height:54}}>쇼핑</div>
             <div className='logo_N_1' style={{width: 107.94, height:54}}>인테리어/생활</div>
           </div>
@@ -208,11 +210,16 @@ function Header() {
                   </div>
                 </span>
               </nav>
-              <span className='s-c_4_1_5'>
-                  <button type='button' className='s-c_4_1_5_b'>
-                  <span className='s-c_4_1_5_b_icon'><FontAwesomeIcon icon={faChevronDown} /></span>
+              <span className='s-c_4_1_5' onClick={() => {setView(!view)}}>
+              {view && <Dropdown/>}
+                  <button type='button' >
+                  <span >
+                    {/* {view ? '^' : 'N'} */}
+                    
+                    <FontAwesomeIcon icon={faChevronDown} /></span>
                   </button>
                 </span>
+              
             </div>
             <div className='s-c_4_2'>
               <div className='s-c_4_2_1'>
@@ -1848,6 +1855,22 @@ function Footer() {
   )
 }
 
+function Dropdown() {
+  return (
+    <div className='drop'>
+      <div className='drop_1'>
+        <div className='drop_1_1'>
+          <span>
+            <a>캠핑</a>
+          </span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 
 function App() {
