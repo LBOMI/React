@@ -167,6 +167,10 @@ header {
   border-radius: 3px;
 }
 
+.logo_N span:hover {
+  color: #35C5F0;
+}
+
 .sticky-container_2 {
   flex: 0 1 650px; /*media 1256*/
 }
@@ -299,6 +303,10 @@ header {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+}
+
+.sticky-container_2_1_4 span button:hover {
+  color: #201e1e;
 }
 
 .sticky-container_2_1_4_1 {
@@ -522,18 +530,30 @@ header {
   color: #0e0f10;
 }
 
-.s-c_4_1_4_p {
-  font-size: 16px;
-  line-height: 20px;
-  position: relative;
-  color: #2F3438;;
+
+.s-c_4_1_2_1 p:hover,
+.s-c_4_1_3_1 p:hover,
+.s-c_4_1_4_1 p:hover,
+.s-c_4_1_5_1 p:hover,
+.s-c_4_1_6_1 p:hover,
+.s-c_4_1_7_1 p:hover,
+.s-c_4_1_8_1 p:hover,
+.s-c_4_1_9_1 p:hover,
+.s-c_4_1_10_1 p:hover,
+.s-c_4_1_11_1 p:hover,
+.s-c_4_1_12_1 p:hover,
+.s-c_4_1_13_1 p:hover,
+.s-c_4_1_14_1 p:hover,
+.s-c_4_1_15_1 p:hover,
+.s-c_4_1_16_1 p:hover {
+  color: #35C5F0;
 }
 
-.s-c_4_1_5 {
+.s-c_4_span {
   line-height: 0;
 }
 
-.s-c_4_1_5 button {
+.s-c_4_span button {
   margin: 0px;
   border: none;
   background: none;
@@ -548,7 +568,7 @@ header {
   touch-action: manipulation;
 }
 
-.s-c_4_1_5 button span {
+.s-c_4_span button span {
     display: inline-block;
     font-size: 12px;
     line-height: 1;
@@ -556,7 +576,7 @@ header {
     z-index: 2;
 }
 
-.s-c_4_1_5 button::after {
+.s-c_4_span button::after {
   content: "";
   position: absolute;
   right: 0px;
@@ -565,12 +585,14 @@ header {
   background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
 }
 
-.s-c_4_1_5_button span::before {
+.s-c_4_span button span::before {
   vertical-align: top;
 }
 
 .s-c_4_2 {
   flex: 0 0 auto;
+  display: block; /*media 768*/
+  margin-left: 10px; /*media 768*/
 }
 
 .s-c_4_2_1 {
@@ -595,7 +617,9 @@ header {
 }
 
 .s-c_4_2_1_1_1_1 {
-  visibility: hidden;
+  position: relative;
+  margin-right: 6px;
+  overflow: hidden;
 }
 
 .s-c_4_2_1_1_1_1_a {
@@ -705,6 +729,10 @@ header {
   font-size: 16px; /*media 768px*/
   line-height: 20px; /*media 768px*/
   padding: 0px 0px 20px; /*media 768px*/
+}
+
+.drop_1_1 a:hover {
+  color: #35C5F0;
 }
 /*body*/
 .B_mains {
