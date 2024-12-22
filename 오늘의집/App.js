@@ -236,7 +236,7 @@ function Header() {
                   </div>
                 </span>
               </nav>
-              <span className='s-c_4_1_5' onClick={() => {setView(!view)}}>
+              <span className='s-c_4_span' onClick={() => {setView(!view)}}>
               {view && <Dropdown/>}
                   <button type='button' >
                   <span >
@@ -1886,6 +1886,9 @@ function Dropdown() {
     <div className='drop'>
       <div className='drop_1'>
         <div className='drop_1_1'>
+          <span>
+            <a>캠핑</a>
+          </span>
           <span>
             <a>취미</a>
           </span>
