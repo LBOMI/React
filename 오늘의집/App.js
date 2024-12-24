@@ -6,13 +6,87 @@ import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
+function SimpleSlider() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
+ 
+  return (
+    
+    
+     
+      
+      
+    <div className='B_main2_1'>
+        <Slider {...settings}>
+                  <div>
+                    <img src='AD\광고1.jpeg'></img>
+                  </div>
+                  <div>
+                    <img src='AD\광고2.avif'></img>
+                  </div>
+                        
+                        
+                {/* <div className='B_main2_1_1'>
+                  <div className='B_main2_1_1_1'>
+                    <div className='B_main2_1_1_1_1'>
+                      <a>
+                        <div>
+                          <img src='AD\광고1.jpeg'></img>
+                        </div>
+                        <div></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className='B_main2_1_2'>
+                  <span className='B_main2_1_2s'>
+                    <span className='B_main2_1_2ss'></span>
+                  </span>
+                </div>
+                <div className='B_main2_1_3'>
+                  <div className='B_main2_1_3_1'>
+                    <button type='button' className='B_main2_1_3_1_button'>
+                      <span className='B_main2_1_3_1_button_span'></span>
+                    </button>
+                  </div>
+                  <div className='B_main2_1_3_2'>
+                    <button type='button' className='B_main2_1_3_1_button'>
+                      <span className='B_main2_1_3_1_button_span'></span>
+                    </button>
+                  </div>
+                  <span className='B_main2_1_3s'>
+                    <span className='B_main2_1_3ss'></span>
+                    <span className='B_main2_1_3ss1'></span>
+                  </span>
+                </div> */}
+                </Slider>
+                </div>
+              
+     
+      
+  
+  );
+}
 
 function Header() {
-  const [view, setView] = useState(false);
+
   return (
     <header>
       <div className='sticky-container' style={{height: 80.75}}>
@@ -236,14 +310,20 @@ function Header() {
                   </div>
                 </span>
               </nav>
-              <span className='s-c_4_span' onClick={() => {setView(!view)}}>
-              {view && <Dropdown/>}
-                  <button type='button' >
-                  <span >
-                    {/* {view ? '^' : 'N'} */}
-                    
-                    <FontAwesomeIcon icon={faChevronDown} /></span>
+              <span className='s-c_4_span' >
+              
+              
+                  
+                  <button type='button'>
+                    {/* <Dropdown/> */}
+                  <span >  
+                  <FontAwesomeIcon icon={faChevronDown} /></span>
                   </button>
+                  
+                    
+
+                  
+                  
                 </span>
               
             </div>
@@ -285,15 +365,24 @@ function Header() {
 }
 
 function Body() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <section>
       <div className='B_mains'>
         <div className='B_main'>
           <div className='B_main1'>
             <section>
-              <a>
+              <a >
                 <img className='B_main_section_a_img' src='오늘의집 main picture.avif'></img>
+                
                 <div className='B_main1_1'>
+                  
                   <p className='B_main1_1_p'>아이 있는 집 맞나요? 모던함이 돋보이는 집</p>
                   <span className='B_main1_1_s'>
                     <img className='B_main1_1_img'></img>
@@ -304,41 +393,11 @@ function Body() {
             </section>
           </div>
           <div className='B_main2'>
-            <section >
-              <div className='B_main2_1'>
-                <div className='B_main2_1_1'>
-                  <div className='B_main2_1_1_1'>
-                    <div className='B_main2_1_1_1_1'>
-                      <a>
-                        <div></div>
-                        <div></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className='B_main2_1_2'>
-                  <span className='B_main2_1_2s'>
-                    <span className='B_main2_1_2ss'></span>
-                  </span>
-                </div>
-                <div className='B_main2_1_3'>
-                  <div className='B_main2_1_3_1'>
-                    <button type='button' className='B_main2_1_3_1_button'>
-                      <span className='B_main2_1_3_1_button_span'></span>
-                    </button>
-                  </div>
-                  <div className='B_main2_1_3_2'>
-                    <button type='button' className='B_main2_1_3_1_button'>
-                      <span className='B_main2_1_3_1_button_span'></span>
-                    </button>
-                  </div>
-                  <span className='B_main2_1_3s'>
-                    <span className='B_main2_1_3ss'></span>
-                    <span className='B_main2_1_3ss1'></span>
-                  </span>
-                </div>
-              </div>
-            </section>
+        
+            
+              <SimpleSlider/>
+             
+          
           </div>
         </div>
         <div className='B_nav'>
@@ -1882,7 +1941,10 @@ function Footer() {
 }
 
 function Dropdown() {
+  
+
   return (
+    
     <div className='drop'>
       <div className='drop_1'>
         <div className='drop_1_1'>
@@ -1901,6 +1963,7 @@ function Dropdown() {
         </div>
       </div>
     </div>
+    
   )
 }
 
