@@ -6,6 +6,8 @@ import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import {faPlus} from '@fortawesome/free-solid-svg-icons'
+import styled from 'styled-components';
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -15,6 +17,8 @@ import './App.css';
 import { useState, useEffect, useRef } from 'react';
 
 function SimpleSlider() {
+  const [currentIndex, setCurrentIndex ] = useState(0);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -24,68 +28,124 @@ function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow/>,
+    afterChange: (current) => setCurrentIndex(current),
   };
 
+  // const slides = [
+  //   { id : 1, content: "Slide 1"},
+  //   { id : 2, content: "Slide 2"},
+  // ];
  
   return (
-    
-    
-     
-      
-      
-    <div className='B_main2_1'>
-        <Slider {...settings}>
+    <div style={{position:"relative"}}>
+                <Slider {...settings}>
+                
                   <div>
                     <img src='AD\광고1.jpeg'></img>
+                 
                   </div>
                   <div>
                     <img src='AD\광고2.avif'></img>
                   </div>
-                        
-                        
-                {/* <div className='B_main2_1_1'>
-                  <div className='B_main2_1_1_1'>
-                    <div className='B_main2_1_1_1_1'>
-                      <a>
-                        <div>
-                          <img src='AD\광고1.jpeg'></img>
-                        </div>
-                        <div></div>
-                      </a>
-                    </div>
+                  <div>
+                    <img src='AD\광고3.avif'></img>
                   </div>
-                </div>
-                <div className='B_main2_1_2'>
-                  <span className='B_main2_1_2s'>
-                    <span className='B_main2_1_2ss'></span>
-                  </span>
-                </div>
-                <div className='B_main2_1_3'>
-                  <div className='B_main2_1_3_1'>
-                    <button type='button' className='B_main2_1_3_1_button'>
-                      <span className='B_main2_1_3_1_button_span'></span>
-                    </button>
+                  <div>
+                    <img src='AD\광고4.avif'></img>
                   </div>
-                  <div className='B_main2_1_3_2'>
-                    <button type='button' className='B_main2_1_3_1_button'>
-                      <span className='B_main2_1_3_1_button_span'></span>
-                    </button>
+                  <div>
+                    <img src='AD\광고5.avif'></img>
                   </div>
-                  <span className='B_main2_1_3s'>
-                    <span className='B_main2_1_3ss'></span>
-                    <span className='B_main2_1_3ss1'></span>
-                  </span>
-                </div> */}
+                  <div>
+                    <img src='AD\광고6.avif'></img>
+                  </div>
                 </Slider>
+                
+                <div style={{
+                  fontSize: 13,
+                  height: 25,
+                  borderRadius: 13,
+                  backgroundColor: "rgba(33, 38, 41, 0.5)",
+                  fontWeight: 700,
+                  display:" inline-flex",
+                  WebkitBoxAlign: "center",
+                  alignItems: "center",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                  wordWrap: "normal",
+                  lineHeight: 0,
+                  overflow: "hidden",
+                  maxWidth: "100%",
+                  color: "#ffffff",
+                  boxSizing: "border-box",
+                  padding: "4px 8px 4px 10px",
+                  cursor: "pointer",
+                  position: "absolute",
+                  bottom: "10px",
+                  right: "10px"
+                }}>
+                  {currentIndex + 1}/6 
+                   <FontAwesomeIcon icon={faPlus} />
+                  </div>
                 </div>
-              
-     
-      
-  
   );
 }
 
+const PrevArrow = ({ onClick }) => {
+	return (
+    <div  className='PrevArrow_button'>
+		<button className='PrevArrow_button_b'
+			onClick={onClick}
+			type='button'
+		>
+		<span><FontAwesomeIcon icon={faChevronLeft} /></span>
+		</button>
+    </div>
+	);
+};
+
+const NextArrow = ({ onClick }) => {
+	return (
+    <div  className='NextArrow_button'>
+		<button
+			onClick={onClick}
+			type='button'
+		>
+		<span><FontAwesomeIcon icon={faChevronRight} /></span>
+		</button>
+    </div>
+	);
+};
+
+const Dropdown = () => {
+  const [option, setOption] = useState("");
+
+  const handleChange = (e) => {
+    setOption(e.target.value);
+  };
+
+  return (
+    <div>
+      <label htmlFor="dropdown">Choose an option: </label>
+      <select id="dropdown" value={Option} onChange={handleChange}>
+        <option value="">--Select--</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      <p>You selected: {Option}</p>
+    </div>
+  )
+}
+
 function Header() {
+  const [option, setOption] = useState("");
+
+  const handleChange = (e) => {
+    setOption(e.target.value);
+  };
 
   return (
     <header>
@@ -315,7 +375,7 @@ function Header() {
               
                   
                   <button type='button'>
-                    {/* <Dropdown/> */}
+                  
                   <span >  
                   <FontAwesomeIcon icon={faChevronDown} /></span>
                   </button>
@@ -385,19 +445,15 @@ function Body() {
                   
                   <p className='B_main1_1_p'>아이 있는 집 맞나요? 모던함이 돋보이는 집</p>
                   <span className='B_main1_1_s'>
-                    <img className='B_main1_1_img'></img>
-                    <span className='B_main1_1_span_span'>눈누</span>
+                    <img src='B_main\B_main_small.avif'></img>
+                    <span>오늘의집에디터</span>
                   </span>
                 </div>
               </a>
             </section>
           </div>
           <div className='B_main2'>
-        
-            
               <SimpleSlider/>
-             
-          
           </div>
         </div>
         <div className='B_nav'>
@@ -1940,32 +1996,6 @@ function Footer() {
   )
 }
 
-function Dropdown() {
-  
-
-  return (
-    
-    <div className='drop'>
-      <div className='drop_1'>
-        <div className='drop_1_1'>
-          <span>
-            <a>캠핑</a>
-          </span>
-          <span>
-            <a>취미</a>
-          </span>
-          <span>
-            <a>핫플레이스</a>
-          </span>
-          <span>
-            <a>이벤트</a>
-          </span>
-        </div>
-      </div>
-    </div>
-    
-  )
-}
 
 
 function App() {
