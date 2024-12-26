@@ -119,32 +119,18 @@ const NextArrow = ({ onClick }) => {
 	);
 };
 
-const Dropdown = () => {
+
+
+function Header() {
   const [option, setOption] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (e) => {
     setOption(e.target.value);
   };
 
-  return (
-    <div>
-      <label htmlFor="dropdown">Choose an option: </label>
-      <select id="dropdown" value={Option} onChange={handleChange}>
-        <option value="">--Select--</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-      </select>
-      <p>You selected: {Option}</p>
-    </div>
-  )
-}
-
-function Header() {
-  const [option, setOption] = useState("");
-
-  const handleChange = (e) => {
-    setOption(e.target.value);
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -373,19 +359,29 @@ function Header() {
               <span className='s-c_4_span' >
               
               
-                  
-                  <button type='button'>
+                  {/* 드롭다운 */}
+                  <button type='button' onClick = {toggleDropdown}>
+                  {/* {isOpen ? "Close Dropdown" : "Open Dropdown"} */}
                   
                   <span >  
                   <FontAwesomeIcon icon={faChevronDown} /></span>
                   </button>
                   
-                    
-
-                  
-                  
                 </span>
-              
+                {isOpen && (
+              <div className={`dropDown ${isOpen ? "open" : ""}`}>
+                <div className='dropDown_1'>
+                  <div className='dropDown_1_1'>
+                    <span>
+                      <a>캠핑</a>
+                    </span>
+                    <span><a>취미</a></span>
+                    <span><a>핫플레이스</a></span>
+                    <span><a>이벤트</a></span>
+                  </div>
+                </div>
+
+              </div>)}
             </div>
             <div className='s-c_4_2'>
               <div className='s-c_4_2_1'>
@@ -423,6 +419,7 @@ function Header() {
   );
 
 }
+
 
 function Body() {
   const settings = {
