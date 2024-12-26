@@ -15,6 +15,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
+import { height, width } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 function SimpleSlider() {
   const [currentIndex, setCurrentIndex ] = useState(0);
@@ -119,7 +120,37 @@ const NextArrow = ({ onClick }) => {
 	);
 };
 
+function VerticalSlider() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    vertical: true,
+    verticalSwiping: false,
+  
+  };
 
+  return (
+          <div className='real_vertical'>
+              <Slider {...settings}>
+                <div className='real_vertical_1'>
+                  <span className='real_vertical_1_s1'>1</span>
+                  <span className='real_vertical_1_s2'>
+                    <span className='real_vertical_1_s2_1'>
+                      <svg></svg>
+                    </span>
+                  </span>
+                  <span className='real_vertical_1_s3'>아크릴 정리함</span>
+                </div>
+                
+                {/* <div className="slide-item">Slide 3</div>
+                <div className="slide-item">Slide 4</div>
+                <div className="slide-item">Slide 5</div> */}
+              </Slider>
+              </div>
+  )
+}
 
 function Header() {
   const [option, setOption] = useState("");
@@ -383,35 +414,28 @@ function Header() {
 
               </div>)}
             </div>
-            <div className='s-c_4_2'>
-              <div className='s-c_4_2_1'>
-                <span className='s-c_4_2_1_s'>
-                  <div className='s-c_4_2_1_1'>
-                    <div className='s-c_4_2_1_1_1'>
-                      <div className='s-c_4_2_1_1_1_1'>
-                        <a className='s-c_4_2_1_1_1_1_a'>
-                          <div className='s-c_4_2_1_1_1_1_a_1'>
-                            <span className='s-c_4_2_1_1_1_1_a_1_s'></span>
-                            <span className='s-c_4_2_1_1_1_1_a_1_s2'>
-                              <span className='s-c_4_2_1_1_1_1_a_1_s2_1'></span>
-                            </span>
-                            <span className='s-c_4_2_1_1_1_1_a_1_s3'></span>
-                          </div>
-                        </a>
-                      </div>
-                      <div>
-                        <div>
-
-                        </div>
-                      </div>
-                    </div>
-                    <button type='button' className='s-c_4_2_1_1_b'>
-                      <span className='s-c_4_2_1_1_b_s'><FontAwesomeIcon icon={faChevronDown} /></span>
-                    </button>
-                  </div>
-                </span>
+            
+            <div className='real_vertical'>
+      {/* <div className='real_vertical_1'> */}
+        {/* <span>
+          <div className='real_vertical_1_1'>
+            <div className='real_vertical_1_1_1'>
+              <div className='real_vertical_1_1_1_1'>
+                <a></a>
               </div>
-            </div>
+              
+              <div className='real_vertical_1_1_1_2'> */}
+                <VerticalSlider />
+              {/* </div>
+             
+            </div> */}
+            <button type='button'>
+              <span><FontAwesomeIcon icon={faChevronDown} /></span>
+            </button>
+          {/* </div>
+        </span> */}
+      {/* </div> */}
+    </div>
           </div>
         </div>
       </div>
