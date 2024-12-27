@@ -650,41 +650,28 @@ header {
 /**/
 .real_vertical {
   flex: 0 0 auto;
-  display: block; /*media 768*/
+  display: flex; /*media 768*/
   margin-left: 10px; /*media 768*/
   width: 192px;
-  height: 51px;
+  height: 30px;
+  overflow: hidden;
+  align-items: center;
 }
 
 .real_vertical .slick-slider {
-  width: 192px;
-  height: 51px;
-}
-.real_vertical_1 {
-  position: relative;
-}
-
-
-.real_vertical_1 span {
-  line-height: 0;
-}
-
-.real_vertical_1_1 {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  width: 145px;
+  height: 30px;
+  margin-left: 0px;
 }
 
-.real_vertical_1_1_1 {
-  position: relative;
-  margin-right: 6px;
-  overflow: hidden;
+.real_vertical span {
+  padding: 5px;
 }
 
-.real_vertical_1_1 button {
+.real_vertical button {
   display: inline-block;
   margin: 0;
   border: none;
@@ -693,68 +680,38 @@ header {
   padding: 6px;
   cursor: pointer;
   touch-action: manipulation;
+  
 }
 
-.real_vertical_1_1 span {
+.real_vertical button span {
   display: block;
   color: #828C94;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
 }
-.real_vertical_1_1_1_1 {
-  visibility: hidden;
-}
 
-.real_vertical_1_1_1_2 {
+.dropDown2 {
+  max-height: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0px auto auto 0px;
+  transform: translate3d(838.667px, 61.3333px, 0px);
+  pointer-events: auto;
+  transition: max-height 0.1s ease, opacity 1s ease-in-out;
+  opacity: 0;
+  /* visibility: visible; */
+  /* visibility: hidden; */
+  z-index: 900;
 }
 
-
-.real_vertical_1 {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+.dropDown2.open {
+  max-height: 1000px;
+  opacity: 1;
 }
 
-.real_vertical_1_s1 {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 20px;
-  font-style: normal;
-  font-weight: 700;
-  color: #2F3438;
-  text-align: center;
-  margin-right: 2px;
-  min-width: 20px;
-}
-
-.real_vertical_1_s2 {
-  margin-right: 6px;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-}
-
-.real_vertical_1_s2_1 {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-
-.real_vertical_1_s3 {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 20px;
-  flex: 1 0 auto;
-  font-style: normal;
-  font-weight: 400;
-  color: #2F3438;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 104px;
+.dropDown2_1_1 {
+  /* display: block; media 768 */
+  min-width: 250px; /*media 768*/
+  padding: 20px 22px 0px; /*media 768*/
 }
 .s-c_4_2 {
   flex: 0 0 auto;
