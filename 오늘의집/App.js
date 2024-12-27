@@ -7,6 +7,8 @@ import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {faPlus} from '@fortawesome/free-solid-svg-icons'
+import {faCaretUp} from '@fortawesome/free-solid-svg-icons'
+
 import styled from 'styled-components';
 import React from 'react';
 import Slider from 'react-slick';
@@ -120,41 +122,109 @@ const NextArrow = ({ onClick }) => {
 	);
 };
 
-function VerticalSlider() {
+const VerticalSlider = () => {
+  const [isOpen_real, setIsOpen_Real] = useState(false);
+
+  const Dropdown2 = () => {
+    setIsOpen_Real(!isOpen_real);
+  }
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     vertical: true,
-    verticalSwiping: false,
-  
+    verticalSwiping: true,
+    arrows: false,
   };
 
   return (
-          <div className='real_vertical'>
-              <Slider {...settings}>
-                <div className='real_vertical_1'>
-                  <span className='real_vertical_1_s1'>1</span>
-                  <span className='real_vertical_1_s2'>
-                    <span className='real_vertical_1_s2_1'>
-                      <svg></svg>
-                    </span>
+    <div className="real_vertical">
+      {/* <div className="real_vertical_1"> */}
+        <Slider {...settings}>
+          <div>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>1</span>
+            <span style={{color:'red', fontSize:12, }}>new</span>
+            <span style={{fontSize:14 }}>브레드박스</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700 }}>2</span>
+            <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+            <span style={{fontSize:14 }}>붙이는 커튼</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700 }}>3</span>
+            <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+            <span style={{fontSize:14 }}>먼지없는 러그</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700 }}>4</span>
+            <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+            <span style={{fontSize:14 }}>이케아 트롤리</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700 }}>5</span>
+            <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+            <span style={{fontSize:14 }}>무타공 벽선반</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700 }}>6</span>
+            <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+            <span style={{fontSize:14 }}>추천코드</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700 }}>7</span>
+            <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+            <span style={{fontSize:14 }}>타일 카페트</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>8</span>
+            <span style={{color:'red', fontSize:12, }}>new</span>
+            <span style={{fontSize:14 }}>필웰</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>9</span>
+            <span style={{color:'red', fontSize:12, }}>new</span>
+            <span style={{fontSize:14 }}>밧드아</span>
+          </div>
+          <div>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>10</span>
+            <span style={{color:'red', fontSize:12, }}>new</span>
+            <span style={{fontSize:14 }}>로보락</span>
+          </div>
+        </Slider>
+        
+            <button type='button' onClick={Dropdown2}>
+              <span><FontAwesomeIcon icon={faChevronDown} /></span>
+            </button>
+            {isOpen_real && (
+              <div className={`dropDown2 ${isOpen_real ? "open" : ""}`}>
+              <div className='dropDown2_1'>
+                <div className='dropDown2_1_1'>
+                  <span>
+                    <a>캠핑</a>
                   </span>
-                  <span className='real_vertical_1_s3'>아크릴 정리함</span>
+                  <span><a>취미</a></span>
+                  <span><a>핫플레이스</a></span>
+                  <span><a>이벤트</a></span>
                 </div>
-                
-                {/* <div className="slide-item">Slide 3</div>
-                <div className="slide-item">Slide 4</div>
-                <div className="slide-item">Slide 5</div> */}
-              </Slider>
               </div>
-  )
-}
+
+            </div>
+            )}
+           
+      {/* </div> */}
+    </div>
+  );
+};
 
 function Header() {
   const [option, setOption] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  
 
   const handleChange = (e) => {
     setOption(e.target.value);
@@ -163,6 +233,8 @@ function Header() {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  
 
   return (
     <header>
@@ -416,26 +488,10 @@ function Header() {
             </div>
             
             <div className='real_vertical'>
-      {/* <div className='real_vertical_1'> */}
-        {/* <span>
-          <div className='real_vertical_1_1'>
-            <div className='real_vertical_1_1_1'>
-              <div className='real_vertical_1_1_1_1'>
-                <a></a>
-              </div>
-              
-              <div className='real_vertical_1_1_1_2'> */}
+     
                 <VerticalSlider />
-              {/* </div>
              
-            </div> */}
-            <button type='button'>
-              <span><FontAwesomeIcon icon={faChevronDown} /></span>
-            </button>
-          {/* </div>
-        </span> */}
-      {/* </div> */}
-    </div>
+             </div>
           </div>
         </div>
       </div>
