@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+import {faChevronUp, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons'
@@ -151,32 +151,32 @@ const VerticalSlider = () => {
             <span style={{fontSize:14 }}>브레드박스</span>
           </div>
           <div>
-            <span style={{ fontWeight: 700 }}>2</span>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>2</span>
             <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
             <span style={{fontSize:14 }}>붙이는 커튼</span>
           </div>
           <div>
-            <span style={{ fontWeight: 700 }}>3</span>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>3</span>
             <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
             <span style={{fontSize:14 }}>먼지없는 러그</span>
           </div>
           <div>
-            <span style={{ fontWeight: 700 }}>4</span>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>4</span>
             <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
             <span style={{fontSize:14 }}>이케아 트롤리</span>
           </div>
           <div>
-            <span style={{ fontWeight: 700 }}>5</span>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>5</span>
             <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
             <span style={{fontSize:14 }}>무타공 벽선반</span>
           </div>
           <div>
-            <span style={{ fontWeight: 700 }}>6</span>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>6</span>
             <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
             <span style={{fontSize:14 }}>추천코드</span>
           </div>
           <div>
-            <span style={{ fontWeight: 700 }}>7</span>
+            <span style={{ fontWeight: 700, paddingLeft:0 }}>7</span>
             <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
             <span style={{fontSize:14 }}>타일 카페트</span>
           </div>
@@ -204,12 +204,64 @@ const VerticalSlider = () => {
               <div className={`dropDown2 ${isOpen_real ? "open" : ""}`}>
               <div className='dropDown2_1'>
                 <div className='dropDown2_1_1'>
-                  <span>
-                    <a>캠핑</a>
-                  </span>
-                  <span><a>취미</a></span>
-                  <span><a>핫플레이스</a></span>
-                  <span><a>이벤트</a></span>
+                  <div className='dropDown2_1_1_1'>
+                    <span>인기 검색어</span>
+                    <span><FontAwesomeIcon icon={faChevronUp} /></span>
+                  </div>
+                  <div className='dropDown2_1_1_2'> 
+                    <div className='dropDown2_1_1_2_1'>
+                      <span style={{ fontWeight: 700, paddingLeft:10}}>1</span>
+                      <span style={{color:'red', fontSize:12, }}>new</span>
+                      <span style={{fontSize:14 }}>브레드박스</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_2'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>2</span>
+                      <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+                      <span style={{fontSize:14 }}>붙이는 커튼</span>
+                    </div>          
+                    <div className='dropDown2_1_1_2_3'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>3</span>
+                      <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+                      <span style={{fontSize:14 }}>먼지없는 러그</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_4'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>4</span>
+                      <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+                      <span style={{fontSize:14 }}>이케아 트롤리</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_5'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>5</span>
+                      <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+                      <span style={{fontSize:14 }}>무타공 벽선반</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_6'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>6</span>
+                      <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+                      <span style={{fontSize:14 }}>추천코드</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_7'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>7</span>
+                      <span style={{color:'red', fontSize:12, }}><FontAwesomeIcon icon={faCaretUp} /></span>
+                      <span style={{fontSize:14 }}>타일 카페트</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_8'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>8</span>
+                      <span style={{color:'red', fontSize:12, }}>new</span>
+                      <span style={{fontSize:14 }}>필웰</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_9'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>9</span>
+                      <span style={{color:'red', fontSize:12, }}>new</span>
+                      <span style={{fontSize:14 }}>밧드아</span>
+                    </div>
+                    <div className='dropDown2_1_1_2_10'>
+                      <span style={{ fontWeight: 700, paddingLeft:10 }}>10</span>
+                      <span style={{color:'red', fontSize:12, }}>new</span>
+                      <span style={{fontSize:14 }}>로보락</span>
+                    </div>
+                  
+                  
+                  </div>
                 </div>
               </div>
 
