@@ -694,13 +694,14 @@ header {
   max-height: 0;
   position: absolute;
   inset: 0px auto auto 0px;
-  transform: translate3d(838.667px, 61.3333px, 0px);
+  transform: translate3d(920.667px, 21.3333px, 0px);
   pointer-events: auto;
   transition: max-height 0.1s ease, opacity 1s ease-in-out;
   opacity: 0;
   /* visibility: visible; */
   /* visibility: hidden; */
   z-index: 900;
+  width: 270px;
 }
 
 .dropDown2.open {
@@ -708,11 +709,86 @@ header {
   opacity: 1;
 }
 
+.dropDown2_1 {
+  transform: none;
+  transition: transform 0.2s ease 0s;
+  position: relative;
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 221, 224);
+  border-radius: 6px;
+  box-shadow: rgba(63, 71, 77, 0.2) 0px 4px 10px 0px;
+  margin: 0;
+}
+
 .dropDown2_1_1 {
   /* display: block; media 768 */
-  min-width: 250px; /*media 768*/
-  padding: 20px 22px 0px; /*media 768*/
+  min-width: 200px; /*media 768*/
+  padding: 20px 10px 0px; /*media 768*/
+  height: 440px;
 }
+
+.dropDown2_1_1 span {
+  height: inherit;
+  /* display: block; */
+}
+
+
+.dropDown2_1_1_1 {
+  display: flex;
+  line-height: 15px;
+  margin-left: 0;
+  padding-left: 0;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.dropDown2_1_1_2 {
+  margin-top: 10px;
+  padding-top: 10px;
+
+}
+
+.dropDown2_1_1_2_1,
+.dropDown2_1_1_2_2,
+.dropDown2_1_1_2_3,
+.dropDown2_1_1_2_4,
+.dropDown2_1_1_2_5,
+.dropDown2_1_1_2_6,
+.dropDown2_1_1_2_7,
+.dropDown2_1_1_2_8,
+.dropDown2_1_1_2_9,
+.dropDown2_1_1_2_10 {
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 25px;
+}
+.dropDown2_1_1_2_1:hover,
+.dropDown2_1_1_2_2:hover,
+.dropDown2_1_1_2_3:hover,
+.dropDown2_1_1_2_4:hover,
+.dropDown2_1_1_2_5:hover,
+.dropDown2_1_1_2_6:hover,
+.dropDown2_1_1_2_7:hover,
+.dropDown2_1_1_2_8:hover,
+.dropDown2_1_1_2_9:hover,
+.dropDown2_1_1_2_10:hover {
+  background-color: #f7f7f7;
+}
+
+.dropDown2_1_1 span a {
+  display: block;
+  text-align: start;
+  font-weight: 700;
+  font-size: 16px; /*media 768*/
+  line-height: 20px; /*media 768*/
+  padding: 0px 0px 20px; /*media 768*/
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
 .s-c_4_2 {
   flex: 0 0 auto;
   display: block; /*media 768*/
