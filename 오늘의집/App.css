@@ -551,6 +551,7 @@ header {
 
 .s-c_4_span {
   line-height: 0;
+  position: relative;
 }
 
 .s-c_4_span button {
@@ -592,27 +593,33 @@ header {
 
 /*드롭다운*/
 .dropDown {
-  max-height: 0;
+  /* max-height: 0; */
+  overflow: hidden;
   position: absolute;
   inset: 0px auto auto 0px;
-  transform: translate3d(838.667px, 61.3333px, 0px);
-  pointer-events: auto;
-  transition: max-height 0.1s ease, opacity 1s ease-in-out;
+  /* transform: translateY(-10px); */
+  transform: translate3d(838.667px, 51.3323px, 0px);
   opacity: 0;
-  /* visibility: visible; */
-  /* visibility: hidden; */
+  transition: max-height 0.3s ease-in-out, opacity 0.1s ease-in-out, transform 0.3s ease, visibility 0.3s ease;
+  /* opacity: 0; */
+  pointer-events: none;
+  visibility: hidden;
   z-index: 900;
 }
 
 .dropDown.open {
-  max-height: 300px;
+  visibility: visible;
+  /* max-height: 500px; */
   opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transform: translate3d(838.667px, 61.3333px, 0px);
 }
 
 .dropDown_1 {
   transform: none;
-  transition: transform 0.2s ease 0s;
-  position: relative;
+  /* transition: transform 0.2s ease 0s; */
+  /* position: relative; */
   padding: 8px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(218, 221, 224);
@@ -696,15 +703,16 @@ header {
   inset: 0px auto auto 0px;
   transform: translate3d(953.667px, -20px, 0px);
   pointer-events: auto;
-  transition: max-height 0.1s ease, opacity 1s ease-in-out;
+  transition: max-height 0.1s ease-in-out, opacity 0.2s ease-in-out, visibility 0.3s ease;
   opacity: 0;
-  /* visibility: visible; */
-  /* visibility: hidden; */
+  
+  visibility: hidden;
   z-index: 900;
   width: 270px;
 }
 
 .dropDown2.open {
+  visibility: visible;
   max-height: 1000px;
   opacity: 1;
 }
