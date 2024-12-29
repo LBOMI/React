@@ -214,7 +214,7 @@ const VerticalSlider = () => {
             <button type='button' onClick={Dropdown2}>
               <span><FontAwesomeIcon icon={faChevronDown} /></span>
             </button>
-            {isOpen_real && (
+            {/* {isOpen_real && ( */}
               <div ref={dropdownRef} className={`dropDown2 ${isOpen_real ? "open" : ""}`}>
               <div className='dropDown2_1'>
                 <div className='dropDown2_1_1'>
@@ -283,7 +283,7 @@ const VerticalSlider = () => {
               </div>
 
             </div>
-            )}
+            {/* )} */}
            
       {/* </div> */}
     </div>
@@ -293,14 +293,16 @@ const VerticalSlider = () => {
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const buttonRef = useRef(null);
   
-  
+
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((isOpen) => !isOpen);
   };
 
   const handelClickOutside = (event) => {
-    if(dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if(dropdownRef.current && !dropdownRef.current.contains(event.target)
+    && buttonRef.current && !buttonRef.current.contains(event.target)) {
       setIsOpen(false);
     }
   };
@@ -539,16 +541,17 @@ function Header() {
               
               
                   {/* 드롭다운 */}
-                  <button type='button' onClick = {toggleDropdown} >
+                  <button type='button' ref={buttonRef} onClick = {toggleDropdown} >
                   {/* {isOpen ? "Close Dropdown" : "Open Dropdown"} */}
                   
                   <span >  
                   <FontAwesomeIcon icon={faChevronDown} /></span>
                   </button>
                   
-                </span>
-                {isOpen && (
+                  </span>
+                {/* {isOpen && ( */}
               <div ref={dropdownRef} className={`dropDown ${isOpen ? "open" : ""}`}>
+                {/* // <div ref={dropdownRef} className="dropDown"> */}
                 <div className='dropDown_1'>
                   <div className='dropDown_1_1'>
                     <span>
@@ -560,7 +563,9 @@ function Header() {
                   </div>
                 </div>
 
-              </div>)}
+              </div>
+            {/* )} */}
+              
             </div>
             
             <div className='real_vertical'>
