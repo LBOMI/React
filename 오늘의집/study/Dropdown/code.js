@@ -1,6 +1,12 @@
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+  
   const handelClickOutside = (event) => {
     if(dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false);
