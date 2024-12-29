@@ -124,10 +124,24 @@ const NextArrow = ({ onClick }) => {
 
 const VerticalSlider = () => {
   const [isOpen_real, setIsOpen_Real] = useState(false);
+  const dropdownRef = useRef(null); //드롭다운 외부 클릭하면 사라짐
 
   const Dropdown2 = () => {
     setIsOpen_Real(!isOpen_real);
   }
+
+  const handelClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen_Real(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handelClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handelClickOutside);
+    };
+  }, []);
 
   const settings = {
     dots: false,
@@ -201,12 +215,15 @@ const VerticalSlider = () => {
               <span><FontAwesomeIcon icon={faChevronDown} /></span>
             </button>
             {isOpen_real && (
-              <div className={`dropDown2 ${isOpen_real ? "open" : ""}`}>
+              <div ref={dropdownRef} className={`dropDown2 ${isOpen_real ? "open" : ""}`}>
               <div className='dropDown2_1'>
                 <div className='dropDown2_1_1'>
                   <div className='dropDown2_1_1_1'>
                     <span>인기 검색어</span>
-                    <span><FontAwesomeIcon icon={faChevronUp} /></span>
+                    <button type='button' onClick={Dropdown2}>
+                      <span><FontAwesomeIcon icon={faChevronUp} /></span>
+                    </button> 
+                    {/* <span><FontAwesomeIcon icon={faChevronUp} /></span> */}
                   </div>
                   <div className='dropDown2_1_1_2'> 
                     <div className='dropDown2_1_1_2_1'>
@@ -274,19 +291,26 @@ const VerticalSlider = () => {
 };
 
 function Header() {
-  const [option, setOption] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
   
-
-  const handleChange = (e) => {
-    setOption(e.target.value);
-  };
-
+  
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  
+  const handelClickOutside = (event) => {
+    if(dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handelClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handelClickOutside);
+    };
+  }, []);
 
   return (
     <header>
@@ -515,7 +539,7 @@ function Header() {
               
               
                   {/* 드롭다운 */}
-                  <button type='button' onClick = {toggleDropdown}>
+                  <button type='button' onClick = {toggleDropdown} >
                   {/* {isOpen ? "Close Dropdown" : "Open Dropdown"} */}
                   
                   <span >  
@@ -524,7 +548,7 @@ function Header() {
                   
                 </span>
                 {isOpen && (
-              <div className={`dropDown ${isOpen ? "open" : ""}`}>
+              <div ref={dropdownRef} className={`dropDown ${isOpen ? "open" : ""}`}>
                 <div className='dropDown_1'>
                   <div className='dropDown_1_1'>
                     <span>
