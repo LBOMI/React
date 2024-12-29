@@ -694,7 +694,7 @@ header {
   max-height: 0;
   position: absolute;
   inset: 0px auto auto 0px;
-  transform: translate3d(920.667px, 21.3333px, 0px);
+  transform: translate3d(953.667px, -20px, 0px);
   pointer-events: auto;
   transition: max-height 0.1s ease, opacity 1s ease-in-out;
   opacity: 0;
