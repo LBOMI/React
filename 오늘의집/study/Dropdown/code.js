@@ -1,14 +1,16 @@
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const buttonRef = useRef(null);
 
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((isOpen) => !isOpen);
   };
   
   const handelClickOutside = (event) => {
-    if(dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if(dropdownRef.current && !dropdownRef.current.contains(event.target)
+    && buttonRef.current && !buttonRef.current.contains(event.target)) {
       setIsOpen(false);
     }
   };
@@ -32,7 +34,7 @@ function Header() {
                   </button>
                   
                 </span>
-                {isOpen && (
+              
               <div ref={dropdownRef} className={`dropDown ${isOpen ? "open" : ""}`}>
                 <div className='dropDown_1'>
                   <div className='dropDown_1_1'>
@@ -45,6 +47,6 @@ function Header() {
                   </div>
                 </div>
 
-              </div>)}
+              </div>
 
 }
