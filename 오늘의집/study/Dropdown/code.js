@@ -1,8 +1,24 @@
-<span className='s-c_4_span' >
+function Header() {
+  const dropdownRef = useRef(null);
+
+  const handelClickOutside = (event) => {
+    if(dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handelClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handelClickOutside);
+    };
+  }, []);
+
+   <span className='s-c_4_span' >
               
               
                   {/* 드롭다운 */}
-                  <button type='button' onClick = {toggleDropdown}>
+                  <button type='button' onClick = {toggleDropdown} >
                   {/* {isOpen ? "Close Dropdown" : "Open Dropdown"} */}
                   
                   <span >  
@@ -11,7 +27,7 @@
                   
                 </span>
                 {isOpen && (
-              <div className={`dropDown ${isOpen ? "open" : ""}`}>
+              <div ref={dropdownRef} className={`dropDown ${isOpen ? "open" : ""}`}>
                 <div className='dropDown_1'>
                   <div className='dropDown_1_1'>
                     <span>
@@ -24,3 +40,5 @@
                 </div>
 
               </div>)}
+
+}
