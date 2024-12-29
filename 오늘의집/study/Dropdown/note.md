@@ -1,2 +1,12 @@
 #### 특징
  + react 상태와 조건부 렌더링을 활용하여 nav바의 화살표 버튼을 누르면 아래로 열리는 드롭다운 메뉴를 구현
+
+#### 구현
+ * 드롭다운 외부를 클릭하면 닫히는 기능
+   1. `useRef`를 사용하여 드롭다운 DOM 요소에 참조를 연결합니다.
+   2. `document.addEventListener`로 클릭 이벤트 감지
+       - `mousedown` 이벤트를 사용하여 드롭다운 외부를 클릭했는지 확인합니다.
+   3. `contains` 메서드로 외부 클릭 확인
+       - `dropdownRef.current.contains(event.target)`를 통해 클릭한 요소가 드롭다운 내부인지 확인합니다.
+   4. 이벤트 클린업
+       - `useEffect`의 `return`에서 `removeEventListener`를 호출하여 컴포넌트가 언마운트될 때 이벤트 리스너를 정리하여 메모리 누수를 방지합니다.
