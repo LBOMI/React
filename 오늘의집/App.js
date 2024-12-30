@@ -316,7 +316,7 @@ function Header() {
 
   return (
     <header>
-      <div className='sticky-container0' style={{height: 80.75}}>
+      <div className='sticky-container' style={{height: 80.75}}>
         <div className='sticky-container_1'>
          <div className='sticky-container_1-1'>
           <div className='sticky-container_1-1_1'>
@@ -713,23 +713,23 @@ function Body() {
                           <button type='button' >
                             <span>
                               <svg style={{width: 24, height: 24, fill:'none'}}>
-                                <path style={{fill:"#35C5F0", fillRule:"evenodd", d:"M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1", clipRule:"evenodd"}}></path>
+                                <path className='B_lookfor_h3_1_2_2_path'></path>
                                 </svg>
-                              <svg style={{width: 24, height: 24, fill:'none'}}>
-                                <g style={{fill:"#fff"}}>
-                                  <path></path>
-                                  <path></path>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                  <path className='B_lookfor_h3_1_2_2_path3'></path>
                                 </g>
                                 <defs>
                                   <clipPath>
-                                    <path></path>
+                                    <path className='B_lookfor_h3_1_2_2_path4'></path>
                                   </clipPath>
                                   <filter>
-                                    <feFlood></feFlood>
-                                    <feColorMatrix></feColorMatrix>
-                                    <feOffset></feOffset>
-                                    <feGaussianBlur></feGaussianBlur>
-                                    <feColorMatrix></feColorMatrix>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
                                     <feBlend></feBlend>
                                     <feBlend></feBlend>
                                   </filter>
@@ -967,16 +967,113 @@ function Body() {
                       <a></a>
                     </div>
                   </li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>
+                    <div className='B_lookfor_h3_1_2'>
+                      <div className='B_lookfor_h3_1_2_1'>
+                        <img src='lookfor_picture\lookfor8.avif'  style={{width: 172.67, height: 230}}></img>
+                        <div className='B_lookfor_h3_1_2_1_1'>
+                          <div className='B_lookfor_h3_1_2_1_1_1'>
+                            <div className='B_lookfor_h3_1_2_1_1_1_1'>
+                              <img></img>
+                            </div>
+                            <span>사이노리</span>
+                          </div>
+                        </div>
+                        <div className='B_lookfor_h3_1_2_2'>
+                          <button type='button' >
+                            <span>
+                              <svg style={{width: 24, height: 24, fill:'none'}}>
+                                <path className='B_lookfor_h3_1_2_2_path'></path>
+                                </svg>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                  <path className='B_lookfor_h3_1_2_2_path3'></path>
+                                </g>
+                                <defs>
+                                  <clipPath>
+                                    <path className='B_lookfor_h3_1_2_2_path4'></path>
+                                  </clipPath>
+                                  <filter>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
+                                    <feBlend></feBlend>
+                                    <feBlend></feBlend>
+                                  </filter>
+                                </defs>
+                                </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                      <a></a>
+                    </div>
+                    </li>
+                  <li>
+                  <div className='B_lookfor_h3_1_2'>
+                      <div className='B_lookfor_h3_1_2_1'>
+                        <img src='lookfor_picture\lookfor1.avif'  style={{width: 172.67, height: 230}}></img>
+                        <div className='B_lookfor_h3_1_2_1_1'>
+                          <div className='B_lookfor_h3_1_2_1_1_1'>
+                            <div className='B_lookfor_h3_1_2_1_1_1_1'>
+                              <img></img>
+                            </div>
+                            <span>사이노리</span>
+                          </div>
+                        </div>
+                        <div className='B_lookfor_h3_1_2_2'>
+                          <button type='button' >
+                            <span>
+                              <svg style={{width: 24, height: 24, fill:'none'}}>
+                                <path className='B_lookfor_h3_1_2_2_path'></path>
+                                </svg>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                  <path className='B_lookfor_h3_1_2_2_path3'></path>
+                                </g>
+                                <defs>
+                                  <clipPath>
+                                    <path className='B_lookfor_h3_1_2_2_path4'></path>
+                                  </clipPath>
+                                  <filter>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
+                                    <feBlend></feBlend>
+                                    <feBlend></feBlend>
+                                  </filter>
+                                </defs>
+                                </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                      <a></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='B_lookfor_h3_1_2'>
+                      <a>
+                        <div className='B_lookfor_h3_1_2_last'>
+                          <span><FontAwesomeIcon icon={faArrowRight} /></span>
+                        </div>
+                        <div className='B_lookfor_h3_1_2_last2'>더보기</div>
+                      </a>
+                    </div>
+                  </li>
                   <li></li>
                   <li></li>
                 </ul>
               </div>
               <div className='B_lookfor_h3_2'>
                 <button>
-                  <span></span>
+                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
                 </button>
               </div>
               <div className='B_lookfor_h3_3'>
