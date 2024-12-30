@@ -316,7 +316,7 @@ function Header() {
 
   return (
     <header>
-      <div className='sticky-container' style={{height: 80.75}}>
+      <div className='sticky-container0' style={{height: 80.75}}>
         <div className='sticky-container_1'>
          <div className='sticky-container_1-1'>
           <div className='sticky-container_1-1_1'>
