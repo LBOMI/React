@@ -109,6 +109,8 @@ const PrevArrow = ({ onClick }) => {
 	);
 };
 
+
+
 const NextArrow = ({ onClick }) => {
 	return (
     <div  className='NextArrow_button'>
@@ -291,6 +293,8 @@ const VerticalSlider = () => {
 };
 
 function LookforSlider() {
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
   
   const settings = {
     dots: false,
@@ -299,15 +303,15 @@ function LookforSlider() {
     arrows: true,
     slidesToShow: 6,
     slidesToScroll: 6,
-    prevArrow: <PrevArrow/>,
     nextArrow: <NextArrow/>,
+    afterChange: (current) => setCurrentSlide(current),
   };
 
+  
   return (
     <div className='B_lookfor_h3_1_1'>
-      <Slider {...settings}>
-                {/* <ul>
-                  <li> */}
+      <Slider ref={sliderRef} {...settings}>
+               
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor1.avif'  style={{width: 172.67, height: 230}}></img>
@@ -351,8 +355,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li> */}
-                  {/* <li> */}
+                 
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor2.avif'  style={{width: 172.67, height: 230}}></img>
@@ -396,8 +399,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li> */}
-                  {/* <li> */}
+                 
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor3.gif' style={{width: 172.67, height: 230}} ></img>
@@ -441,8 +443,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li>
-                  <li> */}
+                 
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor4.avif' style={{width: 172.67, height: 230}} ></img>
@@ -486,8 +487,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li>
-                  <li> */}
+                  
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor5.avif' style={{width: 172.67, height: 230}} ></img>
@@ -531,8 +531,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li>
-                  <li> */}
+                 
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor6.avif' style={{width: 172.67, height: 230}} ></img>
@@ -576,8 +575,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li>
-                  <li> */}
+                  
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor8.avif'  style={{width: 172.67, height: 230}}></img>
@@ -621,8 +619,7 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                    {/* </li>
-                  <li> */}
+                    
                   <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                         <img src='lookfor_picture\lookfor1.avif'  style={{width: 172.67, height: 230}}></img>
@@ -666,24 +663,59 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                  {/* </li>
-                  <li> */}
-                    <div className='B_lookfor_h3_1_2'>
-                      <a>
+                  
+                    {/* <div className='B_lookfor_h3_1_2'> */}
+                    <div>
+                      <div className='B_lookfor_h3_1_2_lastli'>
+                        <a>
                         <div className='B_lookfor_h3_1_2_last'>
                           <span><FontAwesomeIcon icon={faArrowRight} /></span>
                         </div>
                         <div className='B_lookfor_h3_1_2_last2'>더보기</div>
-                      </a>
-                    </div>
-                  {/* </li>
-                  <li></li>
-                  <li></li> */}
-                {/* </ul> */}
+                        </a>
+                        </div>
+                      </div>
+                    {/* </div> */}
                 </Slider>
+
+                {currentSlide > 0 && (
+                  <div  className='PrevArrow2_button'>
+                  <button className='PrevArrow2_button_b'
+                    onClick={() => sliderRef.current.slickPrev()}
+                    style={{
+                      margin: 0,
+                      border: "none",
+                      background: "none",
+                      font: "inherit",
+                      fontSize: 16,
+                      lineHeight: 20,
+                      fontWeight: 700,
+                      boxSizing: "border-box",
+                      textAlign: "center",
+                      color: "rgb(255, 255, 255)",
+                      padding: 0,
+                      width: 48,
+                      height: 48,
+                      display: "flex",
+                      alignItems: "center",
+                      webkitboxpack: "center",
+                      justifyContent: "center",
+                      borderRadius: 24,
+                      backgroundColor: "rgb(255, 255, 255)",
+                      boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+                      cursor: "pointer",
+                      touchAction: "manipulation",
+                    }}
+                    type='button'
+                  >
+                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+                  </button>
+                  </div>
+                )}
               </div>
   )
-}
+};
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
