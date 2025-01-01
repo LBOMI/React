@@ -1004,7 +1004,8 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.2s ease 0s;
+  background-color: #EAEDEF;
+  transition: .2s transform;
 }
 
 .B_main_section_a_img:hover {
@@ -1509,7 +1510,8 @@ header {
   cursor: pointer;
 }
 
-.B_lookfor_h1_1 strong:hover {
+.B_lookfor_h1_1 strong:hover,
+.Todaydeal_h_1_1 strong:hover {
   color: rgb(136, 141, 144);
 }
 
@@ -1585,7 +1587,8 @@ header {
   cursor: pointer;
 }
 
-.B_lookfor_h2 button:hover {
+.B_lookfor_h2 button:hover,
+.Todaydeal_h_2 button:hover {
   color: rgb(165, 210, 224);
 }
 .B_lookfor_h3_1,
@@ -1627,12 +1630,7 @@ header {
   flex-flow: column;
 }
 
-.B_lookfor_h3_1_2_1 {
-  /* overflow: hidden; */
-  position: relative;
-  border-radius: 4px;
-  
-}
+
 
 .B_lookfor_h3 .NextArrow_button button {
   position: absolute;
@@ -1665,7 +1663,7 @@ header {
   cursor: pointer;
 }
 
-/* .B_lookfor_h3_1_2_1_img { ????
+/* .B_lookfor_h3_1_2_1_img { 
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1699,6 +1697,15 @@ header {
   margin-right: 4px;
 }
 
+.B_lookfor_h3_1_2_1_1_1_1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+
 .B_lookfor_h3_1_2_1_1_1 span {
   overflow: hidden;
   display: inline-block;
@@ -1711,7 +1718,8 @@ header {
   text-overflow: ellipsis;
 }
 
-.B_lookfor_h3_1_2_2 {
+.B_lookfor_h3_1_2_2,
+.B_lookfor2_2_1_1_1_2 {
   position: absolute;
   padding: 8px;
   font-size: 0px;
@@ -1720,7 +1728,8 @@ header {
   bottom: 0px;
 }
 
-.B_lookfor_h3_1_2_2 button {
+.B_lookfor_h3_1_2_2 button,
+.B_lookfor2_2_1_1_1_2 button {
   margin: 0px -6px -6px 0px;
   padding: 0px;
   border: none;
@@ -1734,14 +1743,16 @@ header {
   position: relative;
 }
 
-.B_lookfor_h3_1_2_2 span {
+.B_lookfor_h3_1_2_2 span,
+.B_lookfor2_2_1_1_1_2 span {
   display: inline-block;
   font-size: 24px;
   line-height: 1;
   transform: translateZ(0px);
 }
 
-.B_lookfor_h3_1_2_2 svg {
+.B_lookfor_h3_1_2_2 svg,
+.B_lookfor2_2_1_1_1_2 svg {
   filter: drop-shadow(63, 71, 77, 0.25) 0px 2px 5px;
   position: absolute;
   top: 50%;
@@ -1773,25 +1784,30 @@ header {
   transform-origin: 0px 0px;
 }
 
-.B_lookfor_h3_1_2_2 g {
+.B_lookfor_h3_1_2_2 g,
+.B_lookfor2_2_1_1_1_2 g {
   fill: rgb(255, 255, 255);
 }
 
-.B_lookfor_h3_1_2_2_path2 {
+.B_lookfor_h3_1_2_2_path2,
+.B_lookfor2_2_1_1_1_2_path2 {
   d: path("M 4.3 4.05 V 19.5 l 6.63 -3.482 a 2.3 2.3 0 0 1 2.14 0 l 6.63 3.481 V 4.05 Z M 4 2.75 h 16 a 1 1 0 0 1 1 1 v 17.073 a 0.5 0.5 0 0 1 -0.732 0.442 l -7.803 -4.096 a 1 1 0 0 0 -0.93 0 l -7.803 4.096 A 0.5 0.5 0 0 1 3 20.824 V 3.75 a 1 1 0 0 1 1 -1");
 }
 
-.B_lookfor_h3_1_2_2_path3 {
+.B_lookfor_h3_1_2_2_path3,
+.B_lookfor2_2_1_1_1_2_path3 {
   fill-opacity: 0.5;
   d: path("M 4.3 4.05 V 19.5 l 6.63 -3.482 a 2.3 2.3 0 0 1 2.14 0 l 6.63 3.481 V 4.05 Z");
 }
 
-.B_lookfor_h3_1_2_2_path4 {
+.B_lookfor_h3_1_2_2_path4,
+.B_lookfor2_2_1_1_1_2_path4 {
   fill: rgb(255, 255, 255);
   d: path("M 0 0 h 24 v 24 H 0 Z");
 }
 
-.B_lookfor_h3_1_2_2 filter {
+.B_lookfor_h3_1_2_2 filter,
+.B_lookfor2_2_1_1_1_2 filter {
   width: 28px;
   height: 28.573;
   x: -2;
@@ -1977,9 +1993,8 @@ header {
   position: relative;
   border-radius: 4px;
 }
-.B_lookfor_h3_1_1 img {
-  width: 186px;
-}
+
+
 
 .B_lookfor_h3_1_2_lastli {
   /* margin-right: 0; */
@@ -2005,6 +2020,11 @@ header {
   touch-action: manipulation;
   width: 50px;
   height: 80px;
+}
+
+.B_lookfor_h3_1_1 .slick-slide:hover{
+  transition: transform 0.2s ease 0s;
+  transform: scale(1.05);
 }
 
 .PrevArrow2_button {
@@ -2094,8 +2114,8 @@ header {
   line-height: 28px;
 }
 
-.B_lookfor2_2 {
-
+.B_lookfor2_1_1 strong:hover {
+  color: rgb(136, 141, 144);
 }
 
 .B_lookfor2_2_1 {
@@ -2126,7 +2146,7 @@ header {
   border-radius: 4px;
 }
 
-.B_lookfor2_2_1_1_1 .img,
+.B_lookfor2_2_1_1_1 img,
 .UserReview_c_1_1_1 .img,
 .UserReview_c_1_1_2 .img,
 .UserReview_c_1_3_1 .img,
@@ -2137,12 +2157,19 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
+  /* position: absolute; */
   top: 0px;
   left: 0px;
   transition: transform 0.2s ease 0s;
 }
 
+.B_lookfor2_2_1_1 img{
+  transition: transform 0.2s ease 0s;
+}
+
+.B_lookfor2_2_1_1:hover img {
+  transform: scale(1.05);
+}
 .B_lookfor2_2_1_1_1_1,
 .UserReview_c_1_1_1_1,
 .UserReview_c_1_2_1_1,
@@ -2261,6 +2288,18 @@ header {
   max-width: 100%;
 }
 
+/**/
+.Category_C_1_1 .slick-slider {
+  width: 1097px;
+  height: 98px;
+}
+
+.NextArrow_button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 100%;
+}
 .Category_C {
   font-size: 15px; /*media 768*/
 }
@@ -2617,6 +2656,12 @@ header {
   transform: translate(-50%, -50%);
   left: 100%;
   margin: 0;
+}
+
+/**/
+.Todaydeal_C_1_1 .slick-slider {
+  width: 1097.33px;
+  height: 431.67px;
 }
 
 .UserReview_c,
