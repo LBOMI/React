@@ -314,13 +314,13 @@ function LookforSlider() {
                
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor1.avif'  style={{width: 172.67, height: 230}}></img>
+                        <img className='B_lookfor_h3_1_2_1_img' src='lookfor_picture\lookfor1.avif'></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User1</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -358,13 +358,13 @@ function LookforSlider() {
                  
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor2.avif'  style={{width: 172.67, height: 230}}></img>
+                        <img src='lookfor_picture\lookfor2.avif'  ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User2</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -375,19 +375,19 @@ function LookforSlider() {
                                 </svg>
                               <svg style={{width: 24, height: 24, fill:'none'}}>
                                 <g style={{fill:"#fff"}}>
-                                  <path></path>
-                                  <path></path>
+                                <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                <path className='B_lookfor_h3_1_2_2_path3'></path>
                                 </g>
                                 <defs>
                                   <clipPath>
-                                    <path></path>
+                                    <path className='B_lookfor_h3_1_2_2_path4'></path>
                                   </clipPath>
                                   <filter>
-                                    <feFlood></feFlood>
-                                    <feColorMatrix></feColorMatrix>
-                                    <feOffset></feOffset>
-                                    <feGaussianBlur></feGaussianBlur>
-                                    <feColorMatrix></feColorMatrix>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
                                     <feBlend></feBlend>
                                     <feBlend></feBlend>
                                   </filter>
@@ -406,9 +406,9 @@ function LookforSlider() {
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User3</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -419,19 +419,19 @@ function LookforSlider() {
                                 </svg>
                               <svg style={{width: 24, height: 24, fill:'none'}}>
                                 <g style={{fill:"#fff"}}>
-                                  <path></path>
-                                  <path></path>
+                                <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                <path className='B_lookfor_h3_1_2_2_path3'></path>
                                 </g>
                                 <defs>
                                   <clipPath>
                                     <path></path>
                                   </clipPath>
                                   <filter>
-                                    <feFlood></feFlood>
-                                    <feColorMatrix></feColorMatrix>
-                                    <feOffset></feOffset>
-                                    <feGaussianBlur></feGaussianBlur>
-                                    <feColorMatrix></feColorMatrix>
+                                  <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
                                     <feBlend></feBlend>
                                     <feBlend></feBlend>
                                   </filter>
@@ -450,9 +450,9 @@ function LookforSlider() {
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User4</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -463,8 +463,8 @@ function LookforSlider() {
                                 </svg>
                               <svg style={{width: 24, height: 24, fill:'none'}}>
                                 <g style={{fill:"#fff"}}>
-                                  <path></path>
-                                  <path></path>
+                                <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                <path className='B_lookfor_h3_1_2_2_path3'></path>
                                 </g>
                                 <defs>
                                   <clipPath>
@@ -494,9 +494,9 @@ function LookforSlider() {
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User5</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -506,9 +506,9 @@ function LookforSlider() {
                                 <path style={{fill:"#35C5F0", fillRule:"evenodd", d:"M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1", clipRule:"evenodd"}}></path>
                                 </svg>
                               <svg style={{width: 24, height: 24, fill:'none'}}>
-                                <g style={{fill:"#fff"}}>
-                                  <path></path>
-                                  <path></path>
+                                <g >
+                                <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                <path className='B_lookfor_h3_1_2_2_path3'></path>
                                 </g>
                                 <defs>
                                   <clipPath>
@@ -538,9 +538,9 @@ function LookforSlider() {
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User6</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -551,8 +551,8 @@ function LookforSlider() {
                                 </svg>
                               <svg style={{width: 24, height: 24, fill:'none'}}>
                                 <g style={{fill:"#fff"}}>
-                                  <path></path>
-                                  <path></path>
+                                <path className='B_lookfor_h3_1_2_2_path2'></path>
+                                <path className='B_lookfor_h3_1_2_2_path3'></path>
                                 </g>
                                 <defs>
                                   <clipPath>
@@ -582,9 +582,9 @@ function LookforSlider() {
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User7</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -626,9 +626,9 @@ function LookforSlider() {
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
-                              <img></img>
+                              <img src='lookfor_picture\lookfor_mini.avif'></img>
                             </div>
-                            <span>사이노리</span>
+                            <span>User8</span>
                           </div>
                         </div>
                         <div className='B_lookfor_h3_1_2_2'>
@@ -715,6 +715,525 @@ function LookforSlider() {
               </div>
   )
 };
+
+function Categroy_Slider() {
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 13,
+    slidesToScroll: 13,
+    afterChange: (current) => setCurrentSlide(current),
+  };
+
+  return (
+    <div className='Category_C_1_1'>
+    <Slider ref={sliderRef} {...settings}>
+      <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\크리스마스.avif'></img>
+                        </div>
+                        <span>크리스마스</span>
+                      </a>
+                    </div>
+                 
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\가구.avif'></img>
+                        </div>
+                        <span>가구</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\패브릭.avif'></img>
+                        </div>
+                        <span>패브릭</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\가전,디지털.avif'></img>
+                        </div>
+                        <span>가전.디지털</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\주방용품.avif'></img>
+                        </div>
+                        <span>주방용품</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\식품.avif'></img>
+                        </div>
+                        <span>식품</span>
+                      </a>
+                    </div>
+                 
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\데코,식물.avif'></img>
+                        </div>
+                        <span>데코,식물</span>
+                      </a>
+                    </div>
+               
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\조명.avif'></img>
+                        </div>
+                        <span>조명</span>
+                      </a>
+                    </div>
+                
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\수납,정리.avif'></img>
+                        </div>
+                        <span>수납,정리</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\생활용품.avif'></img>
+                        </div>
+                        <span>생활용품</span>
+                      </a>
+                    </div>
+                
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\생필품.avif'></img>
+                        </div>
+                        <span>생필품</span>
+                      </a>
+                    </div>
+                
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\유아,아동.avif'></img>
+                        </div>
+                        <span>유아, 아동</span>
+                      </a>
+                    </div>
+                 
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\반려동물.avif'></img>
+                        </div>
+                        <span>반려동물</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\캠핑,레저.avif'></img>
+                        </div>
+                        <span>캠핑,레저</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\공구,DIY.avif'></img>
+                        </div>
+                        <span>공구,DIY</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\인테리어시공.webp'></img>
+                        </div>
+                        <span>인테리어시공</span>
+                      </a>
+                    </div>
+                  
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\렌탈,구독.avif'></img>
+                        </div>
+                        <span>렌탈,구독</span>
+                      </a>
+                    </div>
+                 
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\장보기.avif'></img>
+                        </div>
+                        <span>장보기</span>
+                      </a>
+                    </div>
+                 
+                    <div className='Category_C_1_1_ul_li'>
+                      <a>
+                        <div className='Category_C_1_1_ul_li_a_1'>
+                          <img src='Category\혼수,신혼.avif'></img>
+                        </div>
+                        <span>혼수,신혼</span>
+                      </a>
+                    </div>
+    </Slider>
+    {currentSlide > 0 && (
+      <div  className='PrevArrow2_button'>
+      <button className='PrevArrow2_button_b'
+        onClick={() => sliderRef.current.slickPrev()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+      </button>
+      </div>
+    )}
+    {currentSlide === 0 && (
+      <div  className='NextArrow_button'>
+      <button 
+        onClick={() => sliderRef.current.slickNext()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronRight} /></span>
+      </button>
+      </div>
+    )}
+    </div>
+  )
+}
+
+function Todaydeal_Slider() {
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    afterChange: (current) => setCurrentSlide(current),
+  };
+
+  return (
+    <div className='Todaydeal_C_1_1'>
+      <Slider ref={sliderRef} {...settings}>
+      <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_1'>
+                                <div className='Todaydeal_C_1_1_li_1_1_1_1_1_1'>
+                                  <picture>
+                                    <source></source>
+                                    <img src='Todaydeal\2024BEST.avif'></img>
+                                  </picture>
+                                </div>
+                              </div>
+                              <img src='Todaydeal\Todaydeal_1.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>아이러브베베</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[최종17,910원/82초고평량]시그니앙 골드퍼플 70매 20팩 캡형 아기물티슈</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.9</strong>
+                                리뷰 630
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>42
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>22,900</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.9</strong>
+                                리뷰 630
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span4'>
+                              <img src='Todaydeal\오늘출발.png'></img>
+                            </span>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span5'>평일 21:00까지 결제시</span>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
+                              <img src='Todaydeal\card-promotion-badge.png'></img>
+                              <span>최대 10% 결제할인</span>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              
+                              <img src='Todaydeal\Todaydeal_2.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>헤드앤숄더</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>두피 케어! 헤드앤숄더 특가 모음딜</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.8</strong>
+                                리뷰 5,739
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>28
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>37900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.8</strong>
+                                리뷰 5,739
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
+                              <img src='Todaydeal\card-promotion-badge.png'></img>
+                              <span>최대 15% 결제할인</span>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                            
+                              <img src='Todaydeal\Todaydeal_3.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>한빛카페트</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[쿠폰] 러그/카페트 특가 모음전(사이잘룩/타일/워셔블/사계절러그)</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.7</strong>
+                                리뷰 91,504
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>40
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>8,900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.7</strong>
+                                리뷰 91,504
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              
+                              <img src='Todaydeal\Todaydeal_4.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>네이처리빙</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>네이처리빙 빨래바구니 외 수납/생활/주방 인기템</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.7</strong>
+                                리뷰 391,566
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>64
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>17,900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.7</strong>
+                                리뷰 391,566
+                              </p>
+                            </div>
+                            
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                          
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+      </Slider>
+    </div>
+  )
+}
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -1153,14 +1672,40 @@ function Body() {
             <div className='B_lookfor2_2_1'>
               <div className='B_lookfor2_2_1_1'>
                 <div className='B_lookfor2_2_1_1_1'>
-                  <img src='jipdlei\집들이1.avif' style={{height:179}}></img>
+                 
+                  <img src='jipdlei\집들이1.avif' />
+                  
                   <div className='B_lookfor2_2_1_1_1_1'>
                     <div className='B_lookfor2_2_1_1_1_1_1'></div>
                   </div>
                   <div className='B_lookfor2_2_1_1_1_2'>
-                    <button type='button'>
-                      <span></span>
-                    </button>
+                  <button type='button' >
+                            <span>
+                              <svg style={{width: 24, height: 24, fill:'none'}}>
+                                <path className='B_lookfor2_2_1_1_1_2_path'></path>
+                                </svg>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor2_2_1_1_1_2_path2'></path>
+                                  <path className='B_lookfor2_2_1_1_1_2_path3'></path>
+                                </g>
+                                <defs>
+                                  <clipPath>
+                                    <path className='B_lookfor2_2_1_1_1_2_path4'></path>
+                                  </clipPath>
+                                  <filter>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
+                                    <feBlend></feBlend>
+                                    <feBlend></feBlend>
+                                  </filter>
+                                </defs>
+                                </svg>
+                            </span>
+                          </button>
                   </div>
                 </div>
                 <div className='B_lookfor2_2_1_1_2'>
@@ -1178,9 +1723,33 @@ function Body() {
                     <div className='B_lookfor2_2_1_1_1_1_1'></div>
                   </div>
                   <div className='B_lookfor2_2_1_1_1_2'>
-                    <button type='button'>
-                      <span></span>
-                    </button>
+                  <button type='button' >
+                            <span>
+                              <svg style={{width: 24, height: 24, fill:'none'}}>
+                                <path className='B_lookfor2_2_1_1_1_2_path'></path>
+                                </svg>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor2_2_1_1_1_2_path2'></path>
+                                  <path className='B_lookfor2_2_1_1_1_2_path3'></path>
+                                </g>
+                                <defs>
+                                  <clipPath>
+                                    <path className='B_lookfor2_2_1_1_1_2_path4'></path>
+                                  </clipPath>
+                                  <filter>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
+                                    <feBlend></feBlend>
+                                    <feBlend></feBlend>
+                                  </filter>
+                                </defs>
+                                </svg>
+                            </span>
+                          </button>
                   </div>
                 </div>
                 <div className='B_lookfor2_2_1_1_2'>
@@ -1198,9 +1767,33 @@ function Body() {
                     <div className='B_lookfor2_2_1_1_1_1_1'></div>
                   </div>
                   <div className='B_lookfor2_2_1_1_1_2'>
-                    <button type='button'>
-                      <span></span>
-                    </button>
+                  <button type='button' >
+                            <span>
+                              <svg style={{width: 24, height: 24, fill:'none'}}>
+                                <path className='B_lookfor2_2_1_1_1_2_path'></path>
+                                </svg>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor2_2_1_1_1_2_path2'></path>
+                                  <path className='B_lookfor2_2_1_1_1_2_path3'></path>
+                                </g>
+                                <defs>
+                                  <clipPath>
+                                    <path className='B_lookfor2_2_1_1_1_2_path4'></path>
+                                  </clipPath>
+                                  <filter>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
+                                    <feBlend></feBlend>
+                                    <feBlend></feBlend>
+                                  </filter>
+                                </defs>
+                                </svg>
+                            </span>
+                          </button>
                   </div>
                 </div>
                 <div className='B_lookfor2_2_1_1_2'>
@@ -1218,9 +1811,33 @@ function Body() {
                     <div className='B_lookfor2_2_1_1_1_1_1'></div>
                   </div>
                   <div className='B_lookfor2_2_1_1_1_2'>
-                    <button type='button'>
-                      <span></span>
-                    </button>
+                  <button type='button' >
+                            <span>
+                              <svg style={{width: 24, height: 24, fill:'none'}}>
+                                <path className='B_lookfor2_2_1_1_1_2_path'></path>
+                                </svg>
+                              <svg style={{width: 24, height: 24, fill:'none', opacity:1}}>
+                                <g >
+                                  <path className='B_lookfor2_2_1_1_1_2_path2'></path>
+                                  <path className='B_lookfor2_2_1_1_1_2_path3'></path>
+                                </g>
+                                <defs>
+                                  <clipPath>
+                                    <path className='B_lookfor2_2_1_1_1_2_path4'></path>
+                                  </clipPath>
+                                  <filter>
+                                    <feFlood style={{floodOpacity:0}}></feFlood>
+                                    <feColorMatrix style={{values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"}}></feColorMatrix>
+                                    <feOffset style={{dy: 2}}></feOffset>
+                                    <feGaussianBlur style={{stdDeviation: 2.5}}></feGaussianBlur>
+                                    <feColorMatrix style={{values:"0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"}}></feColorMatrix>
+                                    <feBlend></feBlend>
+                                    <feBlend></feBlend>
+                                  </filter>
+                                </defs>
+                                </svg>
+                            </span>
+                          </button>
                   </div>
                 </div>
                 <div className='B_lookfor2_2_1_1_2'>
@@ -1246,209 +1863,9 @@ function Body() {
           <div className='Category_C'>
             <div className='Category_C_1'>
               <div className='Category_C_1_1'>
-                <ul>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\크리스마스.avif'></img>
-                        </div>
-                        <span>크리스마스</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\가구.avif'></img>
-                        </div>
-                        <span>가구</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\패브릭.avif'></img>
-                        </div>
-                        <span>패브릭</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\가전,디지털.avif'></img>
-                        </div>
-                        <span>가전.디지털</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\주방용품.avif'></img>
-                        </div>
-                        <span>주방용품</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\식품.avif'></img>
-                        </div>
-                        <span>식품</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\데코,식물.avif'></img>
-                        </div>
-                        <span>데코,식물</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\조명.avif'></img>
-                        </div>
-                        <span>조명</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\수납,정리.avif'></img>
-                        </div>
-                        <span>수납,정리</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\생활용품.avif'></img>
-                        </div>
-                        <span>생활용품</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\생필품.avif'></img>
-                        </div>
-                        <span>생필품</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\유아,아동.avif'></img>
-                        </div>
-                        <span>유아, 아동</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\반려동물.avif'></img>
-                        </div>
-                        <span>반려동물</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\캠핑,레저.avif'></img>
-                        </div>
-                        <span>캠핑,레저</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\공구,DIY.avif'></img>
-                        </div>
-                        <span>공구,DIY</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\인테리어시공.avif'></img>
-                        </div>
-                        <span>인테리어시공</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\렌탈,구독.avif'></img>
-                        </div>
-                        <span>렌탈,구독</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\장보기.avif'></img>
-                        </div>
-                        <span>장보기</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className='Category_C_1_1_ul_li'>
-                      <a>
-                        <div className='Category_C_1_1_ul_li_a_1'>
-                          <img src='Category\혼수,신혼.avif'></img>
-                        </div>
-                        <span>혼수,신혼</span>
-                      </a>
-                    </div>
-                  </li>
-                </ul>
+               <Categroy_Slider/>
               </div>
-              <div className='Category_C_1_2'>
-                <button type='button'>
-                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
-                </button>
-              </div>
-              <div className='Category_C_1_3'>
-              <button type='button'>
-                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -1466,254 +1883,7 @@ function Body() {
           <div className='Todaydeal_C'>
             <div className='Todaydeal_C_1'>
               <div className='Todaydeal_C_1_1'>
-                <ul>
-                  <li>
-                    <div className='Todaydeal_C_1_1_li_1'>
-                      <article>
-                        <a></a>
-                        <div className='Todaydeal_C_1_1_li_1_1'>
-                          <div className='Todaydeal_C_1_1_li_1_1_1'>
-                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_1'>
-                                <div className='Todaydeal_C_1_1_li_1_1_1_1_1_1'>
-                                  <picture>
-                                    <source></source>
-                                    <img src='Todaydeal\2024BEST.avif'></img>
-                                  </picture>
-                                </div>
-                              </div>
-                              <img src='Todaydeal\Todaydeal_1.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
-                              </button>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
-                                <div></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='Todaydeal_C_1_1_li_1_2'>
-                          <div className='Todaydeal_C_1_1_li_1_2_1'>
-                            <h1>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>아이러브베베</span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[최종17,910원/82초고평량]시그니앙 골드퍼플 70매 20팩 캡형 아기물티슈</span>
-                            </h1>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
-                              <p>
-                                <svg></svg>
-                                <strong>4.9</strong>
-                                리뷰 630
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>42
-                                <span>%</span>
-                              </span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>22,900</span>
-                            </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
-                              <p>
-                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
-                                <strong>4.9</strong>
-                                리뷰 630
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span4'>
-                              <img src='Todaydeal\오늘출발.png'></img>
-                            </span>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span5'>평일 21:00까지 결제시</span>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
-                              <svg>
-                                <g></g>
-                              </svg>
-                            </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
-                              <img src='Todaydeal\card-promotion-badge.png'></img>
-                              <span>최대 10% 결제할인</span>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </li>
-                  <li> <div className='Todaydeal_C_1_1_li_1'>
-                      <article>
-                        <a></a>
-                        <div className='Todaydeal_C_1_1_li_1_1'>
-                          <div className='Todaydeal_C_1_1_li_1_1_1'>
-                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
-                              
-                              <img src='Todaydeal\Todaydeal_2.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
-                              </button>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
-                                <div></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='Todaydeal_C_1_1_li_1_2'>
-                          <div className='Todaydeal_C_1_1_li_1_2_1'>
-                            <h1>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>헤드앤숄더</span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>두피 케어! 헤드앤숄더 특가 모음딜</span>
-                            </h1>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
-                              <p>
-                                <svg></svg>
-                                <strong>4.8</strong>
-                                리뷰 5,739
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>28
-                                <span>%</span>
-                              </span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>37900 외</span>
-                            </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
-                              <p>
-                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
-                                <strong>4.8</strong>
-                                리뷰 5,739
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
-                              <svg>
-                                <g></g>
-                              </svg>
-                            </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
-                              <img src='Todaydeal\card-promotion-badge.png'></img>
-                              <span>최대 15% 결제할인</span>
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                    </div></li>
-                  <li> <div className='Todaydeal_C_1_1_li_1'>
-                      <article>
-                        <a></a>
-                        <div className='Todaydeal_C_1_1_li_1_1'>
-                          <div className='Todaydeal_C_1_1_li_1_1_1'>
-                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
-                            
-                              <img src='Todaydeal\Todaydeal_3.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
-                              </button>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
-                                <div></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='Todaydeal_C_1_1_li_1_2'>
-                          <div className='Todaydeal_C_1_1_li_1_2_1'>
-                            <h1>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>한빛카페트</span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[쿠폰] 러그/카페트 특가 모음전(사이잘룩/타일/워셔블/사계절러그)</span>
-                            </h1>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
-                              <p>
-                                <svg></svg>
-                                <strong>4.7</strong>
-                                리뷰 91,504
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>40
-                                <span>%</span>
-                              </span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>8,900 외</span>
-                            </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
-                              <p>
-                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
-                                <strong>4.7</strong>
-                                리뷰 91,504
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
-                              <svg>
-                                <g></g>
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                      </article>
-                    </div></li>
-                  <li> <div className='Todaydeal_C_1_1_li_1'>
-                      <article>
-                        <a></a>
-                        <div className='Todaydeal_C_1_1_li_1_1'>
-                          <div className='Todaydeal_C_1_1_li_1_1_1'>
-                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
-                              
-                              <img src='Todaydeal\Todaydeal_4.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
-                              </button>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
-                                <div></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='Todaydeal_C_1_1_li_1_2'>
-                          <div className='Todaydeal_C_1_1_li_1_2_1'>
-                            <h1>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>네이처리빙</span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>네이처리빙 빨래바구니 외 수납/생활/주방 인기템</span>
-                            </h1>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
-                              <p>
-                                <svg></svg>
-                                <strong>4.7</strong>
-                                리뷰 391,566
-                              </p>
-                            </div>
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>64
-                                <span>%</span>
-                              </span>
-                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>17,900 외</span>
-                            </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
-                              <p>
-                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
-                                <strong>4.7</strong>
-                                리뷰 391,566
-                              </p>
-                            </div>
-                            
-                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
-                              <svg>
-                                <g></g>
-                              </svg>
-                            </span>
-                          
-                          </div>
-                        </div>
-                      </article>
-                    </div></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
+                <Todaydeal_Slider/>
               </div>
               <div className='Todaydeal_C_1_2'>
                 <button type='button'>
