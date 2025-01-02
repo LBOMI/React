@@ -1025,22 +1025,22 @@ function Todaydeal_Slider() {
                               <span className='Todaydeal_C_1_1_li_1_2_1_span1'>아이러브베베</span>
                               <span className='Todaydeal_C_1_1_li_1_2_1_span2'>[최종17,910원/82초고평량]시그니앙 골드퍼플 70매 20팩 캡형 아기물티슈</span>
                             </h1>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
-                              <p>
-                                <svg></svg>
-                                <strong>4.9</strong>
-                                리뷰 630
-                              </p>
-                            </div>
+                            
                             <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
                               <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>42
                                 <span>%</span>
                               </span>
                               <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>22,900</span>
                             </span>
-                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
                               <p>
-                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <svg width="13.2" height="13.2" viewBox="0 0 24 24">
+                                  <path 
+                                   fill='currentColor'
+                                   fillRule='evenodd'
+                                   d='M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z'>
+                                  </path>
+                                  </svg>
                                 <strong>4.9</strong>
                                 리뷰 630
                               </p>
@@ -1050,8 +1050,11 @@ function Todaydeal_Slider() {
                             </span>
                             <span className='Todaydeal_C_1_1_li_1_2_1_span5'>평일 21:00까지 결제시</span>
                             <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
-                              <svg>
-                                <g></g>
+                              <svg aria-label='무료배송' width={47} height={20} viewBox='0 0 47 20'>
+                                <g fill='none' fillRule='evenodd'>
+                                  <rect width={47} height={20} fill='#000' fillOpacity={.07} fillRule='nonzero' rx={4}></rect>
+                                  <path fill='#757575' d='M12.73 5.38v3.96h-6.6V5.38h6.6zm-2.68 9.43H8.76v-3.25H5v-1.03h8.86v1.03h-3.81v3.25zm1.4-6.49V6.41H7.43v1.91h4.04zm11.08 2.7h-1.42v1.54h2.26v1.02h-8.86v-1.02h2.24v-1.53h-1.1V7.78h5.32V6.65H15.6V5.63h6.66V8.8h-5.33v1.18h5.61v1.04zm-4.53 0v1.54h1.87v-1.53H18zm14.37 3.78h-1.23V9.86h-.8v4.49h-1.2V5.18h1.2v3.66h.8V5h1.23v9.8zm-4.2-2.54h-3.9V6.01h1.27v2.26h1.36V6h1.28v6.26zm-1.27-1.01v-2h-1.36v2h1.36zm14.49 1.71c0 1.13-1.25 1.82-3.41 1.82s-3.42-.7-3.42-1.82 1.25-1.82 3.4-1.82c2.18 0 3.43.7 3.43 1.82zm-3.41-6.05c-.5 1.13-2.1 1.9-3.51 2.1l-.54-1c1.64-.17 3.39-1.06 3.39-2.54V5.2h1.33v.28c0 1.48 1.99 2.47 3.4 2.53l-.55 1.01c-1.31-.18-3.03-.97-3.52-2.1zm4.42 3.78h-8.86V9.66h3.79V8.4h1.29v1.26h3.78v1.03zm-2.33 2.27c0-.5-.83-.8-2.1-.8s-2.08.3-2.08.8c0 .51.81.8 2.08.8s2.1-.29 2.1-.8z'></path>
+                                </g>
                               </svg>
                             </span>
                             <div className='Todaydeal_C_1_1_li_1_2_1_div3'>
@@ -1230,7 +1233,133 @@ function Todaydeal_Slider() {
                         </div>
                       </article>
                     </div>
+                    <div className='Todaydeal_C_1_1_li_1'>
+                      <article>
+                        <a></a>
+                        <div className='Todaydeal_C_1_1_li_1_1'>
+                          <div className='Todaydeal_C_1_1_li_1_1_1'>
+                            <div className='Todaydeal_C_1_1_li_1_1_1_1'>
+                              
+                              <img src='Todaydeal\Todaydeal_4.avif'></img>
+                              <button type='button'>
+                                <svg></svg>
+                                <svg></svg>
+                              </button>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
+                              <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='Todaydeal_C_1_1_li_1_2'>
+                          <div className='Todaydeal_C_1_1_li_1_2_1'>
+                            <h1>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span1'>네이처리빙</span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span2'>네이처리빙 빨래바구니 외 수납/생활/주방 인기템</span>
+                            </h1>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div'>
+                              <p>
+                                <svg></svg>
+                                <strong>4.7</strong>
+                                리뷰 391,566
+                              </p>
+                            </div>
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span3'>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_1'>64
+                                <span>%</span>
+                              </span>
+                              <span className='Todaydeal_C_1_1_li_1_2_1_span3_2'>17,900 외</span>
+                            </span>
+                            <div className='Todaydeal_C_1_1_li_1_2_1_div2'>
+                              <p>
+                                <svg style={{width: 24, height:24}} viewBox='0 0 24 24'></svg>
+                                <strong>4.7</strong>
+                                리뷰 391,566
+                              </p>
+                            </div>
+                            
+                            <span className='Todaydeal_C_1_1_li_1_2_1_span6'>
+                              <svg>
+                                <g></g>
+                              </svg>
+                            </span>
+                          
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    
+                    
       </Slider>
+      {currentSlide > 0 && (
+      <div  className='PrevArrow2_button'>
+      <button className='PrevArrow2_button_b'
+        onClick={() => sliderRef.current.slickPrev()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+      </button>
+      </div>
+    )}
+    {currentSlide === 0 && (
+      <div  className='NextArrow_button'>
+      <button 
+        onClick={() => sliderRef.current.slickNext()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronRight} /></span>
+      </button>
+      </div>
+    )}
     </div>
   )
 }
@@ -1885,16 +2014,7 @@ function Body() {
               <div className='Todaydeal_C_1_1'>
                 <Todaydeal_Slider/>
               </div>
-              <div className='Todaydeal_C_1_2'>
-                <button type='button'>
-                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
-                </button>
-              </div>
-              <div className='Todaydeal_C_1_3'>
-                <button type='button'>
-                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
