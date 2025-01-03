@@ -995,22 +995,42 @@ function Todaydeal_Slider() {
       <Slider ref={sliderRef} {...settings}>
       <div className='Todaydeal_C_1_1_li_1'>
                       <article>
-                        <a></a>
+                        
                         <div className='Todaydeal_C_1_1_li_1_1'>
                           <div className='Todaydeal_C_1_1_li_1_1_1'>
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
-                              <div className='Todaydeal_C_1_1_li_1_1_1_1_1'>
+                              {/* <div className='Todaydeal_C_1_1_li_1_1_1_1_1'>
                                 <div className='Todaydeal_C_1_1_li_1_1_1_1_1_1'>
                                   <picture>
                                     <source></source>
                                     <img src='Todaydeal\2024BEST.avif'></img>
                                   </picture>
                                 </div>
-                              </div>
+                              </div> */}
+                            
                               <img src='Todaydeal\Todaydeal_1.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
+                             
+                              <button type='button' >
+                                <svg width={24} height={24} viewBox='0 0 24 24'>
+                                  <defs>
+                                    <path
+                                    d='M12.472 6.93l7.056-3.811A1 1 0 0 1 21 4.002v15.496c0 .83-.672 1.502-1.5 1.502h-15c-.828 0-1.5-.673-1.5-1.502V4.002a1 1 0 0 1 1.472-.883l7.056 3.811a.999.999 0 0 0 .944 0z'></path>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} >
+                              
+                                    </filter>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} ></filter>
+
+                                  </defs>
+                                  <g fill='none' fillRule='nonzero' transform='matrix(1 0 0 -1 0 24)'>
+                                    <use fill='#000'></use>
+                                    <use fill='#fff' fillOpacity={.4}></use>
+                                    <use fill='#000'></use>
+                                    <path stroke='#fff' d='M12.71 7.37h-.002a1.5 1.5 0 0 1-1.417 0L4.236 3.56a.499.499 0 0 0-.736.442v15.496c0 .553.448 1.002 1 1.002h15c.552 0 1-.449 1-1.002V4.002a.499.499 0 0 0-.734-.443l-7.057 3.81zm-.475-.88h-.001z'></path>
+                                  </g>
+                                </svg>
+                                <svg width={24} height={24} viewBox='0 0 24 24' >
+                                  <path fill='#fff' fillRule='nonzero' d='M12.472 17.07a.999.999 0 0 0-.944 0l-7.056 3.811A.999.999 0 0 1 3 19.998V4.502C3 3.672 3.672 3 4.5 3h15c.828 0 1.5.673 1.5 1.502v15.496a1 1 0 0 1-1.472.883l-7.056-3.811z' fillOpacity={0.5}></path>
+                                </svg>
                               </button>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
@@ -1073,9 +1093,27 @@ function Todaydeal_Slider() {
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
                               
                               <img src='Todaydeal\Todaydeal_2.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
+                              <button type='button' >
+                                <svg width={24} height={24} viewBox='0 0 24 24'>
+                                  <defs>
+                                    <path
+                                    d='M12.472 6.93l7.056-3.811A1 1 0 0 1 21 4.002v15.496c0 .83-.672 1.502-1.5 1.502h-15c-.828 0-1.5-.673-1.5-1.502V4.002a1 1 0 0 1 1.472-.883l7.056 3.811a.999.999 0 0 0 .944 0z'></path>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} >
+                              
+                                    </filter>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} ></filter>
+
+                                  </defs>
+                                  <g fill='none' fillRule='nonzero' transform='matrix(1 0 0 -1 0 24)'>
+                                    <use fill='#000'></use>
+                                    <use fill='#fff' fillOpacity={.4}></use>
+                                    <use fill='#000'></use>
+                                    <path stroke='#fff' d='M12.71 7.37h-.002a1.5 1.5 0 0 1-1.417 0L4.236 3.56a.499.499 0 0 0-.736.442v15.496c0 .553.448 1.002 1 1.002h15c.552 0 1-.449 1-1.002V4.002a.499.499 0 0 0-.734-.443l-7.057 3.81zm-.475-.88h-.001z'></path>
+                                  </g>
+                                </svg>
+                                <svg width={24} height={24} viewBox='0 0 24 24' >
+                                  <path fill='#fff' fillRule='nonzero' d='M12.472 17.07a.999.999 0 0 0-.944 0l-7.056 3.811A.999.999 0 0 1 3 19.998V4.502C3 3.672 3.672 3 4.5 3h15c.828 0 1.5.673 1.5 1.502v15.496a1 1 0 0 1-1.472.883l-7.056-3.811z' fillOpacity={0.5}></path>
+                                </svg>
                               </button>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
@@ -1134,9 +1172,27 @@ function Todaydeal_Slider() {
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
                             
                               <img src='Todaydeal\Todaydeal_3.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
+                              <button type='button' >
+                                <svg width={24} height={24} viewBox='0 0 24 24'>
+                                  <defs>
+                                    <path
+                                    d='M12.472 6.93l7.056-3.811A1 1 0 0 1 21 4.002v15.496c0 .83-.672 1.502-1.5 1.502h-15c-.828 0-1.5-.673-1.5-1.502V4.002a1 1 0 0 1 1.472-.883l7.056 3.811a.999.999 0 0 0 .944 0z'></path>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} >
+                              
+                                    </filter>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} ></filter>
+
+                                  </defs>
+                                  <g fill='none' fillRule='nonzero' transform='matrix(1 0 0 -1 0 24)'>
+                                    <use fill='#000'></use>
+                                    <use fill='#fff' fillOpacity={.4}></use>
+                                    <use fill='#000'></use>
+                                    <path stroke='#fff' d='M12.71 7.37h-.002a1.5 1.5 0 0 1-1.417 0L4.236 3.56a.499.499 0 0 0-.736.442v15.496c0 .553.448 1.002 1 1.002h15c.552 0 1-.449 1-1.002V4.002a.499.499 0 0 0-.734-.443l-7.057 3.81zm-.475-.88h-.001z'></path>
+                                  </g>
+                                </svg>
+                                <svg width={24} height={24} viewBox='0 0 24 24' >
+                                  <path fill='#fff' fillRule='nonzero' d='M12.472 17.07a.999.999 0 0 0-.944 0l-7.056 3.811A.999.999 0 0 1 3 19.998V4.502C3 3.672 3.672 3 4.5 3h15c.828 0 1.5.673 1.5 1.502v15.496a1 1 0 0 1-1.472.883l-7.056-3.811z' fillOpacity={0.5}></path>
+                                </svg>
                               </button>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
@@ -1197,9 +1253,27 @@ function Todaydeal_Slider() {
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
                               
                               <img src='Todaydeal\Todaydeal_4.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
+                              <button type='button' >
+                                <svg width={24} height={24} viewBox='0 0 24 24'>
+                                  <defs>
+                                    <path
+                                    d='M12.472 6.93l7.056-3.811A1 1 0 0 1 21 4.002v15.496c0 .83-.672 1.502-1.5 1.502h-15c-.828 0-1.5-.673-1.5-1.502V4.002a1 1 0 0 1 1.472-.883l7.056 3.811a.999.999 0 0 0 .944 0z'></path>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} >
+                              
+                                    </filter>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} ></filter>
+
+                                  </defs>
+                                  <g fill='none' fillRule='nonzero' transform='matrix(1 0 0 -1 0 24)'>
+                                    <use fill='#000'></use>
+                                    <use fill='#fff' fillOpacity={.4}></use>
+                                    <use fill='#000'></use>
+                                    <path stroke='#fff' d='M12.71 7.37h-.002a1.5 1.5 0 0 1-1.417 0L4.236 3.56a.499.499 0 0 0-.736.442v15.496c0 .553.448 1.002 1 1.002h15c.552 0 1-.449 1-1.002V4.002a.499.499 0 0 0-.734-.443l-7.057 3.81zm-.475-.88h-.001z'></path>
+                                  </g>
+                                </svg>
+                                <svg width={24} height={24} viewBox='0 0 24 24' >
+                                  <path fill='#fff' fillRule='nonzero' d='M12.472 17.07a.999.999 0 0 0-.944 0l-7.056 3.811A.999.999 0 0 1 3 19.998V4.502C3 3.672 3.672 3 4.5 3h15c.828 0 1.5.673 1.5 1.502v15.496a1 1 0 0 1-1.472.883l-7.056-3.811z' fillOpacity={0.5}></path>
+                                </svg>
                               </button>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
@@ -1256,9 +1330,27 @@ function Todaydeal_Slider() {
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
                               
                               <img src='Todaydeal\Todaydeal_5.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
+                              <button type='button' >
+                                <svg width={24} height={24} viewBox='0 0 24 24'>
+                                  <defs>
+                                    <path
+                                    d='M12.472 6.93l7.056-3.811A1 1 0 0 1 21 4.002v15.496c0 .83-.672 1.502-1.5 1.502h-15c-.828 0-1.5-.673-1.5-1.502V4.002a1 1 0 0 1 1.472-.883l7.056 3.811a.999.999 0 0 0 .944 0z'></path>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} >
+                              
+                                    </filter>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} ></filter>
+
+                                  </defs>
+                                  <g fill='none' fillRule='nonzero' transform='matrix(1 0 0 -1 0 24)'>
+                                    <use fill='#000'></use>
+                                    <use fill='#fff' fillOpacity={.4}></use>
+                                    <use fill='#000'></use>
+                                    <path stroke='#fff' d='M12.71 7.37h-.002a1.5 1.5 0 0 1-1.417 0L4.236 3.56a.499.499 0 0 0-.736.442v15.496c0 .553.448 1.002 1 1.002h15c.552 0 1-.449 1-1.002V4.002a.499.499 0 0 0-.734-.443l-7.057 3.81zm-.475-.88h-.001z'></path>
+                                  </g>
+                                </svg>
+                                <svg width={24} height={24} viewBox='0 0 24 24' >
+                                  <path fill='#fff' fillRule='nonzero' d='M12.472 17.07a.999.999 0 0 0-.944 0l-7.056 3.811A.999.999 0 0 1 3 19.998V4.502C3 3.672 3.672 3 4.5 3h15c.828 0 1.5.673 1.5 1.502v15.496a1 1 0 0 1-1.472.883l-7.056-3.811z' fillOpacity={0.5}></path>
+                                </svg>
                               </button>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
@@ -1315,9 +1407,27 @@ function Todaydeal_Slider() {
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
                               
                               <img src='Todaydeal\Todaydeal_6.avif'></img>
-                              <button type='button'>
-                                <svg></svg>
-                                <svg></svg>
+                              <button type='button' >
+                                <svg width={24} height={24} viewBox='0 0 24 24'>
+                                  <defs>
+                                    <path
+                                    d='M12.472 6.93l7.056-3.811A1 1 0 0 1 21 4.002v15.496c0 .83-.672 1.502-1.5 1.502h-15c-.828 0-1.5-.673-1.5-1.502V4.002a1 1 0 0 1 1.472-.883l7.056 3.811a.999.999 0 0 0 .944 0z'></path>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} >
+                              
+                                    </filter>
+                                    <filter width={"150%"} height={"150%"} x="-25%" y={"-25%"} filterUnits={"objectBoundingBox"} ></filter>
+
+                                  </defs>
+                                  <g fill='none' fillRule='nonzero' transform='matrix(1 0 0 -1 0 24)'>
+                                    <use fill='#000'></use>
+                                    <use fill='#fff' fillOpacity={.4}></use>
+                                    <use fill='#000'></use>
+                                    <path stroke='#fff' d='M12.71 7.37h-.002a1.5 1.5 0 0 1-1.417 0L4.236 3.56a.499.499 0 0 0-.736.442v15.496c0 .553.448 1.002 1 1.002h15c.552 0 1-.449 1-1.002V4.002a.499.499 0 0 0-.734-.443l-7.057 3.81zm-.475-.88h-.001z'></path>
+                                  </g>
+                                </svg>
+                                <svg width={24} height={24} viewBox='0 0 24 24' >
+                                  <path fill='#fff' fillRule='nonzero' d='M12.472 17.07a.999.999 0 0 0-.944 0l-7.056 3.811A.999.999 0 0 1 3 19.998V4.502C3 3.672 3.672 3 4.5 3h15c.828 0 1.5.673 1.5 1.502v15.496a1 1 0 0 1-1.472.883l-7.056-3.811z' fillOpacity={0.5}></path>
+                                </svg>
                               </button>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_2'></div>
                               <div className='Todaydeal_C_1_1_li_1_1_1_1_3'>
@@ -1475,7 +1585,7 @@ function Counter() {
     const secs = (seconds % 60).toString().padStart(2, '0');
     return `${hours}:${minutes}:${secs}`;
   };
-  return <h1>{formatTime(count)}남음</h1>;
+  return <h1>{formatTime(count)} 남음</h1>;
 }
 
 function Header() {
