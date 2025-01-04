@@ -1561,6 +1561,161 @@ function Todaydeal_Slider() {
   )
 }
 
+function Exhibition_Slider() {
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    afterChange: (current) => setCurrentSlide(current),
+  };
+
+  return (
+    <div className='Exhibition_c1_1'>
+      <Slider ref={sliderRef} {...settings} >
+      <div className='Exhibition_c1_1_1'>
+                      <div className='Exhibition_c1_1_1_1' style={{cursor:"pointer"}}>
+                        <img src='exhibition\기획전_1.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_1_1_1'>
+                          <div className='Exhibition_c1_1_1_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_1_2' style={{cursor:"pointer"}}>
+                        <p className='Exhibition_c1_1_1_2_p1'>전시, 반품, 스크래치 특템의 기회!</p>
+                        <p className='Exhibition_c1_1_1_2_p2'>빠른 품절! 리퍼마켓 ~82%</p>
+                      </div>
+                      <a className='Exhibition_c1_1_1_a'></a>
+                    </div>
+                  
+                  <div className='Exhibition_c1_1_2'>
+                      <div className='Exhibition_c1_1_2_1' style={{cursor:"pointer"}}>
+                        <img src='exhibition\기획전_2.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_2_1_1'>
+                          <div className='Exhibition_c1_1_2_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_1_2' style={{cursor:"pointer"}}>
+                        <p className='Exhibition_c1_1_1_2_p1'>전상품 무료배송</p>
+                        <p className='Exhibition_c1_1_1_2_p2'>매일 새로운 장보기 핫딜! 오마트</p>
+                      </div>
+                      <a></a>
+                    </div>
+                    <div className='Exhibition_c1_1_3'>
+                      <div className='Exhibition_c1_1_3_1' style={{cursor:"pointer"}}>
+                        <img src='exhibition\기획전_3.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_3_1_1'>
+                          <div className='Exhibition_c1_1_3_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_3_2' style={{cursor:"pointer"}}>
+                        <p className='Exhibition_c1_1_3_2_p1'></p>
+                        <p className='Exhibition_c1_1_3_2_p2'>오늘의집 Only</p>
+                      </div>
+                      <a></a>
+                    </div>
+                    <div className='Exhibition_c1_1_4'>
+                      <div className='Exhibition_c1_1_4_1' style={{cursor:"pointer"}}>
+                        <img src='exhibition\기획전_4.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_4_1_1'>
+                          <div className='Exhibition_c1_1_4_1_1_1'></div>
+                        </div>
+                      </div>
+                      <div className='Exhibition_c1_1_4_2' style={{cursor:"pointer"}}>
+                        <p className='Exhibition_c1_1_4_2_p1'>배송 걱정없이 원하는 날 한번에 설치해요!</p>
+                        <p className='Exhibition_c1_1_4_2_p2'>오늘의집 배송 꿀조합 가구 추천</p>
+                      </div>
+                      <a></a>
+                    </div>
+                    <div>
+                    <div className='Exhibition_c1_1_5'>
+                    <a>
+                      <div className='Exhibition_c1_1_5_1'>
+                        <span><FontAwesomeIcon icon={faArrowRight} /></span>
+                      </div>
+                      <div className='Exhibition_c1_1_5_2'>더보기</div>
+                    </a>
+                    </div>
+                    </div>
+
+                  
+      </Slider>
+      {currentSlide > 0 && (
+      <div  className='PrevArrow2_button'>
+      <button className='PrevArrow2_button_b'
+        onClick={() => sliderRef.current.slickPrev()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+      </button>
+      </div>
+    )}
+    {currentSlide === 0 && (
+      <div  className='NextArrow_button'>
+      <button 
+        onClick={() => sliderRef.current.slickNext()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronRight} /></span>
+      </button>
+      </div>
+    )}
+    </div>
+  )
+}
+
 function Counter() {
   const [count, setCount] = useState(10 * 60 * 60);
 
@@ -2257,7 +2412,7 @@ function Body() {
             <div className='UserReview_c_1'>
               <div className='UserReview_c_1_1'>
                 <div className='UserReview_c_1_1_1'>
-                  <img src='UserReview\유저리뷰_1.avif' style={{width:365, height:244}}></img>
+                  <img className='UserReview_img1' src='UserReview\유저리뷰_1.avif' style={{width:365, height:244}}></img>
                   <div className='UserReview_c_1_1_1_1'>
                     <div className='UserReview_c_1_1_1_1_1'></div>
                   </div>
@@ -2272,11 +2427,11 @@ function Body() {
 소통을 잘 해주셔서 정말 만족스러운 결과물이 나왔습니다
 제 지인들께도 무조건 추천 할꼬에욧</p>
                 </div>
-                <a></a>
+                {/* <a className='UserReview_c_1_1_a'></a> */}
               </div>
               <div className='UserReview_c_1_2'>
               <div className='UserReview_c_1_2_1'>
-                  <img src='UserReview\유저리뷰_2.avif' style={{width:365, height:244}}></img>
+                  <img className='UserReview_img2' src='UserReview\유저리뷰_2.avif' style={{width:365, height:244}}></img>
                   <div className='UserReview_c_1_2_1_1'>
                     <div className='UserReview_c_1_2_1_1_1'></div>
                   </div>
@@ -2289,7 +2444,7 @@ function Body() {
               </div>
               <div className='UserReview_c_1_3'>
                 <div className='UserReview_c_1_3_1'>
-                  <img src='UserReview\유저리뷰_3.avif' style={{width:365, height:244}}></img>
+                  <img className='UserReview_img3' src='UserReview\유저리뷰_3.avif' style={{width:365, height:244}}></img>
                   <div className='UserReview_c_1_3_1_1'>
                     <div className='UserReview_c_1_3_1_1_1'></div>
                   </div>
@@ -2298,7 +2453,7 @@ function Body() {
                   <p className='UserReview_c_1_3_2_p1'>ABLY_design</p>
                   <p className='UserReview_c_1_3_2_p2'>구○빈 팀장님께서 소통도 원할히 잘 해주시고 젊은 감각으로  이런저런 부자재들을 트렌디한 것으로 잘 추천해주셨습니다. 첫 미팅때부터 3D 도면 준비해서 설명해주시니 이해도 잘 되고 저희 예산에 최대한 맞춰주시려고 애쓰셨습니다. 공사 후에도 A/S 요청 편히 받아주시고 최대한 불편함 없도록 신경써 주셨습니다. </p>
                 </div>
-                <a></a>
+                {/* <a></a> */}
                 </div>
             </div>
           </div>
@@ -2317,81 +2472,9 @@ function Body() {
           <div className='Exhibition_c'>
             <div className='Exhibition_c1'>
               <div className='Exhibition_c1_1'>
-                <ul>
-                  <li>
-                    <div className='Exhibition_c1_1_1'>
-                      <div className='Exhibition_c1_1_1_1'>
-                        <img src='exhibition\기획전_1.avif' style={{width:269, height:179}}></img>
-                        <div className='Exhibition_c1_1_1_1_1'>
-                          <div className='Exhibition_c1_1_1_1_1_1'></div>
-                        </div>
-                      </div>
-                      <div className='Exhibition_c1_1_1_2'>
-                        <p className='Exhibition_c1_1_1_2_p1'>전시, 반품, 스크래치 특템의 기회!</p>
-                        <p className='Exhibition_c1_1_1_2_p2'>빠른 품절! 리퍼마켓 ~82%</p>
-                      </div>
-                      <a></a>
-                    </div>
-                  </li>
-                  <li><div className='Exhibition_c1_1_2'>
-                      <div className='Exhibition_c1_1_2_1'>
-                        <img src='exhibition\기획전_2.avif' style={{width:269, height:179}}></img>
-                        <div className='Exhibition_c1_1_2_1_1'>
-                          <div className='Exhibition_c1_1_2_1_1_1'></div>
-                        </div>
-                      </div>
-                      <div className='Exhibition_c1_1_2_2'>
-                        <p className='Exhibition_c1_1_2_2_p1'>전상품 무료배송</p>
-                        <p className='Exhibition_c1_1_2_2_p2'>매일 새로운 장보기 핫딜! 오마트</p>
-                      </div>
-                      <a></a>
-                    </div></li>
-                  <li><div className='Exhibition_c1_1_3'>
-                      <div className='Exhibition_c1_1_3_1'>
-                        <img src='exhibition\기획전_3.avif' style={{width:269, height:179}}></img>
-                        <div className='Exhibition_c1_1_3_1_1'>
-                          <div className='Exhibition_c1_1_3_1_1_1'></div>
-                        </div>
-                      </div>
-                      <div className='Exhibition_c1_1_3_2'>
-                        <p className='Exhibition_c1_1_3_2_p1'></p>
-                        <p className='Exhibition_c1_1_3_2_p2'>오늘의집 Only</p>
-                      </div>
-                      <a></a>
-                    </div></li>
-                  <li><div className='Exhibition_c1_1_4'>
-                      <div className='Exhibition_c1_1_4_1'>
-                        <img src='exhibition\기획전_4.avif' style={{width:269, height:179}}></img>
-                        <div className='Exhibition_c1_1_4_1_1'>
-                          <div className='Exhibition_c1_1_4_1_1_1'></div>
-                        </div>
-                      </div>
-                      <div className='Exhibition_c1_1_4_2'>
-                        <p className='Exhibition_c1_1_4_2_p1'>배송 걱정없이 원하는 날 한번에 설치해요!</p>
-                        <p className='Exhibition_c1_1_4_2_p2'>오늘의집 배송 꿀조합 가구 추천</p>
-                      </div>
-                      <a></a>
-                    </div></li>
-                  <li>
-                    <a>
-                      <div className='Exhibition_c1_1_5'>
-                        <span><FontAwesomeIcon icon={faArrowRight} /></span>
-                      </div>
-                      <div className='Exhibition_c1_1_6'>더보기</div>
-                    </a>
-                    </li>
-                </ul>
+                <Exhibition_Slider/>
               </div>
-              <div className='Exhibition_c1_2'>
-                <button type='button'>
-                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
-                </button>
-              </div>
-              <div className='Exhibition_c1_3'>
-                <button type='button'>
-                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
