@@ -1522,7 +1522,8 @@ header {
 
 .B_lookfor_h1_1 strong:hover,
 .Todaydeal_h_1_1 strong:hover,
-.Exhibition_h1_1 strong:hover {
+.Exhibition_h1_1 strong:hover,
+.Best_h1_1 strong:hover {
   color: rgb(136, 141, 144);
 }
 
@@ -1601,7 +1602,8 @@ header {
 .B_lookfor_h2 button:hover,
 .Todaydeal_h_2 button:hover,
 .UserReview_h2 button:hover,
-.Exhibition_h2 button:hover {
+.Exhibition_h2 button:hover,
+.Best_h2 button:hover {
   color: rgb(165, 210, 224);
 }
 .B_lookfor_h3_1,
@@ -1618,11 +1620,11 @@ header {
 
 .B_lookfor_h3_1_1 ul,
 .Todaydeal_C_1_1 ul,
-.Best_c1_1_1 ul {
+.Best_c1_1_1 {
   display: flex;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
+
   list-style: none;
 }
 
@@ -2180,12 +2182,12 @@ header {
 }
 
 .B_lookfor2_2_1_1 img,
-.UserReview_img1{
+.UserReview_img1 {
   transition: transform 0.2s ease 0s;
 }
 
 .B_lookfor2_2_1_1:hover img,
-.UserReview_img1:hover {
+.UserReview_img1:hover{
   transform: scale(1.05);
 }
 .B_lookfor2_2_1_1_1_1,
@@ -2927,14 +2929,14 @@ header {
   /* margin: 0; */
 }
 
-.Best_c1_1_1 li {
+.Best_c1_1_1_1 {
   margin: 0px 6px 0px 0px;
   padding: 0px;
   flex-shrink: 0;
   scroll-snap-align: start;
-  /* display: list-item;
-  text-align: -webkit-match-parent; */
 }
+
+
 
 .Best_c1_1_1_li_label_1 {
   display: inline-block;
@@ -2947,6 +2949,10 @@ header {
   color: rgb(255, 255, 255);
   background-color: rgb(53, 197, 240);
   cursor: pointer;
+}
+
+.Best_c1_1_1_li_label_1:hover {
+  background-color: rgb(51, 158, 190);
 }
 
 .Best_c1_1_1 label::before {
@@ -2988,6 +2994,30 @@ header {
   background-color: rgb(247, 249, 250);
   cursor: pointer;
 }
+
+.Best_c1_1_1_li_label_2:hover,
+.Best_c1_1_1_li_label_3:hover,
+.Best_c1_1_1_li_label_4:hover,
+.Best_c1_1_1_li_label_5:hover,
+.Best_c1_1_1_li_label_6:hover,
+.Best_c1_1_1_li_label_7:hover,
+.Best_c1_1_1_li_label_8:hover,
+.Best_c1_1_1_li_label_9:hover,
+.Best_c1_1_1_li_label_10:hover,
+.Best_c1_1_1_li_label_11:hover,
+.Best_c1_1_1_li_label_12:hover,
+.Best_c1_1_1_li_label_13:hover,
+.Best_c1_1_1_li_label_14:hover,
+.Best_c1_1_1_li_label_15:hover,
+.Best_c1_1_1_li_label_16:hover,
+.Best_c1_1_1_li_label_17:hover,
+.Best_c1_1_1_li_label_18:hover,
+.Best_c1_1_1_li_label_19:hover,
+.Best_c1_1_1_li_label_20:hover,
+.Best_c1_1_1_li_label_21:hover,
+.Best_c1_1_1_li_label_22:hover {
+  background-color: rgb(228, 224, 224);
+}
 .Best_c1_1_1 input {
   position: absolute;
   top: 0px;
@@ -3009,6 +3039,25 @@ header {
   display: block;
   position: relative;
   padding: 0;
+  cursor: pointer; /* 포인터 변경 */
+}
+
+.Best_c2 article:hover .Best_c2_2_1 span,
+.Best_c2 article:hover .Best_c2_22_1 span,
+.Best_c2 article:hover .Best_c2_222_1 span {
+  color: #939090;
+}
+
+.Best_c2_1_1 button:hover,
+.Best_c2_11_1 button:hover,
+.Best_c2_111_1 button:hover {
+  filter: drop-shadow(rgba(63, 71, 77, 0.25) 0px 2px 5px);
+}
+
+.Best_c2 article:hover img{
+  transition: transform 0.3s ease; /* 확대 효과 */
+  transform: scale(1.05);
+ 
 }
 
 .Best_c2 a {
@@ -3039,14 +3088,14 @@ header {
   left: 12px;
 }
 
-.Best_c2_1_1_1 span,
-.Best_c2_11_1_1 span,
-.Best_c2_111_1_1 span {
+.Best_c2_1_1_1_span,
+.Best_c2_11_1_1_span,
+.Best_c2_111_1_1_span {
   position: absolute;
   top: 4px;
   left: 0px;
   right: 0px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -3074,13 +3123,14 @@ header {
   z-index: 10;
 }
 
-.Best_c2_1_1 span,
-.Best_c2_11_1 span,
-.Best_c2_111_1 span {
+.Best_c2_1_1_span,
+.Best_c2_11_1_span,
+.Best_c2_111_1_span {
   display: inline-block;
   font-size: 24px;
   line-height: 1;
   transform: translateZ(0px);
+  cursor: pointer;
 }
 
 .Best_c2_1_1_2,
@@ -3164,6 +3214,10 @@ header {
   -webkit-box-orient: vertical;
   overflow-wrap: break-word;
   color: rgb(47, 52, 56);
+}
+
+.Best_c2_2_1 span:hover {
+  color: rgb(92, 99, 105);
 }
 
 .Best_c2_2_2,
@@ -3265,6 +3319,16 @@ header {
   margin-top: 8px;
 }
 
+/**/
+.Best_c1_1_1 .slick-slider {
+  width: 1126.67px;
+  height: 32px;
+  margin: 0;
+}
+
+.Best_c1_1_1 .slick-track {
+  width: 3000px; 
+}
 footer {
   margin-top: auto;
   z-index: 100;
