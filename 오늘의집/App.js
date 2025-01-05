@@ -1716,6 +1716,252 @@ function Exhibition_Slider() {
   )
 }
 
+function Best_Slider() {
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    variableWidth: true,
+    afterChange: (current) => setCurrentSlide(current),
+  };
+
+  return (
+    <div className='Best_c1_1_1'>
+     
+    <Slider ref={sliderRef} {...settings} >
+   
+      <div className='Best_c1_1_1_1' style={{width: 58}} >
+    <label className='Best_c1_1_1_li_label_1' >
+                        <input type='checkbox' checked></input>
+                        <span>전체</span>
+                      </label>
+                      </div>
+                    
+                      <div className='Best_c1_1_1_1' style={{width: 100}}>
+                      <label className='Best_c1_1_1_li_label_2'>
+                        <input type='checkbox'></input>
+                        <span>크리스마스</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 58}}>
+                      <label className='Best_c1_1_1_li_label_3'>
+                        <input type='checkbox'></input>
+                        <span>가구</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 73}}>
+                      <label className='Best_c1_1_1_li_label_4'>
+                        <input type='checkbox'></input>
+                        <span>패브릭</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 108}}>
+                      <label className='Best_c1_1_1_li_label_5'>
+                        <input type='checkbox'></input>
+                        <span>가전,디지털</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_6'>
+                        <input type='checkbox'></input>
+                        <span>주방용품</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 58}}>
+                      <label className='Best_c1_1_1_li_label_7'>
+                        <input type='checkbox'></input>
+                        <span>식품</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_8'>
+                        <input type='checkbox'></input>
+                        <span>데코,식물</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 58}}>
+                      <label className='Best_c1_1_1_li_label_9'>
+                        <input type='checkbox'></input>
+                        <span>조명</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_10'>
+                        <input type='checkbox'></input>
+                        <span>수납,정리</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 108}}>
+                      <label className='Best_c1_1_1_li_label_11'>
+                        <input type='checkbox'></input>
+                        <span>가전,디지털</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_12'>
+                        <input type='checkbox'></input>
+                        <span>생활용품</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 78}}>
+                      <label className='Best_c1_1_1_li_label_13'>
+                        <input type='checkbox'></input>
+                        <span>생필품</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_14'>
+                        <input type='checkbox'></input>
+                        <span>유아,아동</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_15'>
+                        <input type='checkbox'></input>
+                        <span>반려동물</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_16'>
+                        <input type='checkbox'></input>
+                        <span>캠핑,레저</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_17'>
+                        <input type='checkbox'></input>
+                        <span>공구,DIY</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 118}}>
+                      <label className='Best_c1_1_1_li_label_18'>
+                        <input type='checkbox'></input>
+                        <span>인테리어시공</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_19'>
+                        <input type='checkbox'></input>
+                        <span>렌탈,구독</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 78}}>
+                      <label className='Best_c1_1_1_li_label_20'>
+                        <input type='checkbox'></input>
+                        <span>장보기</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_21'>
+                        <input type='checkbox'></input>
+                        <span>혼수,신혼</span>
+                      </label>
+                      </div>
+
+                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <label className='Best_c1_1_1_li_label_22'>
+                        <input type='checkbox'></input>
+                        <span>Binary shop</span>
+                      </label>  
+                      </div>    
+    </Slider>
+    {currentSlide > 0 && (
+      <div  className='PrevArrow2_button'>
+      <button className='PrevArrow2_button_b'
+        onClick={() => sliderRef.current.slickPrev()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronLeft} /></span>
+      </button>
+      </div>
+    )}
+    {currentSlide >= 0 && (
+      <div  className='NextArrow_button' >
+      <button 
+        onClick={() => sliderRef.current.slickNext()}
+        style={{
+          margin: 0,
+          border: "none",
+          background: "none",
+          font: "inherit",
+          fontSize: 16,
+          lineHeight: 20,
+          fontWeight: 700,
+          boxSizing: "border-box",
+          textAlign: "center",
+          color: "rgb(255, 255, 255)",
+          padding: 0,
+          width: 48,
+          height: 48,
+          display: "flex",
+          alignItems: "center",
+          webkitboxpack: "center",
+          justifyContent: "center",
+          borderRadius: 24,
+          backgroundColor: "rgb(255, 255, 255)",
+          boxShadow: "0 2px 5px rgba(63, 71, 77, 0.15)",
+          cursor: "pointer",
+          touchAction: "manipulation",
+        }}
+        type='button'
+      >
+      <span><FontAwesomeIcon icon={faChevronRight} /></span>
+      </button>
+      </div>
+    )}
+    </div>
+
+  )
+}
 function Counter() {
   const [count, setCount] = useState(10 * 60 * 60);
 
@@ -2493,151 +2739,9 @@ function Body() {
             <div className='Best_c1'>
               <div className='Best_c1_1'>
                 <div className='Best_c1_1_1'>
-                  <ul>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_1'>
-                        <input type='checkbox' checked></input>
-                        <span>전체</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_2'>
-                        <input type='checkbox'></input>
-                        <span>크리스마스</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_3'>
-                        <input type='checkbox'></input>
-                        <span>가구</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_4'>
-                        <input type='checkbox'></input>
-                        <span>패브릭</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_5'>
-                        <input type='checkbox'></input>
-                        <span>가전,디지털</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_6'>
-                        <input type='checkbox'></input>
-                        <span>주방용품</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_7'>
-                        <input type='checkbox'></input>
-                        <span>식품</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_8'>
-                        <input type='checkbox'></input>
-                        <span>데코,식물</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_9'>
-                        <input type='checkbox'></input>
-                        <span>조명</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_10'>
-                        <input type='checkbox'></input>
-                        <span>수납,정리</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_11'>
-                        <input type='checkbox'></input>
-                        <span>가전,디지털</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_12'>
-                        <input type='checkbox'></input>
-                        <span>생활용품</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_13'>
-                        <input type='checkbox'></input>
-                        <span>생필품</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_14'>
-                        <input type='checkbox'></input>
-                        <span>유아,아동</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_15'>
-                        <input type='checkbox'></input>
-                        <span>반려동물</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_16'>
-                        <input type='checkbox'></input>
-                        <span>캠핑,레저</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_17'>
-                        <input type='checkbox'></input>
-                        <span>공구,DIY</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_18'>
-                        <input type='checkbox'></input>
-                        <span>인테리어시공</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_19'>
-                        <input type='checkbox'></input>
-                        <span>렌탈,구독</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_20'>
-                        <input type='checkbox'></input>
-                        <span>장보기</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_21'>
-                        <input type='checkbox'></input>
-                        <span>혼수,신혼</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label className='Best_c1_1_1_li_label_22'>
-                        <input type='checkbox'></input>
-                        <span>Binary shop</span>
-                      </label>
-                    </li>
-                  </ul>
+                  <Best_Slider/>
                 </div>
-                <div className='Best_c1_1_2'>
-                  <button type='button'>
-                    <span><FontAwesomeIcon icon={faChevronLeft} /></span>
-                  </button>
-                </div>
-                <div className='Best_c1_1_3'>
-                  <button type='button'>
-                    <span><FontAwesomeIcon icon={faChevronRight} /></span>
-                  </button>
-                </div>
+                
               </div>
             </div>
             <div className='Best_c2'>
@@ -2646,20 +2750,30 @@ function Body() {
                 <div className='Best_c2_1'>
                   <div className='Best_c2_1_1'>
                     <div className='Best_c2_1_1_1'>
-                      <svg></svg>
-                      <span>1</span>                    
+                      <svg width={26} height={30} fill='none'>
+                        <path fillRule='evenodd' clipRule={"evenodd"} d='m13 24.25-13 5V0h26v29.25l-13-5Z' fill='rgba(53, 197, 240, 0.86)'></path>
+                      </svg>
+                      <span className='Best_c2_1_1_1_span'>1</span>                    
                       </div>
                     <button type='button'>
-                      <span>
-                        <svg></svg>
-                        <svg></svg>
+                      <span className='Best_c2_1_1_span'>
+                        {/* <svg width={24} height={24} fill='none'>
+                          <path fill='#35C5F0' fillRule='evenodd' d='M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1' clipRule={"evenodd"}></path>
+                        </svg> */}
+                        <svg width={24} height={24} fill='none'>
+                          <g fill='#fff'>
+                            <path d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05zM4 2.75h16a1 1 0 0 1 1 1v17.073a.5.5 0 0 1-.732.442l-7.803-4.096a1 1 0 0 0-.93 0l-7.803 4.096A.5.5 0 0 1 3 20.824V3.75a1 1 0 0 1 1-1'></path>
+                            <path fillOpacity={0.5} d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05z'></path>
+                          </g>
+                          <defs></defs>
+                        </svg>
                       </span>
                     </button>
                     <div className='Best_c2_1_1_2'>
                       <div className='Best_c2_1_1_2_1'>
-                        <div className='Best_c2_1_1_2_1_1'>
+                        {/* <div className='Best_c2_1_1_2_1_1'>
                           <img src='best\2024BEST.avif'></img>
-                        </div>
+                        </div> */}
                       </div>
                       <img src='best\best_1.avif' style={{width:365, height:365}}></img>
                     </div>
@@ -2680,7 +2794,13 @@ function Body() {
                     </span>
                   </div>
                   <div className='Best_c2_2_3'>
-                    <span className='Best_c2_2_3_span1'></span>
+                    <span className='Best_c2_2_3_span1'><svg width="13.2" height="13.2" viewBox="0 0 24 24">
+                                  <path 
+                                   fill='currentColor'
+                                   fillRule='evenodd'
+                                   d='M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z'>
+                                  </path>
+                                  </svg></span>
                     <strong>4.7</strong>
                     <span className='Best_c2_2_3_span2'>리뷰 39,766</span>
                   </div>
@@ -2694,19 +2814,29 @@ function Body() {
                 <div className='Best_c2_11'>
                   <div className='Best_c2_11_1'>
                     <div className='Best_c2_11_1_1'>
-                      <svg></svg>
-                      <span>2</span>                    
+                    <svg width={26} height={30} fill='none'>
+                        <path fillRule='evenodd' clipRule={"evenodd"} d='m13 24.25-13 5V0h26v29.25l-13-5Z' fill='rgba(53, 197, 240, 0.86)'></path>
+                      </svg>
+                      <span className='Best_c2_11_1_1_span'>2</span>                       
                       </div>
                     <button type='button'>
-                      <span>
-                        <svg></svg>
-                        <svg></svg>
+                    <span className='Best_c2_1_1_span'>
+                        {/* <svg width={24} height={24} fill='none'>
+                          <path fill='#35C5F0' fillRule='evenodd' d='M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1' clipRule={"evenodd"}></path>
+                        </svg> */}
+                        <svg width={24} height={24} fill='none'>
+                          <g fill='#fff'>
+                            <path d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05zM4 2.75h16a1 1 0 0 1 1 1v17.073a.5.5 0 0 1-.732.442l-7.803-4.096a1 1 0 0 0-.93 0l-7.803 4.096A.5.5 0 0 1 3 20.824V3.75a1 1 0 0 1 1-1'></path>
+                            <path fillOpacity={0.5} d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05z'></path>
+                          </g>
+                          <defs></defs>
+                        </svg>
                       </span>
                     </button>
                     <div className='Best_c2_11_1_2'>
                       <div className='Best_c2_11_1_2_1'>
                         <div className='Best_c2_11_1_2_1_1'>
-                          <img src='best\2024BEST.avif'></img>
+                          <img src='best\bestOnly.png'></img>
                         </div>
                       </div>
                       <img src='best\best_2.avif' style={{width:365, height:365}}></img>
@@ -2728,7 +2858,15 @@ function Body() {
                     </span>
                   </div>
                   <div className='Best_c2_22_3'>
-                    <span className='Best_c2_22_3_span1'></span>
+                    <span className='Best_c2_22_3_span1'>
+                    <svg width="13.2" height="13.2" viewBox="0 0 24 24">
+                                  <path 
+                                   fill='currentColor'
+                                   fillRule='evenodd'
+                                   d='M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z'>
+                                  </path>
+                                  </svg>
+                    </span>
                     <strong>4.8</strong>
                     <span className='Best_c2_22_3_span2'>리뷰 43,751</span>
                   </div>
@@ -2742,19 +2880,29 @@ function Body() {
                 <div className='Best_c2_111'>
                   <div className='Best_c2_111_1'>
                     <div className='Best_c2_111_1_1'>
-                      <svg></svg>
-                      <span>3</span>                    
+                    <svg width={26} height={30} fill='none'>
+                        <path fillRule='evenodd' clipRule={"evenodd"} d='m13 24.25-13 5V0h26v29.25l-13-5Z' fill='rgba(53, 197, 240, 0.86)'></path>
+                      </svg>
+                      <span className='Best_c2_111_1_1_span'>3</span>                       
                       </div>
                     <button type='button'>
-                      <span>
-                        <svg></svg>
-                        <svg></svg>
+                    <span className='Best_c2_1_1_span'>
+                        {/* <svg width={24} height={24} fill='none'>
+                          <path fill='#35C5F0' fillRule='evenodd' d='M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1' clipRule={"evenodd"}></path>
+                        </svg> */}
+                        <svg width={24} height={24} fill='none'>
+                          <g fill='#fff'>
+                            <path d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05zM4 2.75h16a1 1 0 0 1 1 1v17.073a.5.5 0 0 1-.732.442l-7.803-4.096a1 1 0 0 0-.93 0l-7.803 4.096A.5.5 0 0 1 3 20.824V3.75a1 1 0 0 1 1-1'></path>
+                            <path fillOpacity={0.5} d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05z'></path>
+                          </g>
+                          <defs></defs>
+                        </svg>
                       </span>
                     </button>
                     <div className='Best_c2_111_1_2'>
                       <div className='Best_c2_111_1_2_1'>
                         <div className='Best_c2_111_1_2_1_1'>
-                          <img src='best\2024BEST.avif'></img>
+                          <img src='best\bestOnly.png'></img>
                         </div>
                       </div>
                       <img src='best\best_3.avif' style={{width:365, height:365}}></img>
@@ -2776,7 +2924,15 @@ function Body() {
                     </span>
                   </div>
                   <div className='Best_c2_222_3'>
-                    <span className='Best_c2_222_3_span1'></span>
+                    <span className='Best_c2_222_3_span1'>
+                    <svg width="13.2" height="13.2" viewBox="0 0 24 24">
+                                  <path 
+                                   fill='currentColor'
+                                   fillRule='evenodd'
+                                   d='M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z'>
+                                  </path>
+                                  </svg>
+                    </span>
                     <strong>4.8</strong>
                     <span className='Best_c2_222_3_span2'>리뷰 16,581</span>
                   </div>
@@ -2785,7 +2941,13 @@ function Body() {
                   </div>
                   <span className='Best_c2_222_31_span'>평일 12:00까지 결제시</span>
                   <div className='Best_c2_222_4'>
-                    <svg></svg>
+                  <svg aria-label='특가' width={30} height={20} viewBox='0 0 30 20'>
+                              <rect width={30} height={20} fill='#F77' rx={4}></rect>
+                              <path 
+                              fill='#fff'
+                              d='M12.83 7.93v-.97H7.93v-.555h5.228v-.991H6.655v4.063h6.59v-.992H7.928V7.93h4.901zm-6.295 3.747v1.002h5.326v2.037h1.274v-3.04h-6.6zm7.733-.588v-1.024H5.5v1.024h8.768zM23.91 9.782V8.725h-1.405V5H21.24v9.705h1.264V9.782h1.405zm-3.954-3.79h-4.53v1.056h3.147c-.174 1.938-1.623 3.975-3.736 4.945l.773.958c2.974-1.612 4.259-4.03 4.346-6.96z'></path>
+                            </svg>
+                          
                   </div>
                 </div>
               </article>
