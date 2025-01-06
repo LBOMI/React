@@ -3054,7 +3054,9 @@ header {
   filter: drop-shadow(rgba(63, 71, 77, 0.25) 0px 2px 5px);
 }
 
-.Best_c2 article:hover img{
+.Best_c2 article:hover .Best_c2_1_1_2 img,
+.Best_c2 article:hover .Best_c2_11_1_2_2 img,
+.Best_c2 article:hover .Best_c2_111_1_2_2 img{
   transition: transform 0.3s ease; /* 확대 효과 */
   transform: scale(1.05);
  
@@ -3373,6 +3375,10 @@ footer {
   text-decoration: none;
 }
 
+.footer_1_1_1:hover a {
+  text-decoration: underline;
+}
+
 .footer_1_1_1 span {
   display: inline-block;
   font-size: 12px;
@@ -3397,6 +3403,10 @@ footer {
   color: inherit;
   text-decoration: none;
 }
+
+.footer_1_1_2:hover a {
+  text-decoration: underline;
+} 
 
 .footer_1_1_2 time {
   font-size: 14px;
@@ -3460,6 +3470,10 @@ footer {
   touch-action: manipulation;
 }
 
+.footer_1_1_4:hover a {
+  text-decoration: underline;
+}
+
 .footer_1_2,
 .footer_1_4 {
   width: 1px;
@@ -3475,7 +3489,18 @@ footer {
   grid-row-gap: 20px;
 }
 
-.footer_1_3 a {
+.footer_1_3_a1,
+.footer_1_3_a2,
+.footer_1_3_a3,
+.footer_1_3_a4,
+.footer_1_3_a5,
+.footer_1_3_a6,
+.footer_1_3_a7,
+.footer_1_3_a8,
+.footer_1_3_a9,
+.footer_1_3_a10,
+.footer_1_3_a11,
+.footer_1_3_a12 {
   font-size: 12px;
   line-height: 16px;
   display: inline-block;
@@ -3485,6 +3510,21 @@ footer {
   touch-action: manipulation;
 }
 
+.footer_1_3_a1:hover,
+.footer_1_3_a2:hover,
+.footer_1_3_a3:hover,
+.footer_1_3_a4:hover,
+.footer_1_3_a5:hover,
+.footer_1_3_a6:hover,
+.footer_1_3_a7:hover,
+.footer_1_3_a8:hover,
+.footer_1_3_a9:hover,
+.footer_1_3_a10:hover,
+.footer_1_3_a11:hover
+.footer_1_3_a12:hover{
+  text-decoration: underline;
+}
+
 .footer_1_5 {
   font-size: 10px;
   line-height: 14px;
@@ -3492,6 +3532,10 @@ footer {
   flex-direction: column;
   gap: 12px;
   color: #828C94;
+}
+
+.footer_1_5 p {
+  margin: 0;
 }
 
 .footer_1_5_1 {
@@ -3600,6 +3644,14 @@ footer {
   color: inherit;
   text-decoration: none;
 }
+
+.footer_1_5_5_s1:hover,
+.footer_1_5_5_s2:hover,
+.footer_1_5_5_s3:hover,
+.footer_1_5_5_s4:hover,
+.footer_1_5_5_s5:hover {
+  color: #676a6c;
+} 
 
 .footer_1_5_5 svg {
   vertical-align: top;
