@@ -44,12 +44,12 @@ const ScrollHideHeader = () => {
     };
   }, []);
 
-  
+
   return (
     <div className='sticky-container' style={{height: 51.75}}>
     <div className='s-c_layout'
-    style={{ position: "relative",
-      top: 0,
+    style={{ position: "fixed",
+      top: 80,
       width: "100%",
       transition: "transform 0.3s ease",
       transform: isVisible ? "translateY(0)" :" translateY(-250%)",
