@@ -8,8 +8,8 @@ import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {faPlus} from '@fortawesome/free-solid-svg-icons'
 import {faCaretUp} from '@fortawesome/free-solid-svg-icons'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
 
-import styled from 'styled-components';
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -17,8 +17,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
-import { height, width } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
+//슬라이드
 function SimpleSlider() {
   const [currentIndex, setCurrentIndex ] = useState(0);
 
@@ -36,15 +36,11 @@ function SimpleSlider() {
     afterChange: (current) => setCurrentIndex(current),
   };
 
-  // const slides = [
-  //   { id : 1, content: "Slide 1"},
-  //   { id : 2, content: "Slide 2"},
-  // ];
- 
   return (
-    <div style={{position:"relative"}}>
+    <div className='B_main20'>
                 <Slider {...settings}>
-                
+                {/* <div className='B_main20_1'> */}
+                {/* <div className='B_main20_1_1'> */}
                   <div>
                     <img src='AD\광고1.jpeg'></img>
                  
@@ -64,6 +60,8 @@ function SimpleSlider() {
                   <div>
                     <img src='AD\광고6.avif'></img>
                   </div>
+                  {/* </div> */}
+                  {/* </div> */}
                 </Slider>
                 
                 <div style={{
@@ -109,8 +107,6 @@ const PrevArrow = ({ onClick }) => {
 	);
 };
 
-
-
 const NextArrow = ({ onClick }) => {
 	return (
     <div  className='NextArrow_button'>
@@ -155,11 +151,18 @@ const VerticalSlider = () => {
     vertical: true,
     verticalSwiping: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 0
+        }
+      }
+    ]
   };
 
   return (
     <div className="real_vertical">
-      {/* <div className="real_vertical_1"> */}
         <Slider {...settings}>
           <div>
             <span style={{ fontWeight: 700, paddingLeft:0 }}>1</span>
@@ -216,7 +219,6 @@ const VerticalSlider = () => {
             <button type='button' onClick={Dropdown2}>
               <span><FontAwesomeIcon icon={faChevronDown} /></span>
             </button>
-            {/* {isOpen_real && ( */}
               <div ref={dropdownRef} className={`dropDown2 ${isOpen_real ? "open" : ""}`}>
               <div className='dropDown2_1'>
                 <div className='dropDown2_1_1'>
@@ -225,7 +227,6 @@ const VerticalSlider = () => {
                     <button type='button' onClick={Dropdown2}>
                       <span><FontAwesomeIcon icon={faChevronUp} /></span>
                     </button> 
-                    {/* <span><FontAwesomeIcon icon={faChevronUp} /></span> */}
                   </div>
                   <div className='dropDown2_1_1_2'> 
                     <div className='dropDown2_1_1_2_1'>
@@ -278,16 +279,11 @@ const VerticalSlider = () => {
                       <span style={{color:'red', fontSize:12, }}>new</span>
                       <span style={{fontSize:14 }}>로보락</span>
                     </div>
-                  
-                  
                   </div>
                 </div>
               </div>
 
             </div>
-            {/* )} */}
-           
-      {/* </div> */}
     </div>
   );
 };
@@ -305,16 +301,28 @@ function LookforSlider() {
     slidesToScroll: 6,
     nextArrow: <NextArrow/>,
     afterChange: (current) => setCurrentSlide(current),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      }
+    ]
   };
 
   
   return (
-    <div className='B_lookfor_h3_1_1'>
+    <div className='B_lookfor_h3_1_19'>
       <Slider ref={sliderRef} {...settings}>
-               
+     
+       
+         
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img className='B_lookfor_h3_1_2_1_img' src='lookfor_picture\lookfor1.avif'></img>
+                        <div className='B_lookfor_h3_1_2_15'>
+                        <img src='lookfor_picture\lookfor1.avif'></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -353,11 +361,20 @@ function LookforSlider() {
                           </button>
                         </div>
                       </div>
+                    
                       <a></a>
                     </div>
+                    </div>
+
+                  
+                   
+
+                   
+
                  
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
+                      <div className='B_lookfor_h3_1_2_15'>
                         <img src='lookfor_picture\lookfor2.avif'  ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
@@ -397,12 +414,15 @@ function LookforSlider() {
                           </button>
                         </div>
                       </div>
+                      
                       <a></a>
+                    </div>
                     </div>
                  
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor3.gif' style={{width: 172.67, height: 230}} ></img>
+                      <div className='B_lookfor_h3_1_2_15'>
+                        <img src='lookfor_picture\lookfor3.gif'  ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -439,14 +459,17 @@ function LookforSlider() {
                                 </svg>
                             </span>
                           </button>
-                        </div>
+                        
+                      </div>
                       </div>
                       <a></a>
+                    </div>
                     </div>
                  
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor4.avif' style={{width: 172.67, height: 230}} ></img>
+                      <div className='B_lookfor_h3_1_2_15'>
+                        <img src='lookfor_picture\lookfor4.avif'  ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -487,10 +510,12 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
+                    </div>
                   
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor5.avif' style={{width: 172.67, height: 230}} ></img>
+                      <div className='B_lookfor_h3_1_2_15'>
+                        <img src='lookfor_picture\lookfor5.avif'></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -531,10 +556,12 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
-                 
+                    </div>
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor6.avif' style={{width: 172.67, height: 230}} ></img>
+                      <div className='B_lookfor_h3_1_2_15'>
+
+                        <img src='lookfor_picture\lookfor6.avif'></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -575,10 +602,13 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
+                    </div>
+
                   
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor8.avif'  style={{width: 172.67, height: 230}}></img>
+                      <div className='B_lookfor_h3_1_2_15'>
+                        <img src='lookfor_picture\lookfor8.avif'  ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -619,10 +649,14 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
+                    </div>
+
                     
                   <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
-                        <img src='lookfor_picture\lookfor1.avif'  style={{width: 172.67, height: 230}}></img>
+                      <div className='B_lookfor_h3_1_2_15'>
+
+                        <img src='lookfor_picture\lookfor1.avif' ></img>
                         <div className='B_lookfor_h3_1_2_1_1'>
                           <div className='B_lookfor_h3_1_2_1_1_1'>
                             <div className='B_lookfor_h3_1_2_1_1_1_1'>
@@ -663,8 +697,9 @@ function LookforSlider() {
                       </div>
                       <a></a>
                     </div>
+                    </div>
                   
-                    {/* <div className='B_lookfor_h3_1_2'> */}
+
                     <div>
                       <div className='B_lookfor_h3_1_2_lastli'>
                         <a>
@@ -675,7 +710,8 @@ function LookforSlider() {
                         </a>
                         </div>
                       </div>
-                    {/* </div> */}
+                
+
                 </Slider>
 
                 {currentSlide > 0 && (
@@ -683,6 +719,7 @@ function LookforSlider() {
                   <button className='PrevArrow2_button_b'
                     onClick={() => sliderRef.current.slickPrev()}
                     style={{
+                    
                       margin: 0,
                       border: "none",
                       background: "none",
@@ -999,15 +1036,7 @@ function Todaydeal_Slider() {
                         <div className='Todaydeal_C_1_1_li_1_1'>
                           <div className='Todaydeal_C_1_1_li_1_1_1'>
                             <div className='Todaydeal_C_1_1_li_1_1_1_1'>
-                              {/* <div className='Todaydeal_C_1_1_li_1_1_1_1_1'>
-                                <div className='Todaydeal_C_1_1_li_1_1_1_1_1_1'>
-                                  <picture>
-                                    <source></source>
-                                    <img src='Todaydeal\2024BEST.avif'></img>
-                                  </picture>
-                                </div>
-                              </div> */}
-                            
+            
                               <img src='Todaydeal\Todaydeal_1.avif'></img>
                              
                               <button type='button' >
@@ -1578,25 +1607,30 @@ function Exhibition_Slider() {
   return (
     <div className='Exhibition_c1_1'>
       <Slider ref={sliderRef} {...settings} >
+     
       <div className='Exhibition_c1_1_1'>
                       <div className='Exhibition_c1_1_1_1' style={{cursor:"pointer"}}>
-                        <img src='exhibition\기획전_1.avif' style={{width:269, height:179}}></img>
+                        <div className='Exhibition_c1_1_1_174' style={{ marginRight: 20 }}>
+                        <img src='exhibition\기획전_1.avif'></img>
                         <div className='Exhibition_c1_1_1_1_1'>
                           <div className='Exhibition_c1_1_1_1_1_1'></div>
                         </div>
-                      </div>
+                        </div>
                       <div className='Exhibition_c1_1_1_2' style={{cursor:"pointer"}}>
                         <p className='Exhibition_c1_1_1_2_p1'>전시, 반품, 스크래치 특템의 기회!</p>
                         <p className='Exhibition_c1_1_1_2_p2'>빠른 품절! 리퍼마켓 ~82%</p>
                       </div>
                       <a className='Exhibition_c1_1_1_a'></a>
                     </div>
+                    </div>
                   
                   <div className='Exhibition_c1_1_2'>
                       <div className='Exhibition_c1_1_2_1' style={{cursor:"pointer"}}>
-                        <img src='exhibition\기획전_2.avif' style={{width:269, height:179}}></img>
+                      <div className='Exhibition_c1_1_1_174' style={{ marginRight: 20 }}>
+                        <img src='exhibition\기획전_2.avif' ></img>
                         <div className='Exhibition_c1_1_2_1_1'>
                           <div className='Exhibition_c1_1_2_1_1_1'></div>
+                        </div>
                         </div>
                       </div>
                       <div className='Exhibition_c1_1_1_2' style={{cursor:"pointer"}}>
@@ -1607,10 +1641,13 @@ function Exhibition_Slider() {
                     </div>
                     <div className='Exhibition_c1_1_3'>
                       <div className='Exhibition_c1_1_3_1' style={{cursor:"pointer"}}>
-                        <img src='exhibition\기획전_3.avif' style={{width:269, height:179}}></img>
+                      <div className='Exhibition_c1_1_1_174' style={{ marginRight: 20 }}>
+                        <img src='exhibition\기획전_3.avif'></img>
                         <div className='Exhibition_c1_1_3_1_1'>
                           <div className='Exhibition_c1_1_3_1_1_1'></div>
                         </div>
+                        </div>
+
                       </div>
                       <div className='Exhibition_c1_1_3_2' style={{cursor:"pointer"}}>
                         <p className='Exhibition_c1_1_3_2_p1'></p>
@@ -1620,10 +1657,13 @@ function Exhibition_Slider() {
                     </div>
                     <div className='Exhibition_c1_1_4'>
                       <div className='Exhibition_c1_1_4_1' style={{cursor:"pointer"}}>
-                        <img src='exhibition\기획전_4.avif' style={{width:269, height:179}}></img>
+                      <div className='Exhibition_c1_1_1_174' style={{ marginRight: 20 }}>
+                        <img src='exhibition\기획전_4.avif'></img>
                         <div className='Exhibition_c1_1_4_1_1'>
                           <div className='Exhibition_c1_1_4_1_1_1'></div>
                         </div>
+                        </div>
+
                       </div>
                       <div className='Exhibition_c1_1_4_2' style={{cursor:"pointer"}}>
                         <p className='Exhibition_c1_1_4_2_p1'>배송 걱정없이 원하는 날 한번에 설치해요!</p>
@@ -1634,7 +1674,7 @@ function Exhibition_Slider() {
                     <div>
                     <div className='Exhibition_c1_1_5'>
                     <a>
-                      <div className='Exhibition_c1_1_5_1'>
+                      <div className='Exhibition_c1_1_5_1' >
                         <span><FontAwesomeIcon icon={faArrowRight} /></span>
                       </div>
                       <div className='Exhibition_c1_1_5_2'>더보기</div>
@@ -1728,7 +1768,7 @@ function Best_Slider() {
     slidesToShow: 6,
     slidesToScroll: 10,
     variableWidth: true,
-    afterChange: (current) => setCurrentSlide(current),
+    afterChange: (current) => setCurrentSlide(current)
   };
 
   return (
@@ -1736,154 +1776,154 @@ function Best_Slider() {
      
     <Slider ref={sliderRef} {...settings} >
    
-      <div className='Best_c1_1_1_1' style={{width: 58}} >
+      <div className='Best_c1_1_1_1' >
     <label className='Best_c1_1_1_li_label_1' >
                         <input type='checkbox' checked></input>
                         <span>전체</span>
                       </label>
                       </div>
                     
-                      <div className='Best_c1_1_1_1' style={{width: 100}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_2'>
                         <input type='checkbox'></input>
                         <span>크리스마스</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 58}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_3'>
                         <input type='checkbox'></input>
                         <span>가구</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 73}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_4'>
                         <input type='checkbox'></input>
                         <span>패브릭</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 108}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_5'>
                         <input type='checkbox'></input>
                         <span>가전,디지털</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_6'>
                         <input type='checkbox'></input>
                         <span>주방용품</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 58}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_7'>
                         <input type='checkbox'></input>
                         <span>식품</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_8'>
                         <input type='checkbox'></input>
                         <span>데코,식물</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 58}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_9'>
                         <input type='checkbox'></input>
                         <span>조명</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_10'>
                         <input type='checkbox'></input>
                         <span>수납,정리</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 108}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_11'>
                         <input type='checkbox'></input>
                         <span>가전,디지털</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_12'>
                         <input type='checkbox'></input>
                         <span>생활용품</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 78}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_13'>
                         <input type='checkbox'></input>
                         <span>생필품</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_14'>
                         <input type='checkbox'></input>
                         <span>유아,아동</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_15'>
                         <input type='checkbox'></input>
                         <span>반려동물</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_16'>
                         <input type='checkbox'></input>
                         <span>캠핑,레저</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_17'>
                         <input type='checkbox'></input>
                         <span>공구,DIY</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 118}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_18'>
                         <input type='checkbox'></input>
                         <span>인테리어시공</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_19'>
                         <input type='checkbox'></input>
                         <span>렌탈,구독</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 78}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_20'>
                         <input type='checkbox'></input>
                         <span>장보기</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_21'>
                         <input type='checkbox'></input>
                         <span>혼수,신혼</span>
                       </label>
                       </div>
 
-                      <div className='Best_c1_1_1_1' style={{width: 88}}>
+                      <div className='Best_c1_1_1_1'>
                       <label className='Best_c1_1_1_li_label_22'>
                         <input type='checkbox'></input>
                         <span>Binary shop</span>
@@ -1924,7 +1964,7 @@ function Best_Slider() {
       </button>
       </div>
     )}
-    {currentSlide === 0 && (
+    {currentSlide >= 0 && (
       <div  className='NextArrow_button' >
       <button 
         onClick={() => sliderRef.current.slickNext()}
@@ -1961,7 +2001,8 @@ function Best_Slider() {
     </div>
 
   )
-}
+};
+
 function Counter() {
   const [count, setCount] = useState(10 * 60 * 60);
 
@@ -1989,12 +2030,129 @@ function Counter() {
   return <h1>{formatTime(count)} 남음</h1>;
 }
 
-function Header() {
+const NavBar = () => {
+  const [hiddenItems, setHiddenItems] = useState([]); // 드롭다운으로 이동할 메뉴
+  const navRef = useRef(null); // NavBar의 참조
+  const [visibleWidth, setVisibleWidth] = useState(0); // NavBar 너비
+
+  const menuItems = ["Home", "About", "Services", "Portfolio", "Contact", "Blog", "Shop"];
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (navRef.current) {
+        const navWidth = navRef.current.offsetWidth; // NavBar 너비
+        const items = Array.from(navRef.current.children); // NavBar의 자식 노드들
+
+        let totalWidth = 0;
+        const hidden = [];
+        
+        // 메뉴 항목들의 너비 합을 계산
+        items.forEach((item, index) => {
+          totalWidth += item.offsetWidth;
+          if (totalWidth > navWidth) {
+            hidden.push(menuItems[index]); // 공간 부족 시 숨겨진 항목 추가
+          }
+        });
+
+        setHiddenItems(hidden); // 숨겨진 항목을 상태에 저장
+      }
+    };
+
+    handleResize(); // 초기 실행
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [menuItems]);
+
+  return (
+    <nav
+      ref={navRef}
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "10px 20px",
+        backgroundColor: "#333",
+        color: "#fff",
+      }}
+    >
+      {/* 로고 */}
+      <div style={{ fontSize: "24px", fontWeight: "bold" }}>Logo</div>
+
+      {/* 메뉴 */}
+      <div
+        style={{
+          display: "flex",
+          gap: "20px",
+          flexGrow: 1,
+          overflow: "hidden",
+        }}
+      >
+        {menuItems.map((item, index) => (
+          !hiddenItems.includes(item) && ( // 숨겨진 항목은 표시하지 않음
+            <div key={index} style={{ whiteSpace: "nowrap", cursor: "pointer" }}>
+              {item}
+            </div>
+          )
+        ))}
+      </div>
+
+      {/* 드롭다운 */}
+      {hiddenItems.length > 0 && (
+        <div style={{ position: "relative" }}>
+          <button
+            style={{
+              background: "#444",
+              color: "#fff",
+              padding: "10px",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+          >
+            More ▾
+          </button>
+          <ul
+            style={{
+              position: "absolute",
+              top: "40px",
+              right: "0",
+              background: "#444",
+              listStyle: "none",
+              padding: "10px",
+              margin: "0",
+              borderRadius: "5px",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            {hiddenItems.map((item, index) => (
+              <li
+                key={index}
+                style={{
+                  padding: "10px",
+                  borderBottom: "1px solid #555",
+                  color: "#fff",
+                  cursor: "pointer",
+                }}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </nav>
+  );
+}
+const ScrollHideHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
-  
 
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  
+  
   const toggleDropdown = () => {
     setIsOpen((isOpen) => !isOpen);
   };
@@ -2013,90 +2171,51 @@ function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY.current){
+        setIsVisible(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
-    <header>
-      <div className='sticky-container' style={{height: 80.75}}>
-        <div className='sticky-container_1'>
-         <div className='sticky-container_1-1'>
-          <div className='sticky-container_1-1_1'>
-            <button type='button'>
-              <span></span>
-            </button>
-          </div>
-          <div className='logo'>
-            <a>
-            <img src="오늘의 집 logo.jpg" width="71" height="28"></img>
-            </a>
-          </div>
-
-          <div className='logo_N'>
-            <a>
-              <span style={{color:"#35C5F0"}}>커뮤니티</span>
-            </a>
-            <a>
-              <span>쇼핑</span>
-            </a>
-            <a>
-              <span>인테리어/생활</span>
-            </a>
-          </div>
-
-         
-         <div className='sticky-container_2'>
-          <div className='sticky-container_2_1'>
-            <div className='sticky-container_2_1_1'>
-              <div className='sticky-container_2_1_1_1'>
-                <div className='sticky-container_2_1_1_1_1'>
-                  <span><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
-                  <input 
-                    type='text' 
-                    placeholder='통합검색' 
-                    autoComplete='off' 
-                    aria-autocomplete='list'>
-                  </input>
-                  <div className='sticky-container_2_1_1_1_1_1'></div>
-                </div>
-              </div>
-            </div>
-            <div className='sticky-container_2_1_2'>
-              <button type='button'>
-                <span></span>
-              </button>
-            </div>
-            <a className='sticky-container_2_1_3a'>
-              <span><FontAwesomeIcon icon={faCartShopping}/></span>
-            </a>
-            <div className='sticky-container_2_1_4'>
-              <div className='sticky-container_2_1_4_1'>
-                <a>로그인</a>
-                <a>회원가입</a>
-                <a>고객센터</a>
-              </div>
-              <span>
-                <button role='button' type='button'>
-                  <span className='sticky-container_2_1_4_2'>글쓰기</span>
-                  <span className='sticky-container_2_1_4_3'><FontAwesomeIcon icon={faChevronDown} /></span>
-                </button>
-              </span>
-            </div>
-          </div>
-          
-          </div>
-          
-         </div>
-      </div>
-      </div>
-      <div className='sticky-container' style={{height: 51.75}}>
-        <div className='s-c_layout'>
+    <div className='sticky-container' style={{height: 51.75}}>
+    <div className='s-c_layout'
+    style={{ position: "fixed",
+      // top: 80,
+      width: "100%",
+      transition: "transform 0.3s ease",
+      transform: isVisible ? "translateY(0)" :" translateY(-250%)",
+      backgroundColor: "#fff",
+      borderbottom: "1px solid #EAEDEF",
+      zIndex: 1100}}>
+         {/* <NavBar/> */}
           <div className='s-c_4'>
             <div  className='s-c_4_1'>
               <nav className='s-c_4_nav'>
                 <span>
                   <div className='s-c_4_1_1'>
                     <a>
-                      <div className='s-c_4_1_1_2'>
-                        <p>홈</p>
-                      </div>
+                    
+  <div className="s-c_4_1_1_2">
+    <p>
+     홈
+    </p>
+  </div>
+
                     </a>
                   </div>
                 </span>
@@ -2236,22 +2355,23 @@ function Header() {
                   </div>
                 </span>
               </nav>
+              
               <span className='s-c_4_span' >
               
               
                   {/* 드롭다운 */}
-                  <button type='button' ref={buttonRef} onClick = {toggleDropdown} >
-                  {/* {isOpen ? "Close Dropdown" : "Open Dropdown"} */}
+                  <button type='button' onClick = {toggleDropdown} >
                   
                   <span >  
                   <FontAwesomeIcon icon={faChevronDown} /></span>
                   </button>
-                  
                   </span>
-                {/* {isOpen && ( */}
+
               <div ref={dropdownRef} className={`dropDown ${isOpen ? "open" : ""}`}>
-                {/* // <div ref={dropdownRef} className="dropDown"> */}
                 <div className='dropDown_1'>
+                
+                 
+               
                   <div className='dropDown_1_1'>
                     <span>
                       <a>캠핑</a>
@@ -2263,18 +2383,100 @@ function Header() {
                 </div>
 
               </div>
-            {/* )} */}
               
             </div>
             
-            <div className='real_vertical'>
+            {/* <div className='real_vertical'> */}
      
                 <VerticalSlider />
              
-             </div>
+             {/* </div> */}
           </div>
         </div>
+        </div>
+  )
+}
+
+function Header() {
+  
+
+  return (
+    <header>
+      <div className='sticky-container' style={{height: 80.75}}>
+        <div className='sticky-container_1'>
+         <div className='sticky-container_1-1'>
+          <div className='sticky-container_1-1_1'>
+            <button type='button'>
+              <span><FontAwesomeIcon icon={faBars} /></span>
+            </button>
+          </div>
+          <div className='logo'>
+            <a>
+            <img src="오늘의 집 logo.jpg" width="71" height="28"></img>
+            </a>
+          </div>
+
+          <div className='logo_N'>
+            <a>
+              <span style={{color:"#35C5F0"}}>커뮤니티</span>
+            </a>
+            <a>
+              <span>쇼핑</span>
+            </a>
+            <a>
+              <span>인테리어/생활</span>
+            </a>
+          </div>
+
+         
+         <div className='sticky-container_2'>
+          <div className='sticky-container_2_1'>
+            <div className='sticky-container_2_1_1'>
+              <div className='sticky-container_2_1_1_1'>
+                <div className='sticky-container_2_1_1_1_1'>
+                  <span><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
+                  <input 
+                    type='text' 
+                    placeholder='통합검색' 
+                    autoComplete='off' 
+                    aria-autocomplete='list'>
+                  </input>
+                  <div className='sticky-container_2_1_1_1_1_1'></div>
+                </div>
+              </div>
+              
+            </div>
+            <div className='sticky-container_2_1_2'>
+              <button type='button'>
+                <span><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
+              </button>
+            </div>
+            <a className='sticky-container_2_1_3a'>
+              <span><FontAwesomeIcon icon={faCartShopping}/></span>
+            </a>
+            <div className='sticky-container_2_1_4'>
+              <div className='sticky-container_2_1_4_1'>
+                <a className='sticky-container_2_1_4_1_a1'>로그인</a>
+                <a className='sticky-container_2_1_4_1_a2'>회원가입</a>
+                <a className='sticky-container_2_1_4_1_a3'>고객센터</a>
+              </div>
+              <span className='sticky-container_2_1_4_span'>
+                <button role='button' type='button'>
+                  <span className='sticky-container_2_1_4_2'>글쓰기</span>
+                  <span className='sticky-container_2_1_4_3'><FontAwesomeIcon icon={faChevronDown} /></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          
+          </div>
+          
+         </div>
       </div>
+      </div>
+      
+        <ScrollHideHeader/>
+     
     </header>
   );
 
@@ -2394,20 +2596,9 @@ function Body() {
           </div>
           <div className='B_lookfor_h3'>
             <div className='B_lookfor_h3_1'>
-              <div className='B_lookfor_h3_1_1'>
+
               <LookforSlider/>
-              </div>
-              
-              {/* <div className='B_lookfor_h3_2'>
-                <button>
-                  <span><FontAwesomeIcon icon={faChevronLeft} /></span>
-                </button>
-              </div>
-              <div className='B_lookfor_h3_3'>
-                <button>
-                  <span><FontAwesomeIcon icon={faChevronRight} /></span>
-                </button>
-              </div> */}
+
             </div>
           </div>
         </div>
@@ -2658,7 +2849,7 @@ function Body() {
             <div className='UserReview_c_1'>
               <div className='UserReview_c_1_1'>
                 <div className='UserReview_c_1_1_1'>
-                  <img className='UserReview_img1' src='UserReview\유저리뷰_1.avif' style={{width:365, height:244}}></img>
+                  <img className='UserReview_img1' src='UserReview\유저리뷰_1.avif'></img>
                   <div className='UserReview_c_1_1_1_1'>
                     <div className='UserReview_c_1_1_1_1_1'></div>
                   </div>
@@ -2677,7 +2868,7 @@ function Body() {
               </div>
               <div className='UserReview_c_1_2'>
               <div className='UserReview_c_1_2_1'>
-                  <img className='UserReview_img2' src='UserReview\유저리뷰_2.avif' style={{width:365, height:244}}></img>
+                  <img className='UserReview_img2' src='UserReview\유저리뷰_2.avif' ></img>
                   <div className='UserReview_c_1_2_1_1'>
                     <div className='UserReview_c_1_2_1_1_1'></div>
                   </div>
@@ -2686,11 +2877,11 @@ function Body() {
                   <p className='UserReview_c_1_2_2_p1'>요즘인테리어</p>
                   <p className='UserReview_c_1_2_2_p2' >저희는 구축 아파트를 계약해서 무조건 올수리 인테리어를 생각했던 예비 신혼 부부입니다 여러 업체를 상담했지만 인테리어는 처음이라 판단이 잘 안섰는데 현실적으로 실현 가능한 인테리어를 고민해주시고 소통도 가장 잘된다고 느꼈던 권지헌 대표님과 최종 계약을 진행했습니다 결과적으로는 기대하던 것 보다도 훨씬 인테리어가 잘 나와서 너무나도 만족스럽습니다☺️ 우선 권지헌 대표님과  진행하면서 가장 만족스러웠던 점은 소통이었습니다 저희가 업체 선정을 일찍해서 첫미팅부터 공사 완성까지 약 5-6개월 정도가 걸렸는데 그 기간동안 단 한번도 연락 문제없이 바로바로 피드백을 주시고 더 나은 의견이 있으면 반영해서 수정해주셔서 더 좋은 인테리어가 나올 수 있었던 것 같습니다 그리고 대표님께서 젊은 감각을 가지고 해주셔서 그런지 타업체 분들 보다도 제가 원하는 그림을 대충 설명드려도 너무도 정확하고 빠르게 파악해주시고 제 취향에 맞게 인테리어적으로 제안도 많이 해주셔서 어려웠던 인테리어를 끝까지 잘 마무리할 수 있었습니다 정말 공사들어가는 그날 그날 바꾼 부분들 마저도 완벽했어요!! 공사뿐만 아니라 공사를 끝내고도 인테리어 업체의 역할이 중요하다고 생각하는데 그 부분에서도 너무 완벽하셨습니다🥲 문제가 있는 부분들은 그때 그때 다 처리해주시고 입주청소업체와도 문제가 있어서 혼란스러운 상황도 있었는데 그 부분들도 다 잘 처리할 수 있도록 도와주셨어요 대표님뿐만 아니라 공사해주시는 공사 팀 분들의 실력도 물론 출중하셔서 진짜 솔직히 거의 문제가 될 부분도 없었어요..아직은 가구가 덜 들어와서 조금 부족해보일 수 있지만 인테리어 자체를 너무 완벽하게 해주셔서 앞으로 채울 모습들이 더 기대가 됩니다 집 준비하면서 다른 신경쓸 것도 많아서 업체랑의 문제가 많으면 더 힘들었을텐데 대표님과 진행한 덕분에 잘 마무리할 수 있었구요 앞으로 주변에 인테리어 고민하시면 무조건 추천드릴 예정이에요 저희의 첫 집을 맡길 수 있어서 정말 감사했습니다~!</p>
                 </div>
-                <a></a>
+                {/* <a></a> */}
               </div>
               <div className='UserReview_c_1_3'>
                 <div className='UserReview_c_1_3_1'>
-                  <img className='UserReview_img3' src='UserReview\유저리뷰_3.avif' style={{width:365, height:244}}></img>
+                  <img className='UserReview_img3' src='UserReview\유저리뷰_3.avif'></img>
                   <div className='UserReview_c_1_3_1_1'>
                     <div className='UserReview_c_1_3_1_1_1'></div>
                   </div>
@@ -2717,9 +2908,9 @@ function Body() {
           </div>
           <div className='Exhibition_c'>
             <div className='Exhibition_c1'>
-              <div className='Exhibition_c1_1'>
+              
                 <Exhibition_Slider/>
-              </div>
+
               
             </div>
           </div>
@@ -2738,9 +2929,9 @@ function Body() {
           <div className='Best_c'>
             <div className='Best_c1'>
               <div className='Best_c1_1'>
-                <div className='Best_c1_1_1'>
+          
                   <Best_Slider/>
-                </div>
+        
                 
               </div>
             </div>
@@ -2757,9 +2948,6 @@ function Body() {
                       </div>
                     <button type='button'>
                       <span className='Best_c2_1_1_span'>
-                        {/* <svg width={24} height={24} fill='none'>
-                          <path fill='#35C5F0' fillRule='evenodd' d='M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1' clipRule={"evenodd"}></path>
-                        </svg> */}
                         <svg width={24} height={24} fill='none'>
                           <g fill='#fff'>
                             <path d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05zM4 2.75h16a1 1 0 0 1 1 1v17.073a.5.5 0 0 1-.732.442l-7.803-4.096a1 1 0 0 0-.93 0l-7.803 4.096A.5.5 0 0 1 3 20.824V3.75a1 1 0 0 1 1-1'></path>
@@ -2771,11 +2959,8 @@ function Body() {
                     </button>
                     <div className='Best_c2_1_1_2'>
                       <div className='Best_c2_1_1_2_1'>
-                        {/* <div className='Best_c2_1_1_2_1_1'>
-                          <img src='best\2024BEST.avif'></img>
-                        </div> */}
                       </div>
-                      <img src='best\best_1.avif' style={{width:365, height:365}}></img>
+                      <img src='best\best_1.avif' ></img>
                     </div>
                   </div>
                 </div>
@@ -2821,9 +3006,6 @@ function Body() {
                       </div>
                     <button type='button'>
                     <span className='Best_c2_1_1_span'>
-                        {/* <svg width={24} height={24} fill='none'>
-                          <path fill='#35C5F0' fillRule='evenodd' d='M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1' clipRule={"evenodd"}></path>
-                        </svg> */}
                         <svg width={24} height={24} fill='none'>
                           <g fill='#fff'>
                             <path d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05zM4 2.75h16a1 1 0 0 1 1 1v17.073a.5.5 0 0 1-.732.442l-7.803-4.096a1 1 0 0 0-.93 0l-7.803 4.096A.5.5 0 0 1 3 20.824V3.75a1 1 0 0 1 1-1'></path>
@@ -2840,7 +3022,7 @@ function Body() {
                         </div>
                       </div>
                       <div className='Best_c2_11_1_2_2'>
-                      <img src='best\best_2.avif' style={{width:365, height:365}}></img>
+                      <img className='Best_c2_11_1_2_3' src='best\best_2.avif' ></img>
                       </div>
                     </div>
                   </div>
@@ -2889,9 +3071,6 @@ function Body() {
                       </div>
                     <button type='button'>
                     <span className='Best_c2_1_1_span'>
-                        {/* <svg width={24} height={24} fill='none'>
-                          <path fill='#35C5F0' fillRule='evenodd' d='M20 2.75H4a1 1 0 0 0-1 1v17.073a.5.5 0 0 0 .732.442l7.803-4.096a1 1 0 0 1 .93 0l7.803 4.096a.5.5 0 0 0 .732-.442V3.75a1 1 0 0 0-1-1' clipRule={"evenodd"}></path>
-                        </svg> */}
                         <svg width={24} height={24} fill='none'>
                           <g fill='#fff'>
                             <path d='M4.3 4.05V19.5l6.63-3.482a2.3 2.3 0 0 1 2.14 0l6.63 3.481V4.05zM4 2.75h16a1 1 0 0 1 1 1v17.073a.5.5 0 0 1-.732.442l-7.803-4.096a1 1 0 0 0-.93 0l-7.803 4.096A.5.5 0 0 1 3 20.824V3.75a1 1 0 0 1 1-1'></path>
@@ -2908,7 +3087,7 @@ function Body() {
                         </div>
                       </div>
                       <div className='Best_c2_111_1_2_2'>
-                      <img src='best\best_3.avif' style={{width:365, height:365}}></img>
+                      <img className='Best_c2_111_1_2_3' src='best\best_3.avif' ></img>
                       </div>
                     </div>
                   </div>
@@ -3101,39 +3280,15 @@ function Footer() {
 }
 
 
-
-function App() {
-  return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
-  );
-}
-
 export default function TodaysHouse() {
   function Entire(){
 
   }
   return (
-   <div className='entire'>
+   <div className='entire' >
     <Header />
     <Body />
     <Footer />
     </div>
-     
-    
   )
 };
