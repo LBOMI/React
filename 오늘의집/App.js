@@ -11,12 +11,15 @@ import {faCaretUp} from '@fortawesome/free-solid-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react';
+import Modal from "react-modal";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
+
+Modal.setAppElement("#root");
 
 //슬라이드
 function SimpleSlider() {
@@ -42,8 +45,8 @@ function SimpleSlider() {
                 {/* <div className='B_main20_1'> */}
                 {/* <div className='B_main20_1_1'> */}
                   <div>
-                    <img src='AD\광고1.jpeg'></img>
-                 
+                    <img className='B_main20_1_img1' src='AD\광고1.jpeg'></img>
+                    <img className='B_main20_1_img2' src='AD\add_mobile_1.avif'></img>
                   </div>
                   <div>
                     <img src='AD\광고2.avif'></img>
@@ -91,6 +94,82 @@ function SimpleSlider() {
                    <FontAwesomeIcon icon={faPlus} />
                   </div>
                 </div>
+        
+  );
+}
+
+function SimpleSlider2() {
+  const [currentIndex, setCurrentIndex ] = useState(0);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow/>,
+    afterChange: (current) => setCurrentIndex(current),
+  };
+
+  return (
+    <div className='B_main20'>
+                <Slider {...settings}>
+                {/* <div className='B_main20_1'> */}
+                {/* <div className='B_main20_1_1'> */}
+                  <div>
+                    <img src='AD\add_mobile_1.avif'></img>
+                  </div>
+                  <div>
+                  <img src='AD\add_mobile_2.avif'></img>
+                  </div>
+                  <div>
+                  <img src='AD\add_mobile_3.avif'></img>
+                  </div>
+                  <div>
+                  <img src='AD\add_mobile_4.avif'></img>
+                  </div>
+                  <div>
+                  <img src='AD\add_mobile_5.avif'></img>
+                  </div>
+                  <div>
+                  <img src='AD\add_mobile_6.avif'></img>
+                  </div>
+                  {/* </div> */}
+                  {/* </div> */}
+                </Slider>
+                
+                <div style={{
+                  fontSize: 13,
+                  height: 25,
+                  borderRadius: 13,
+                  backgroundColor: "rgba(33, 38, 41, 0.5)",
+                  fontWeight: 700,
+                  display:" inline-flex",
+                  WebkitBoxAlign: "center",
+                  alignItems: "center",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                  wordWrap: "normal",
+                  lineHeight: 0,
+                  overflow: "hidden",
+                  maxWidth: "100%",
+                  color: "#ffffff",
+                  boxSizing: "border-box",
+                  padding: "4px 8px 4px 10px",
+                  cursor: "pointer",
+                  position: "absolute",
+                  bottom: "10px",
+                  right: "10px"
+                }}>
+                  {currentIndex + 1}/6 
+                   <FontAwesomeIcon icon={faPlus} />
+                  </div>
+                </div>
+        
   );
 }
 
@@ -1505,7 +1584,8 @@ function Todaydeal_Slider() {
                         </div>
                       </article>
                     </div>
-                    <div>
+                   
+                  <div>
                     <div className='Todaydeal_C_last'>
                         <a>
                           <div className='Todaydeal_C_last_1'>
@@ -1515,6 +1595,7 @@ function Todaydeal_Slider() {
                         </a>
                     </div>
                     </div>
+              
           
                     
       </Slider>
@@ -2074,6 +2155,8 @@ const NavBar = () => {
         padding: "10px 20px",
         backgroundColor: "#333",
         color: "#fff",
+        width: 300,
+        overflow: "hidden"
       }}
     >
       {/* 로고 */}
@@ -2098,7 +2181,7 @@ const NavBar = () => {
       </div>
 
       {/* 드롭다운 */}
-      {hiddenItems.length > 0 && (
+      {hiddenItems.length >= 0 && (
         <div style={{ position: "relative" }}>
           <button
             style={{
@@ -2133,6 +2216,7 @@ const NavBar = () => {
                   borderBottom: "1px solid #555",
                   color: "#fff",
                   cursor: "pointer",
+                  zIndex: 2000
                 }}
               >
                 {item}
@@ -2373,12 +2457,19 @@ const ScrollHideHeader = () => {
                  
                
                   <div className='dropDown_1_1'>
+                  <span className='dropDown_1_1_0'><a>살림수납</a></span>
+                  <span className='dropDown_1_1_1'><a>반려동물</a></span>
+                  <span className='dropDown_1_1_2'><a>육아</a></span>
+                  <span className='dropDown_1_1_3'><a>홈스토랑</a></span>
+                  <span className='dropDown_1_1_4'><a>플랜테리어</a></span>
+                  <span className='dropDown_1_1_5'><a>콜렉터블</a></span>
                     <span>
                       <a>캠핑</a>
                     </span>
                     <span><a>취미</a></span>
                     <span><a>핫플레이스</a></span>
                     <span><a>이벤트</a></span>
+                 
                   </div>
                 </div>
 
@@ -2394,6 +2485,28 @@ const ScrollHideHeader = () => {
           </div>
         </div>
         </div>
+  )
+}
+
+const Modals = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  return (
+    <div 
+    className='modal'
+    isOpen = {isModalOpen}
+    onRequestClose = {closeModal}
+    overlayClassName = {`modal-overlay ${
+      isModalOpen ? "modal-overlay-open" : ""
+    }`}
+    >
+      <div>
+        <button onClick={closeModal}>X</button>
+      </div>
+    </div>
   )
 }
 
@@ -2513,6 +2626,9 @@ function Body() {
           </div>
           <div className='B_main2'>
               <SimpleSlider/>
+          </div>
+          <div className='B_main3'>
+              <SimpleSlider2/>
           </div>
         </div>
         <div className='B_nav'>
