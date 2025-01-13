@@ -19,7 +19,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
 
-Modal.setAppElement("#root");
 
 //슬라이드
 function SimpleSlider() {
@@ -42,11 +41,8 @@ function SimpleSlider() {
   return (
     <div className='B_main20'>
                 <Slider {...settings}>
-                {/* <div className='B_main20_1'> */}
-                {/* <div className='B_main20_1_1'> */}
                   <div>
-                    <img className='B_main20_1_img1' src='AD\광고1.jpeg'></img>
-                    <img className='B_main20_1_img2' src='AD\add_mobile_1.avif'></img>
+                    <img src='AD\광고1.jpeg'></img>
                   </div>
                   <div>
                     <img src='AD\광고2.avif'></img>
@@ -63,8 +59,6 @@ function SimpleSlider() {
                   <div>
                     <img src='AD\광고6.avif'></img>
                   </div>
-                  {/* </div> */}
-                  {/* </div> */}
                 </Slider>
                 
                 <div style={{
@@ -118,8 +112,6 @@ function SimpleSlider2() {
   return (
     <div className='B_main20'>
                 <Slider {...settings}>
-                {/* <div className='B_main20_1'> */}
-                {/* <div className='B_main20_1_1'> */}
                   <div>
                     <img src='AD\add_mobile_1.avif'></img>
                   </div>
@@ -138,8 +130,6 @@ function SimpleSlider2() {
                   <div>
                   <img src='AD\add_mobile_6.avif'></img>
                   </div>
-                  {/* </div> */}
-                  {/* </div> */}
                 </Slider>
                 
                 <div style={{
@@ -445,12 +435,6 @@ function LookforSlider() {
                     </div>
                     </div>
 
-                  
-                   
-
-                   
-
-                 
                     <div className='B_lookfor_h3_1_2'>
                       <div className='B_lookfor_h3_1_2_1'>
                       <div className='B_lookfor_h3_1_2_15'>
@@ -2111,123 +2095,7 @@ function Counter() {
   return <h1>{formatTime(count)} 남음</h1>;
 }
 
-const NavBar = () => {
-  const [hiddenItems, setHiddenItems] = useState([]); // 드롭다운으로 이동할 메뉴
-  const navRef = useRef(null); // NavBar의 참조
-  const [visibleWidth, setVisibleWidth] = useState(0); // NavBar 너비
 
-  const menuItems = ["Home", "About", "Services", "Portfolio", "Contact", "Blog", "Shop"];
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (navRef.current) {
-        const navWidth = navRef.current.offsetWidth; // NavBar 너비
-        const items = Array.from(navRef.current.children); // NavBar의 자식 노드들
-
-        let totalWidth = 0;
-        const hidden = [];
-        
-        // 메뉴 항목들의 너비 합을 계산
-        items.forEach((item, index) => {
-          totalWidth += item.offsetWidth;
-          if (totalWidth > navWidth) {
-            hidden.push(menuItems[index]); // 공간 부족 시 숨겨진 항목 추가
-          }
-        });
-
-        setHiddenItems(hidden); // 숨겨진 항목을 상태에 저장
-      }
-    };
-
-    handleResize(); // 초기 실행
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, [menuItems]);
-
-  return (
-    <nav
-      ref={navRef}
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "10px 20px",
-        backgroundColor: "#333",
-        color: "#fff",
-        width: 300,
-        overflow: "hidden"
-      }}
-    >
-      {/* 로고 */}
-      <div style={{ fontSize: "24px", fontWeight: "bold" }}>Logo</div>
-
-      {/* 메뉴 */}
-      <div
-        style={{
-          display: "flex",
-          gap: "20px",
-          flexGrow: 1,
-          overflow: "hidden",
-        }}
-      >
-        {menuItems.map((item, index) => (
-          !hiddenItems.includes(item) && ( // 숨겨진 항목은 표시하지 않음
-            <div key={index} style={{ whiteSpace: "nowrap", cursor: "pointer" }}>
-              {item}
-            </div>
-          )
-        ))}
-      </div>
-
-      {/* 드롭다운 */}
-      {hiddenItems.length >= 0 && (
-        <div style={{ position: "relative" }}>
-          <button
-            style={{
-              background: "#444",
-              color: "#fff",
-              padding: "10px",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-            }}
-          >
-            More ▾
-          </button>
-          <ul
-            style={{
-              position: "absolute",
-              top: "40px",
-              right: "0",
-              background: "#444",
-              listStyle: "none",
-              padding: "10px",
-              margin: "0",
-              borderRadius: "5px",
-              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-            }}
-          >
-            {hiddenItems.map((item, index) => (
-              <li
-                key={index}
-                style={{
-                  padding: "10px",
-                  borderBottom: "1px solid #555",
-                  color: "#fff",
-                  cursor: "pointer",
-                  zIndex: 2000
-                }}
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </nav>
-  );
-}
 const ScrollHideHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -2286,20 +2154,17 @@ const ScrollHideHeader = () => {
       backgroundColor: "#fff",
       borderbottom: "1px solid #EAEDEF",
       zIndex: 1100}}>
-         {/* <NavBar/> */}
           <div className='s-c_4'>
             <div  className='s-c_4_1'>
               <nav className='s-c_4_nav'>
                 <span>
                   <div className='s-c_4_1_1'>
-                    <a>
-                    
-  <div className="s-c_4_1_1_2">
-    <p>
-     홈
-    </p>
-  </div>
-
+                    <a>  
+                    <div className="s-c_4_1_1_2">
+                      <p>
+                      홈
+                      </p>
+                    </div>
                     </a>
                   </div>
                 </span>
@@ -2488,30 +2353,8 @@ const ScrollHideHeader = () => {
   )
 }
 
-const Modals = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  return (
-    <div 
-    className='modal'
-    isOpen = {isModalOpen}
-    onRequestClose = {closeModal}
-    overlayClassName = {`modal-overlay ${
-      isModalOpen ? "modal-overlay-open" : ""
-    }`}
-    >
-      <div>
-        <button onClick={closeModal}>X</button>
-      </div>
-    </div>
-  )
-}
 
 function Header() {
-  
 
   return (
     <header>
@@ -3397,9 +3240,6 @@ function Footer() {
 
 
 export default function TodaysHouse() {
-  function Entire(){
-
-  }
   return (
    <div className='entire' >
     <Header />
