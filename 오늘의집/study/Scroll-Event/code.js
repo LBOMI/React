@@ -6,7 +6,7 @@ const ScrollHideHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
   
-
+  
   const toggleDropdown = () => {
     setIsOpen((isOpen) => !isOpen);
   };
@@ -49,23 +49,24 @@ const ScrollHideHeader = () => {
     <div className='sticky-container' style={{height: 51.75}}>
     <div className='s-c_layout'
     style={{ position: "fixed",
-      top: 80,
+      // top: 80,
       width: "100%",
       transition: "transform 0.3s ease",
       transform: isVisible ? "translateY(0)" :" translateY(-250%)",
       backgroundColor: "#fff",
       borderbottom: "1px solid #EAEDEF",
       zIndex: 1100}}>
-         
           <div className='s-c_4'>
             <div  className='s-c_4_1'>
               <nav className='s-c_4_nav'>
                 <span>
                   <div className='s-c_4_1_1'>
-                    <a>
-                      <div className='s-c_4_1_1_2'>
-                        <p>홈</p>
-                      </div>
+                    <a>  
+                    <div className="s-c_4_1_1_2">
+                      <p>
+                      홈
+                      </p>
+                    </div>
                     </a>
                   </div>
                 </span>
@@ -205,11 +206,12 @@ const ScrollHideHeader = () => {
                   </div>
                 </span>
               </nav>
+              
               <span className='s-c_4_span' >
               
               
                   {/* 드롭다운 */}
-                  <button type='button' ref={buttonRef} onClick = {toggleDropdown} >
+                  <button type='button' onClick = {toggleDropdown} >
                   
                   <span >  
                   <FontAwesomeIcon icon={faChevronDown} /></span>
@@ -218,13 +220,23 @@ const ScrollHideHeader = () => {
 
               <div ref={dropdownRef} className={`dropDown ${isOpen ? "open" : ""}`}>
                 <div className='dropDown_1'>
+                
+                 
+               
                   <div className='dropDown_1_1'>
+                  <span className='dropDown_1_1_0'><a>살림수납</a></span>
+                  <span className='dropDown_1_1_1'><a>반려동물</a></span>
+                  <span className='dropDown_1_1_2'><a>육아</a></span>
+                  <span className='dropDown_1_1_3'><a>홈스토랑</a></span>
+                  <span className='dropDown_1_1_4'><a>플랜테리어</a></span>
+                  <span className='dropDown_1_1_5'><a>콜렉터블</a></span>
                     <span>
                       <a>캠핑</a>
                     </span>
                     <span><a>취미</a></span>
                     <span><a>핫플레이스</a></span>
                     <span><a>이벤트</a></span>
+                 
                   </div>
                 </div>
 
@@ -232,11 +244,11 @@ const ScrollHideHeader = () => {
               
             </div>
             
-            <div className='real_vertical'>
+            {/* <div className='real_vertical'> */}
      
                 <VerticalSlider />
              
-             </div>
+             {/* </div> */}
           </div>
         </div>
         </div>
