@@ -1,7 +1,3 @@
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 function SimpleSlider() {
   const [currentIndex, setCurrentIndex ] = useState(0);
 
@@ -20,12 +16,10 @@ function SimpleSlider() {
   };
 
   return (
-    <div style={{position:"relative"}}>
+    <div className='B_main20'>
                 <Slider {...settings}>
-                
                   <div>
                     <img src='AD\광고1.jpeg'></img>
-                 
                   </div>
                   <div>
                     <img src='AD\광고2.avif'></img>
@@ -71,5 +65,6 @@ function SimpleSlider() {
                    <FontAwesomeIcon icon={faPlus} />
                   </div>
                 </div>
+        
   );
 }
